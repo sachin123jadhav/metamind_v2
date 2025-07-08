@@ -11,6 +11,10 @@ import RankArea from "./rank-area";
 import ServicesArea from "./services-area";
 import TestimonialArea from "./testimonial-area";
 import Footer from "@/layout/footers/footer";
+import AboutMeta from "./about-meta";
+import TeamDetailsArea from "@/components/team-details/team-details-area";
+import FooterTwo from "@/layout/footers/footer-2";
+import SecurityArea from "./security-area";
 
 const HomeOne = () => {
 	return (
@@ -19,16 +23,13 @@ const HomeOne = () => {
 			<div id="smooth-wrapper">
 				<div id="smooth-content">
 					<main className="fix">
-						<HeroSlider />
-						<FeatureArea />
+						<HeroSlider />						
 						<AboutArea />
 						<ServicesArea />
-						<ProjectArea />
-						<TestimonialArea />
-						<RankArea />
-						<PriceArea />
+						<AboutMeta />	
+						<SecurityArea />
 					</main>
-					<Footer />
+					<FooterTwo />
 					<ScrollToTop />
 				</div>
 			</div>

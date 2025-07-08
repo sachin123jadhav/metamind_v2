@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 
 // images import 
-import about_img_1 from "../../public/assets/img/about/about-bg-shape.png"
+import about_img_1 from "../../public/assets/img/about/Metamind.jpg";
 import about_img_2 from "../../public/assets/img/about/about-2.jpg"
 import about_img_3 from "../../public/assets/img/about/about-1.jpg"
 import about_img_4 from "../../public/assets/img/about/about-3.jpg"
@@ -40,36 +40,38 @@ const about_data =[
 
 // about content
 const about_content = {
-    title: "OVER 150K+ CLIENT",
-    sub_title: "We Offer Real Time Data Solutions", 
-    des: <>Excepteur sint occaecat cupidatat officia non proident <br />
-    sunt in culpa qui deserunt.!</>,
+  title: "About Us",
+  sub_title: "Empowering Innovation Through AI and Analytics",
+  des: (
+    <>
+      We @Metamind Systems Pvt. Ltd. are excited to share that: Bharat
+      Electronics Limited (BEL) has signed a tripartite MoU with Metamind
+      Systems Pvt. Ltd. and Persistent Systems The collaboration is set to
+      jointly develop and deliver cutting-edge software products, solutions, and
+      services across multiple high-impact sectors. The MoU outlines a shared
+      commitment to leverage expertise in Data Analytics, Artificial Intelligenc
+    </>
+  ),
 
-    about_list: [
-        <>Various analysis options.</>,
-        <>Page Load (time, size, number of requests).</>,
-        <> Big data analysis.</>,
-    ],
-    btn_text: "About Us",
-
-}
+  about_list: [
+    <>Machine Learning.</>,
+    <>Artificial Intelligence</>,
+    <> Data Analytics</>,
+    <> Cyber Security</>,
+  ],
+  btn_text: "About Us",
+};
 const {title, sub_title, des, about_list, btn_text}  = about_content
 
 
 const AboutArea = () => {
     return (
         <>
-            <div className="tp-about__area tp-about__pt-pb pt-100 pb-160">
+            <div className="tp-about__area tp-about__pt-pb pt-50 pb-50">
                <div className="container">
                   <div className="row align-items-center">
                      <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".2s">
-                        <div className="tp-about__img-wrapper text-center text-lg-end p-relative">
-                            {about_data.map((item, i)  => 
-                                <div key={i} className={`tp-about__${item.cls}`}>
-                                    <Image src={item.img} alt="theme-pure" />
-                                </div>
-                            )} 
-                        </div>
+                       <Image className='about-img' src={about_img_1} ></Image>
                      </div>
                      <div className="col-xl-6 col-lg-6 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".6s">
                         <div className="tp-about__right">

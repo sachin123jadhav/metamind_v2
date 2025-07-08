@@ -99,30 +99,7 @@ const Footer = () => {
                <div className="tp-footer__area pt-50">
                   <div className="container">
 
-                     <div className="tp-footer__border-bottom">
-                        <div className="row align-items-center">
-                           <div className="col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
-                              <div className="tp-footer__top-text">
-                                 <span>{title}</span>
-                              </div>
-                           </div>
-                           <div className="col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                              <div className="tp-footer__input p-relative">
-                                 <form onSubmit={(e) => e.preventDefault()}>
-                                    <input type="text" placeholder="Business email adress" />
-                                    <span>
-                                        <EmailIcon /> 
-                                    </span>
-                                    <button>
-                                        <RightArrow />
-                                    </button>
-                                 </form>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-
-                     <div className="tp-footer__top-space">
+                     <div className="tp-footer">
                         <div className="row">
 
                            <div className="col-xl-4 col-lg-4 col-md-7 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">

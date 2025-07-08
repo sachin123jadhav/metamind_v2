@@ -1,3 +1,58 @@
 .header-top__support{color:#fff;}
 
 .header-top__support span a{padding: 0 8px ;color:#fff;}
+.header-top__support{position: relative;}
+.header-top__support::before {
+    content: "";
+  position: absolute;
+  left: -17px;
+  top: -18px;
+  bottom: 0;
+  width: 2px;
+  background: #fff;
+  transform: rotate(41deg);
+  transform-origin: top left;
+  height: 75px;
+  
+  }
+  .globe{color: transparent;
+    max-width: 150px;
+    position: absolute;
+    right: 134px;
+    top: -100px; animation: animationglob 50s cubic-bezier(1,.99,.03,.01) infinite;}
+    .relative{position: relative; }
+
+    /* .tp-about__area {background-image: url(../../assets/img/about/why_bg_2.webp);} */
+    .about-img{border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        border: solid 5px #fff;
+        box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.2);}
+
+
+
+
+
+        @media (max-width: 767px) {
+
+.globe{max-width: 52px;
+    position: absolute;
+    right: 50px;
+    top: -35px;}
+
+
+        }
+
+
+.tp-service__area{background-image: url(../../assets/img/service/Service.svg);}
+
+.service-title{position: absolute;transform: rotate(-90deg);
+    left: -28%;
+    color: RGBA(21, 24, 27, 0.03);
+    font-size: 160px;
+    top: 50%;
+    font-weight: 700;}
+
+    .about-home{background-image: url(../../assets/img/about/shape.svg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 50% auto;}

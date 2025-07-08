@@ -3,25 +3,16 @@ import Link from "next/link";
 
 const social_links = [
   {
-    link: "http://facebook.com",
+    link: "https://www.linkedin.com/company/metamind-systems-pvt-ltd/",
     target: "_blank",
-    icon: "fab fa-facebook-f", 
+    icon: "fab fa-linkedin",
   },
   {
-    link: "http://twitter.com",
+    link: "https://www.instagram.com/metamind_systems_/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
     target: "_blank",
-    icon: "fab fa-twitter", 
+    icon: "fab fa-instagram",
   },
-  {
-    link: "https://www.linkedin.com",
-    target: "_blank",
-    icon: "fab fa-linkedin-in", 
-  }, 
-  {
-    link: "https://www.vimeo.com",
-    target: "_blank",
-    icon: "fab fa-vimeo-v", 
-  },
+  
 ];
 
 const SocialLinks = () => {
@@ -49,8 +40,13 @@ export default SocialLinks;
 
 
 const copy_right_text = {
-  copy_right: <>Full Copyright & Design By <Link href="#">@Theme pure</Link> – {new Date().getFullYear()}</>,
-}
+  copy_right: (
+    <>
+      Copyright {new Date().getFullYear()} Metamind Systems Private Limited. All
+      Rights Reserved.{" "}
+    </>
+  ),
+};
 const {copy_right}  = copy_right_text
 
 export const CopyRight = ()  => {

@@ -39,7 +39,12 @@
     }
     &__content{
         & p{
-            padding-bottom: 7px;
+            overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+            padding-bottom: 0;
             @media #{$lg,$md,$xs}{
                 & br{
                     display: none;

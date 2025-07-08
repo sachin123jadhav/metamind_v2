@@ -2,11 +2,11 @@
 
 .tp-btn{
 	display: inline-block;
-	background-color: var(--tp-common-blue);
+	background-color: var(--tp-common-green);
 	color: var(--tp-common-white);
 	height: 45px;
 	line-height: 45px;
-	border-radius: 30px;
+	border-radius: 5px;
 	padding: 0 35px;
 	font-size: 15px;
 	font-weight: 600;
@@ -66,7 +66,7 @@
 	color: var(--tp-common-white);
 	height: 36px;
 	line-height: 36px;
-	border-radius: 30px;
+	border-radius: 5px;
 	padding: 0 30px;
 	font-size: 15px;
 	font-weight: 600;
@@ -84,8 +84,9 @@
 		color: var(--tp-common-white);
 	}
 	&:hover{
+		background-color: var(--tp-common-green);
 		& span{
-			color: var(--tp-common-black);
+			color: var(--tp-common-white);
 			transition-delay: .1s;
 		}
 	}
@@ -640,13 +641,13 @@
 		position: absolute;
 		width: 0px;
 		height: 0px;
-		background-color: var(--tp-common-black);
+		background-color: var(--tp-common-green);
 		border-radius: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 		-webkit-transition: all 1s ease;
 		transition: all 1s ease;
-		z-index: 1;
+		z-index: -1;
 	}
 
 	&:hover {

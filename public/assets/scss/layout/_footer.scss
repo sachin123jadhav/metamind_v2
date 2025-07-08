@@ -19,8 +19,9 @@
             color: #FFFFFF;
         }
     }
+    &__logo img{max-width: 250px;}
     &__border-bottom{
-        padding-bottom: 50px;
+        padding-bottom: 0px;
         position: relative;
         &::after{
             content: '';
@@ -48,7 +49,7 @@
     }
     &__tp-border-bottom{
         border-bottom: 1px solid #DFDFEA;
-        padding-bottom: 45px;
+        padding-bottom: 0px;
     }
     &__input{
         & input{
@@ -909,7 +910,7 @@
     margin:0 auto;
     height: 100%;
     text-align: center;
-    background-color: var(--tp-common-black);
+    background-color: var(--tp-common-green);
     z-index: -1;
 }
 .tp-footer{

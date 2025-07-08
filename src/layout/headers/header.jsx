@@ -38,7 +38,7 @@ const Header = () => {
 
     return (
       <>
-        <header className="header-bottom__transparent z-index-6 tp-header-height">
+        <header className="header-bottom z-index-6 tp-header-height">
           <div
             className="header-top__area  header-top__bg z-index-3 d-none d-md-block tp-header-top-animation "
             ref={(el) => (header_top_animation = el)}
@@ -48,7 +48,7 @@ const Header = () => {
                 <div className="col-4">
                   <div className="header-top__link header-top__space">
                     <span className="text-white fs-6">
-                      <i className="fas fa-phone-volume text-white "></i> +91 20
+                      <i className="fas fa-phone-volume text-white"></i> +91 20
                       26059659
                     </span>
                   </div>
@@ -57,11 +57,11 @@ const Header = () => {
                   <div className="header-top__support text-end">
                     <span>
                       {" "}
-                      <i className="fas fa-envelope "> </i>{" "}
+                      <i className="fas fa-envelope mr-3"> </i>{" "}
                       info@metamindsystem.com
                     </span>
-                    <span>
-                      Visit Us: <SocialLinks /> 
+                    <span className="pl-15">
+                      Visit Us: <SocialLinks />
                     </span>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ const Header = () => {
 
           <div
             id="header-sticky"
-            className={`header-bottom__area header-mob-space header-bottom__area-2 header-bottom__transparent z-index-5 ${
+            className={`header-bottom__area header-mob-space header-bottom__area-2 header-bottom z-index-5 ${
               sticky && "header-sticky"
             }`}
           >
@@ -84,44 +84,31 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="col-xxl-6 col-xl-5 col-lg-5 d-none d-lg-block">
-                  <div className="header-bottom__main-menu">
-                    <nav id="mobile-menu">
-                      <NavMenu />
-                    </nav>
-                  </div>
-                </div>
-                <div className="col-xxl-4 col-xl-5 col-lg-5 col-md-8 col-6">
-                  <div className="header-bottom__right d-flex align-items-center justify-content-end">
-                    <div className="header-bottom__action">
-                      <a
-                        className="d-none d-md-inline-block search-open-btn"
-                        onClick={() => setSearchOpen(true)}
-                      >
-                        <SearchIconTwo />
-                      </a>
-                      <Link
-                        className="d-none d-lg-inline-block last-child"
-                        href="/register"
-                      >
-                        <UserIcon />
-                        <span>Log In</span>
-                      </Link>
+
+                <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-8 col-6">
+                  <div className="d-flex  justify-content-end">
+                    <div className="header-bottom__main-menu d-none d-lg-flex">
+                      <nav id="mobile-menu">
+                        <NavMenu />
+                      </nav>
                     </div>
-                    <div className="header-bottom__btn d-flex align-items-center">
-                      <Link
-                        className="tp-btn-white tp-btn-hover alt-color-black d-none d-md-inline-block"
-                        href="/service-details"
-                      >
-                        <span className="white-text">Get Started</span>
-                        <b></b>
-                      </Link>
-                      <a
-                        className="header-bottom__bar d-lg-none tp-menu-bar"
-                        onClick={() => setSidebarOpen(true)}
-                      >
-                        <i className="fal fa-bars"></i>
-                      </a>
+                    <div className="header-bottom__right d-flex align-items-center justify-content-end">
+                      <div className="header-bottom__action"></div>
+                      <div className="header-bottom__btn d-flex align-items-center">
+                        <Link
+                          className="tp-btn-orange tp-btn-hover alt-color-green d-none d-md-inline-block"
+                          href="/service-details"
+                        >
+                          <span className="white-text">Contact Us</span>
+                          <b></b>
+                        </Link>
+                        <a
+                          className="header-bottom__bar d-lg-none tp-menu-bar"
+                          onClick={() => setSidebarOpen(true)}
+                        >
+                          <i className="fal fa-bars"></i>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
