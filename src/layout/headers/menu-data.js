@@ -22,7 +22,7 @@ const menu_data = [
     link: "/about",
     active: "",
     sub_menus: [
-      { link: "/#", title: "Company" },
+      { link: "/about", title: "Company" },
       { link: "/#", title: "Career" },
       { link: "/#", title: "Testimonials" },
     ],
@@ -75,8 +75,6 @@ const menu_data = [
       { link: "/services", title: "Digital Transformation Services" },
     ],
   },
-
- 
 
   // {
   //   id: 5,

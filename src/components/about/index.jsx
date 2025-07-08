@@ -10,21 +10,25 @@ import Brand from "./brand";
 import CompanyArea from "./company-area";
 import JobArea from "./job-area";
 import JourneyArea from "./journey-area";
+import Header from "@/layout/headers/header";
+import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
+import AboutBanner from "./about-banner";
+import AboutContent from "./about-content";
+import FooterTwo from "@/layout/footers/footer-2";
+import OurTeam from "./team";
+import AboutAreaNew from "@/common/about-area-new";
  
 const About = () => {
   return (
     <>
-      <HeaderSix />
-      <Breadcrumb title_top="About"  title_bottom="Softec" />
-      <HeroBanner title="About" subtitle="Softec" bg_img="/assets/img/breadcrumb/breadcrumb-2.jpg" />
-      <Brand />
-      <CompanyArea />
-      <AboutArea />
-      <TeamArea bg_style={true} />
-      <JourneyArea />
-      <JobArea />
-      <CtaArea />
-      <FooterFive style_contact={true} style_team={true} />
+      <Header />
+      <BreadcrumbTwo title="About Company" innertitle="About Company" />{" "}
+      <AboutBanner />
+      <AboutContent />
+      <OurTeam />
+   
+      <AboutAreaNew />
+      <FooterTwo />
     </>
   );
 };

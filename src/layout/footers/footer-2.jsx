@@ -86,7 +86,7 @@ const FooterTwo = () => {
     }
     return (
       <>
-        <footer>
+        <footer className='mt-25'>
           <div className="tp-footer__pl-pr footer-bg">
             <div className="tp-footer__area pt-40 tp-footer__tp-border-bottom">
               <div className="container">

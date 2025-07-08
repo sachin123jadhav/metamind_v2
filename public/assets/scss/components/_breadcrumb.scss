@@ -1,6 +1,7 @@
 @use '../utils' as *;
 
 
+
 .about{
     &-shape-1{
         position: absolute;
@@ -71,7 +72,7 @@
     &-title{
         font-style: normal;
         font-weight: 600;
-        font-size: 110px;
+        font-size: 22px;
         line-height: 1.2;
         letter-spacing: -0.02em;
         color: #600EE4;
@@ -90,6 +91,10 @@
 }
 
 .breadcrumb{
+    color: #000;
+
+    &__area{  background-size: cover;background-position: right center;}
+  
     &__shape-1{
         position: absolute;
         top: 50%;
@@ -107,8 +112,8 @@
         right: -5px;
     }
     &-height{
-        padding-top: 115px;
-        padding-bottom: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     &-height-2{
         padding-top: 105px;
@@ -160,12 +165,12 @@
         }   
     }
     &__content{
-        margin-top: 60px;
+        margin-top: 0px;
         @media #{$md}{
             transform: translateY(20px);
         }
         @media #{$xs}{
-            margin-bottom: 30px;
+            margin-bottom: 0px;
         }
     }
     &__client-info{
@@ -175,7 +180,7 @@
             line-height: 12px; 
             text-align: center;
             letter-spacing: 0.06em;
-            color: rgba(255, 255, 255, 0.6);
+            color: #000;
             margin-bottom: 15px;
             display: inline-block;
         }
@@ -196,7 +201,7 @@
             font-size: 17px;
             line-height: 26px;
             text-align: center; 
-            color: rgba(255, 255, 255, 0.7);
+            color: #000;
             @media #{$xs}{
                 & br{
                     display: none;
@@ -208,7 +213,7 @@
             font-size: 14px;
             line-height: 12px;
             text-transform: uppercase; 
-            color: rgba(255, 255, 255, 0.6);
+            color: #000;
             padding-bottom: 10px;
             display: inline-block;            
         }
@@ -218,11 +223,11 @@
     }
     &__title{
         font-weight: 700;
-        font-size: 70px;
+        font-size: 22px;
         line-height: 1.1;
         letter-spacing: -0.02em;
         color: #FFFFFF;
-        padding-bottom: 12px;
+        padding-bottom: 0px;
         @media #{$lg}{
             font-size: 60px;
         }
@@ -243,15 +248,15 @@
     &__list{
         display: inline-block;
         & span{ 
-            font-weight: 600;
+            font-weight: 500;
             font-size: 17px;
             line-height: 24px;
-            color: #FFFFFF;
+            color: #000;
             @media #{$xs}{
                 font-size: 15px;
             }
             &.child-one{
-                color: rgba(255, 255, 255, 0.7);
+                color: #000;
                 font-weight: 400;
             }        
             &.dvdr{
@@ -259,7 +264,7 @@
                     font-weight: 400;
                     font-size: 17px;
                     line-height: 16px;
-                    color: rgba(255, 255, 255, 0.7);
+                    color: #000;
                     padding: 0px 8px;
                     transform: translateY(1px);
                 }

@@ -19,24 +19,22 @@ const BreadcrumbTwo = ({ title, innertitle, team_details, career_details }) => {
  useTitleAnimation(subtitleRef)
   return (
     <>
-      <div className="breadcrumb__area breadcrumb-height p-relative blue-bg-2">
-        <div className="breadcrumb__shape-1">
-          <Image src={shape_1} alt="theme-pure" />
-        </div>
-        <div className="breadcrumb__shape-2">
-          <Image src={shape_2} alt="theme-pure" />
-        </div>
+      <div className="breadcrumb__area breadcrumb-height p-relative green-bg-2">
+      
         <div className="container">
           <div className="row">
-            <div className="col-xl-8 col-lg-7">
-              <div className="breadcrumb__content">
-                <h3
+            <div className="col-xl-12 col-lg-12">
+              <div className="breadcrumb__content text-end">
+                {/* <h3
                   ref={animeRef}
                   className="breadcrumb__title tp-char-animation anime_text"
                 >
                   {title}
-                </h3>
-                <div ref={subtitleRef} className="breadcrumb__list tp-title-anim tp__title_anime">
+                </h3> */}
+                <div
+                  ref={subtitleRef}
+                  className="breadcrumb__list tp-title-anim tp__title_anime"
+                >
                   <span className="child-one">
                     <Link href="/">Home</Link>
                   </span>
@@ -69,18 +67,7 @@ const BreadcrumbTwo = ({ title, innertitle, team_details, career_details }) => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-lg-5 col-lg-4 text-center text-md-end">
-              <div className="breadcrumb__img p-relative text-start z-index">
-                <Image className="z-index-3" src={shape_3} alt="theme-pure" />
-                <div
-                  className="breadcrumb__sub-img wow tpfadeUp"
-                  data-wow-duration=".9s"
-                  data-wow-delay=".4s"
-                >
-                  <Image src={shape_4} alt="theme-pure" />
-                </div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>
