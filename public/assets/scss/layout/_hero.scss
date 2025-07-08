@@ -11,10 +11,11 @@
     }
     &__bg{
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom:120px;
         border-radius: 30px;
         @media #{$xl,$lg}{
-            padding-top: 140px;
+            padding-top: 60px;
+            padding-bottom:60px;
         }
         @media #{$md}{
             padding-top: 170px;
@@ -31,7 +32,7 @@
         padding-bottom: 0px;
         overflow: hidden;
         @media #{$lg,$xl}{
-            font-size: 40px;  
+            font-size: 32px;  
         }
         @media #{$md}{
             font-size: 30px;  
