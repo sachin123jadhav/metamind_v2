@@ -102,7 +102,7 @@ const Header = () => {
                           className="tp-btn-orange tp-btn-hover alt-color-green d-none d-md-inline-block"
                           href="/service-details"
                         >
-                          <span className="white-text">Contact Us</span>
+                          <span className="white-text">Contact</span>
                           <b></b>
                         </Link>
                         <a
