@@ -38,7 +38,7 @@ const Header = () => {
 
     return (
       <>
-        <header className="header-bottom z-index-6 tp-header-height">
+        <header className="header-bottom z-index-6 tp-header-height bg-white">
           <div
             className="header-top__area  header-top__bg z-index-3 d-none d-md-block tp-header-top-animation "
             ref={(el) => (header_top_animation = el)}
@@ -60,9 +60,12 @@ const Header = () => {
                       <i className="fas fa-envelope mr-3"> </i>{" "}
                       info@metamindsystem.com
                     </span>
-                    <span className="pl-15">
+                    {/* <span className="pl-15">
                       Visit Us: <SocialLinks />
-                    </span>
+                    </span> */}
+                    <Link className="pl-15" href="/">
+                      <u>Career</u>
+                    </Link>
                   </div>
                 </div>
               </div>

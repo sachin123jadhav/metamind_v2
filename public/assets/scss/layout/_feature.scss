@@ -264,12 +264,12 @@
             }
             & a{
                 font-weight: 600;
-                font-size: 22px;
+                font-size: 18px;
                 line-height: 24px;
-                color: #6B14FA;
+                color: #266544;
                 text-decoration: underline;
                 @media #{$xs}{
-                    font-size: 20px;
+                    font-size: 16px;
                     line-height: 24px;
                 }
             }

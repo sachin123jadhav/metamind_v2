@@ -80,11 +80,12 @@ const AboutAreaNew = () => {
         <div className="container">
           <div className="row align-items-center">
             <div
-              className="col-xl-5 col-lg-6 wow tpfadeLeft"
-              data-wow-duration=".9s"
-              data-wow-delay=".2s"
-            >
-              <div className="tp-about__img-wrapper text-center text-lg-end p-relative">
+              className="col-xl-5 col-lg-6 " >
+              <div
+                className="tp-about__img-wrapper text-center text-lg-end p-relative wow tpfadeLeft"
+                data-wow-duration=".9s"
+                data-wow-delay=".2s"
+              >
                 {about_data.map((item, i) => (
                   <div key={i} className={`tp-about__${item.cls}`}>
                     <Image src={item.img} alt="theme-pure" />

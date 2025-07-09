@@ -86,7 +86,7 @@
 	&:hover{
 		background-color: var(--tp-common-green);
 		& span{
-			color: var(--tp-common-white);
+			color: var(--tp-common-orange);
 			transition-delay: .1s;
 		}
 	}
@@ -790,5 +790,49 @@
 	}
 	&:hover{
 		color: var(--tp-common-yellow-3);
+	}
+}
+.tp-btn-blue-border{
+	height: 60px;
+	line-height: 57px;
+	padding-left: 38px;
+	padding-right: 28px;
+	border-radius: 100px;
+	border: 2px solid var(--tp-common-blue);
+	color: var(--tp-common-blue);
+	font-size: 16px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 16px;
+	transition: .3s;
+	& i{
+		padding-left: 60px;
+		position: relative;
+		z-index: 5;
+		color: #fff;
+		font-size: 22px;
+		transform: translateY(2px);
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 100%;
+		width: 68px;
+		background: var(--tp-common-blue-3);
+		z-index: -1;
+		transition: .3s;
+	}
+	&:hover{
+		color: #fff;
+		border: 2px solid var(--tp-common-blue);
+		&::before{
+			width: 100%;
+			background: var(--tp-common-blue);
+		}
 	}
 }

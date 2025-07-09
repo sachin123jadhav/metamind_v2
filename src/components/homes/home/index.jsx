@@ -15,26 +15,28 @@ import AboutMeta from "./about-meta";
 import TeamDetailsArea from "@/components/team-details/team-details-area";
 import FooterTwo from "@/layout/footers/footer-2";
 import SecurityArea from "./security-area";
+import ServicesHome from "./services";
 
 const HomeOne = () => {
 	return (
-		<>
-			<Header />
-			<div id="smooth-wrapper">
-				<div id="smooth-content">
-					<main className="fix">
-						<HeroSlider />						
-						<AboutArea />
-						<ServicesArea />
-						<AboutMeta />	
-						<SecurityArea />
-					</main>
-					<FooterTwo />
-					<ScrollToTop />
-				</div>
-			</div>
-		</>
-	);
+    <>
+      <Header />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <main className="fix">
+            <HeroSlider />
+            <AboutArea />
+            <ServicesArea />
+            <ServicesHome />
+            <AboutMeta />
+            <SecurityArea />
+          </main>
+          <FooterTwo />
+          <ScrollToTop />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default HomeOne;

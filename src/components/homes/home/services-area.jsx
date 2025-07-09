@@ -14,11 +14,11 @@ const service_content = {
   bg_img: "/assets/img/service/sv-bg.jpg",
   title_2: (
     <>
-      Data Analysis <br /> Tools & Methods
+      Our Products <br /> HRMS and DMS
     </>
   ),
-  des: <>Our Offerings</>,
-  btn_text: "Work with Us",
+  // des: <>Our Offerings</>,
+  btn_text: "Know More",
 };
 const {title, sub_title,bg_img, title_2, des, btn_text}  = service_content
 
@@ -70,7 +70,7 @@ const ServicesArea = () => {
                 </div>
               ))}
 
-              {/* <div
+              <div
                 className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp"
                 data-wow-duration=".9s"
                 data-wow-delay="1s"
@@ -100,7 +100,7 @@ const ServicesArea = () => {
                     />
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

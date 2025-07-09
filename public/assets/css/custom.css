@@ -407,3 +407,27 @@ position: relative;
 
   .page-bg::after{content: '';background-image: url("../../assets/img/about/comparison-plan-after.png"); right: -85%;
   top: 0;}
+
+  .title {
+    color: var(--tp-common-blue);
+    font-size: 28px;
+    text-transform: capitalize;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+
+  .service-content p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    padding-bottom: 0;
+  }
+
+  .home-services img{border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border: solid 4px #fff;
+    box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.22);}

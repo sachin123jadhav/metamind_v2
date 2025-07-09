@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 const TeamMember = ({ name, image, designation, colClass }) => {
   return (
     <div className={colClass || "col-md-3"}>
