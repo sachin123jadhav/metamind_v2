@@ -9,24 +9,22 @@ import TestimonialArea from "../../common/testimonial-area";
 import CtaArea from "../contact/cta-area";
 import FaqArea from "../homes/home-2/faq-area";
 import ServiceArea from "./service-area";
+import Header from "@/layout/headers/header";
+import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
+import Footer from "@/layout/footers/footer";
+import FooterTwo from "@/layout/footers/footer-2";
+import AllServices from "./AllServices";
 
 const Service = () => {
   return (
     <>
-      <HeaderSix />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <Breadcrumb title_top={"Our Top"} title_bottom={"Service"} />
-            <HeroBanner title="Our Top" subtitle="Service" bg_img="/assets/img/breadcrumb/breadcrumb-2.jpg" />
-            <ServiceArea /> 
-            <CardArea style_service={true} />
-            <SalesArea style_service={true} />
-            <TestimonialArea />
-            <FaqArea style_service={true} />
-            <CtaArea />
+           <AllServices />
           </main>
-          <FooterFive style_contact={true} style_team={true} />
+          <FooterTwo />
         </div>
       </div>
     </>

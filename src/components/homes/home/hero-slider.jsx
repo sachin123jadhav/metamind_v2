@@ -151,7 +151,7 @@ const HeroSlider = () => {
                   </p>
                   <Link
                     className="tp-btn-green tp-btn-hover alt-color-green d-none d-md-inline-block  wow tpfadeUp"
-                    href="/service-details"
+                    href="/service"
                     data-wow-duration=".9s"
                     data-wow-delay=".7s"
                   >

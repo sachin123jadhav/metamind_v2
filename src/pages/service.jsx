@@ -6,7 +6,11 @@ import Wrapper from "../layout/wrapper";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Softec - Data analytics"} />
+      <SEO
+        pageTitle={
+          "Metamind :- Web Development,E-Commerce Development, Digital Transformation Services, Software Product Development (SaaP), Software as a Service (SaaS)"
+        }
+      />
       <Service />
     </Wrapper>
   );

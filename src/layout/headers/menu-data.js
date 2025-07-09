@@ -32,7 +32,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "Surveillance Soutions",
-    link: "/products",
+    link: "/surveillance",
     active: "",
   },
   {
@@ -40,7 +40,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "Cyber Security Solutions",
-    link: "/#",
+    link: "/cyber-security",
     active: "",
   },
   // {
@@ -56,7 +56,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "SaaP",
-    link: "/#",
+    link: "/service#spd",
     active: "",
   },
   {
@@ -64,7 +64,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "SaaS",
-    link: "/#",
+    link: "/service#saas",
     active: "",
   },
   {
@@ -72,7 +72,7 @@ const menu_data = [
     mega_menu: false,
     has_dropdown: false,
     title: "e-Governance Solutions",
-    link: "/#",
+    link: "/e-governance-solutions",
     active: "",
   },
 

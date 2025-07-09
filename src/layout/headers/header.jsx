@@ -22,25 +22,14 @@ const Header = () => {
       let g_timline = new gsap.timeline();
       let header_top_animation = useRef(null)
 
-      useEffect(() => {
-         gsap.from(header_top_animation,  {
-            opacity: 0,
-		      y: '20px',
-            delay: 1.05
-         });
-         gsap.to(header_top_animation, {
-            opacity:1,
-            y: '0px',
-            delay: 1.05
-        })
-      },[])
+    
  
 
     return (
       <>
         <header className="header-bottom z-index-6 tp-header-height bg-white">
           <div
-            className="header-top__area  header-top__bg z-index-3 d-none d-md-block tp-header-top-animation "
+            className="header-top__area  header-top__bg z-index-3 d-none d-md-block  "
             ref={(el) => (header_top_animation = el)}
           >
             <div className="container">
@@ -63,7 +52,7 @@ const Header = () => {
                     {/* <span className="pl-15">
                       Visit Us: <SocialLinks />
                     </span> */}
-                    <Link className="pl-15" href="/">
+                    <Link className="pl-15" href="/career">
                       <u>Career</u>
                     </Link>
                   </div>
@@ -100,7 +89,7 @@ const Header = () => {
                       <div className="header-bottom__btn d-flex align-items-center">
                         <Link
                           className="tp-btn-orange tp-btn-hover alt-color-green d-none d-md-inline-block"
-                          href="/service-details"
+                          href="/contact"
                         >
                           <span className="white-text">Contact</span>
                           <b></b>

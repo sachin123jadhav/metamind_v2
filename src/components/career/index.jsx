@@ -6,21 +6,26 @@ import PlatformArea from "../../common/platform-area";
 import JobArea from "../about/job-area";
 import CtaArea from "../contact/cta-area";
 import CarrerBanner from "./carrer-banner";
+import Header from "@/layout/headers/header";
+import FooterTwo from "@/layout/footers/footer-2";
+import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
+import Opportunity from "./opportunity";
 
 const Career = () => {
   return (
     <>
-      <HeaderSix />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
-          <main> 
-            <BreadcrumbThree />
-            <CarrerBanner />
-            <PlatformArea style_carrer={true} />
-            <JobArea style_carrer={true} />
-            <CtaArea />
+          <main>
+            <BreadcrumbTwo title="Career" innertitle="Career" />
+            <div className="page-bg">
+              <Opportunity />
+              {/* <PlatformArea style_carrer={true} /> */}
+              <JobArea style_carrer={true} />
+            </div>
           </main>
-          <FooterFive style_contact={true} style_team={true}/>
+          <FooterTwo />
         </div>
       </div>
     </>
