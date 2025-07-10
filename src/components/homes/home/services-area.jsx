@@ -54,7 +54,7 @@ const ServicesArea = () => {
 
           {/* Service Cards */}
           <div className="row">
-            {service_data.slice(0, 5).map((item, i) => (
+            {service_data.slice(0, 6).map((item, i) => (
               <div
                 key={i}
                 className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp"
@@ -81,7 +81,7 @@ const ServicesArea = () => {
             ))}
 
             {/* Dashboard Section */}
-            <div
+            {/* <div
               className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp"
               data-wow-duration=".9s"
               data-wow-delay="1s"
@@ -111,7 +111,7 @@ const ServicesArea = () => {
                   />
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

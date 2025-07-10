@@ -78,22 +78,22 @@
         }
     }
     &__right{
-        padding-left: 50px;
+        padding-right: 50px;
         @media #{$xl}{
-            padding-left: 30px;
+            padding-right: 30px;
         }
         @media #{$lg}{
-            padding-left: 20px;
+            padding-right: 20px;
         }
         @media #{$md,$xs}{
-            padding-left: 0px;
+            padding-right: 0px;
         }
     }
     &__section-box{
         padding-bottom: 20px;
         & p{
             font-weight: 400;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 28px;
             @media #{$md,$xs,$lg}{
                 display: none;

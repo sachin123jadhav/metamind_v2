@@ -11,12 +11,14 @@ const About = () => {
   return (
     <>
       <Header />
-      <BreadcrumbTwo title="About Company" innertitle="About Company" />{" "}
+      <div className="text-white">
+        <BreadcrumbTwo title="About Company" innertitle="About Company" />{" "}
+      </div>
       <AboutBanner />
       <AboutContent />
       <OurTeam />
-   
-      <AboutAreaNew />
+
+      {/* <AboutAreaNew /> */}
       <FooterTwo />
     </>
   );

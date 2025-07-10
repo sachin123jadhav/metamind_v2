@@ -29,7 +29,7 @@ function AllServices() {
             </div>
           </div>
 
-          <div className="row mt-50 align-items-center" id="spd">
+          {/* <div className="row mt-50 align-items-center" id="spd">
             <div className="col-md-6">
               <Image src={SoftwareProductDevelopment} />
             </div>
@@ -48,7 +48,7 @@ function AllServices() {
                 success.
               </p>
             </div>
-          </div>
+          </div> */}
 
           <div
             className="row mt-50 align-items-center flex-md-row-reverse"

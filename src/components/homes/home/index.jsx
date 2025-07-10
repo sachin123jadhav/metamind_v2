@@ -26,9 +26,10 @@ const HomeOne = () => {
           <main className="fix">
             <HeroSlider />
             <AboutArea />
-            <ServicesArea />
-            <ServicesHome />
             <AboutMeta />
+            <ServicesHome />
+            <ServicesArea />
+
             <SecurityArea />
           </main>
           <FooterTwo />

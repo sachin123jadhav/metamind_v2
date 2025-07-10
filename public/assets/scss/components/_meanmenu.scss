@@ -98,12 +98,12 @@
 	height: 30px;
 	width: 30px;
     line-height: 30px;
-	color: #fff;
+	color: #000;
 	line-height: 30px;
 	top: 0;
 	font-weight: 400;
     &:hover{
-        color: var(--tp-theme-2);
+        color: #000;
         border-color: #888888;
     }
 }
@@ -130,6 +130,6 @@
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    color: var(--tp-common-white);
+    color: #000;
 }
 

@@ -53,27 +53,39 @@ const menu_data = [
   // },
   {
     id: 2,
-    mega_menu: false,
-    has_dropdown: false,
-    title: "SaaP",
-    link: "/service#spd",
+    mega_menu: true,
+    has_dropdown: true,
+    title: "SaaP +",
+    link: "/software-as-a-product",
     active: "",
+    sub_menus: [
+      { link: "/workfusion", title: "Workfusion" },
+      {
+        link: "/document-management-system",
+        title: "Document Management System",
+      },
+      // { link: "/service", title: "Development" },
+    ],
   },
   {
     id: 2,
     mega_menu: false,
     has_dropdown: false,
     title: "SaaS",
-    link: "/service#saas",
+    link: "/service",
     active: "",
   },
   {
     id: 2,
     mega_menu: false,
-    has_dropdown: false,
-    title: "e-Governance Solutions",
+    has_dropdown: true,
+    title: "e-Governance Solutions +",
     link: "/e-governance-solutions",
     active: "",
+    sub_menus: [
+      { link: "/digital-mapping", title: "Digital Mapping" },
+      { link: "/geo-referencing", title: "Geo-referencing" },
+    ],
   },
 
   // {

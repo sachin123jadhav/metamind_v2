@@ -604,3 +604,5 @@ position: relative;
     height: 100%;
     background-color: #fafbfe;
   }
+
+  .text-white .breadcrumb__list span.child-one,   .text-white .breadcrumb__list span ,   .text-white .breadcrumb__content .dvdr i{color: #fff;}

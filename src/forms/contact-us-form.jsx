@@ -35,6 +35,7 @@ const ContactUsForm = () => {
       });
 
       const result = await response.json();
+      console.log("email result", result);
       setLoading(false);
       setAlert({
         status: result?.status === 200 ? "success" : "danger",

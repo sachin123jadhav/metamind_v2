@@ -20,7 +20,7 @@ const service_data = [
     icon: img_1,
     img: img_1,
     title: "Software Product Development",
-    link: "/service#spd",
+    link: "/software-as-a-product",
     description: (
       <>
         Software Product Development involves the process of designing,
@@ -39,7 +39,7 @@ const service_data = [
     icon: img_2,
     img: img_2,
     title: "Software as a Service (SaaS)",
-    link: "/service#saas",
+    link: "/service",
     description: (
       <>
         Software as a Service (SaaS) is a cloud-based model that delivers
@@ -73,7 +73,7 @@ const service_data = [
     icon: img_4,
     img: img_4,
     title: "E-Commerce Development",
-    link: "/service/ecd",
+    link: "/service#ecd",
     description: (
       <>
         Custom e-commerce platforms that drive sales, enhance customer
@@ -95,6 +95,23 @@ const service_data = [
         create sustainable competitive advantages. Embrace the future of
         business operations with Metamind Systems Pvt. Ltd.'s digital
         transformation services.
+      </>
+    ),
+    delay: ".9s",
+  },
+  {
+    id: 6,
+    icon: img_5,
+    img: img_5,
+    title: "E-Governance Solutions",
+    link: "/e-governance-solutions",
+    description: (
+      <>
+        In the rapidly evolving digital era, governments worldwide are embracing
+        e-governance solutions to streamline operations, enhance citizen
+        services, and foster transparency and efficiency. Our comprehensive
+        range of e-governance solutions is designed to empower governments and
+        public institutions in their digital transformation journey.
       </>
     ),
     delay: ".9s",

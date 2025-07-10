@@ -77,7 +77,7 @@ const security_data = [
     title: (
       <>
         Kumbh <br />
-        Prayagraj 2024
+        Prayagraj 2025
       </>
     ),
   },
@@ -88,7 +88,7 @@ const security_data = [
     title: (
       <>
         Government <br />
-        of Maharashtra.
+        of Maharashtra
       </>
     ),
   },

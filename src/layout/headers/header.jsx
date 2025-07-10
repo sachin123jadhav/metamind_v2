@@ -34,26 +34,31 @@ const Header = () => {
           >
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-4">
+                <div className="col-4 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                   <div className="header-top__link header-top__space">
-                    <span className="text-white fs-6">
+                    <span className="text-white ">
                       <i className="fas fa-phone-volume text-white"></i> +91 20
                       26059659
                     </span>
-                  </div>
-                </div>
-                <div className="col-8">
-                  <div className="header-top__support text-end">
-                    <span>
+                    <span>|</span>
+                    <span className="text-white">
                       {" "}
-                      <i className="fas fa-envelope mr-3"> </i>{" "}
+                      <i className="fas fa-envelope mr-3 text-white"> </i>{" "}
                       info@metamindsystem.com
                     </span>
+                  </div>
+                </div>
+                <div className="col-8 col-md-6 col-lg-6 col-xl-6  col-xxl-8">
+                  <div className="header-top__support text-end">
                     {/* <span className="pl-15">
                       Visit Us: <SocialLinks />
                     </span> */}
+                    <Link className="pl-15" href="/contact">
+                      Contact Us
+                    </Link>
+
                     <Link className="pl-15" href="/career">
-                      <u>Career</u>
+                      Careers
                     </Link>
                   </div>
                 </div>
@@ -87,13 +92,13 @@ const Header = () => {
                     <div className="header-bottom__right d-flex align-items-center justify-content-end">
                       <div className="header-bottom__action"></div>
                       <div className="header-bottom__btn d-flex align-items-center">
-                        <Link
+                        {/* <Link
                           className="tp-btn-orange tp-btn-hover alt-color-green d-none d-md-inline-block"
                           href="/contact"
                         >
                           <span className="white-text">Contact</span>
                           <b></b>
-                        </Link>
+                        </Link> */}
                         <a
                           className="header-bottom__bar d-lg-none tp-menu-bar"
                           onClick={() => setSidebarOpen(true)}
