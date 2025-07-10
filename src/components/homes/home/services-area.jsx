@@ -7,6 +7,8 @@ import React, { useRef } from "react";
 
 // Static image import for the dashboard section
 import img from "../../../../public/assets/img/service/sv-dashbord.png";
+import ServicesHome from "./services";
+import MetamindProducts from "@/components/software-as-a-product/MetamindProducts";
 
 // Section content
 const service_content = {
@@ -44,13 +46,14 @@ const ServicesArea = () => {
             <div className="col-lg-12">
               <div
                 ref={titleRef}
-                className="tp-service__section-box tp__title_anime mb-50 text-center tp-title-anim"
+                className="tp-service__section-box tp__title_anime mb-0 text-center tp-title-anim"
               >
                 <p className="tp-section-subtitle-4">{sub_title}</p>
                 <h2 className="tp-section-title">{title}</h2>
               </div>
             </div>
           </div>
+          <MetamindProducts />
 
           {/* Service Cards */}
           <div className="row">
@@ -113,6 +116,7 @@ const ServicesArea = () => {
               </div>
             </div> */}
           </div>
+          <ServicesHome />
         </div>
       </div>
     </>

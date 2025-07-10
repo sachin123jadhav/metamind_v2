@@ -27,7 +27,7 @@ const HomeOne = () => {
             <HeroSlider />
             <AboutArea />
             <AboutMeta />
-            <ServicesHome />
+            {/* <ServicesHome /> */}
             <ServicesArea />
 
             <SecurityArea />

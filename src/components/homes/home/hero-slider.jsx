@@ -38,13 +38,13 @@ const hero_content = {
     <>
       <span className="tp_title">
         <span className="child">Welcome to</span>
-      </span>{" "}
-      <br />
-      <span>
+      </span>
+      
+      <span className="mt--20">
         <span className="child">
          Metamind Systems Private Limited.
         </span>
-      </span>{" "}
+      </span>
     </>
   ),
   sub_title: (

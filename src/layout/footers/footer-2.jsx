@@ -47,10 +47,13 @@ const footer_content = {
         { name: "E-Commerce Development", link: "/service#ecd" },
         {
           name: "Digital Transformation Services",
-          link: "/e-governance-solutions",
+          link: "/digital-mapping",
         },
-        { name: "Software Product Development", link: "/service#spd" },
-        { name: "Software as a Service (SaaS)", link: "/service#saas" },
+        {
+          name: "Software Product Development",
+          link: "/software-as-a-product",
+        },
+        { name: "Software as a Service (SaaS)", link: "/service" },
       ],
     },
   ],
@@ -84,7 +87,7 @@ const FooterTwo = () => {
     }
     return (
       <>
-        <footer className='mt-25'>
+        <footer className="mt-25">
           <div className="tp-footer__pl-pr footer-bg">
             <div className="tp-footer__area pt-40 tp-footer__tp-border-bottom">
               <div className="container">
@@ -107,15 +110,18 @@ const FooterTwo = () => {
                             <span>
                               <PhoneTwo />
                             </span>
-                            <Link className="first-child" href={`tel:${phone}`}>
-                              {phone}
-                            </Link>
+                            <Link href={`tel:${phone}`}>{phone}</Link>
                           </li>
                           <li>
                             <span>
                               <EmailTwo />
                             </span>
-                            <Link href={`mailto:${email}`}>{email}</Link>
+                            <Link
+                              className="first-child"
+                              href={`mailto:${email}`}
+                            >
+                              {email}
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -154,11 +160,9 @@ const FooterTwo = () => {
                   >
                     <div className="tp-footer__widget footer-widget-2 footer-col-2-4">
                       <h4 className="tp-footer__widget-title">{download}</h4>
-                      <div className="tp-footer__download-box ">
-                        {address}
-                      </div>
+                      <div className="tp-footer__download-box ">{address}</div>
                       <div className="tp-copyright__social">
-                        <h6 className='mt-15'>Follow Us:</h6>
+                        <h6 className="mt-15">Follow Us:</h6>
                         {social_links.map((l, i) => (
                           <Link
                             key={i}
@@ -184,7 +188,6 @@ const FooterTwo = () => {
                       </span>
                     </div>
                   </div>
-                
                 </div>
               </div>
             </div>

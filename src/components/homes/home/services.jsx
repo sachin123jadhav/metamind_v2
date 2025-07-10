@@ -8,9 +8,9 @@ import Image from "next/image";
 function ServicesHome() {
   return (
     <>
-      <section className="home-services pt-50 pb-30">
+      <section className="home-services  pb-30">
         <div className="container z-index-5">
-          <div className="row">
+          {/* <div className="row">
             <div className="col-md-6">
               <div
                 className="tp-payment__bg-color-3 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeLeft"
@@ -76,7 +76,7 @@ function ServicesHome() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="row">
             <div className="col-md-6">
               <div
