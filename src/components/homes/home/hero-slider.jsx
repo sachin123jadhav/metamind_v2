@@ -128,7 +128,7 @@ const HeroSlider = () => {
                 key={i}
                 className={item.cls}
                 src={item.img}
-                alt="Metamind"
+                alt="Metamind "
               />
             ))}
           </div>
