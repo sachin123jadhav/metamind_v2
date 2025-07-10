@@ -54,7 +54,7 @@ const ServicesArea = () => {
             </div>
           </div>
           <MetamindProducts />
-
+          <ServicesHome />
           {/* Service Cards */}
           <div className="row">
             {service_data.slice(0, 6).map((item, i) => (
@@ -116,7 +116,6 @@ const ServicesArea = () => {
               </div>
             </div> */}
           </div>
-          <ServicesHome />
         </div>
       </div>
     </>

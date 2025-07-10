@@ -39,19 +39,19 @@ const hero_content = {
       <span className="tp_title">
         <span className="child">Welcome to</span>
       </span>
-      
+
       <span className="mt--20">
-        <span className="child">
-         Metamind Systems Private Limited.
-        </span>
+        <span className="child">Metamind Systems Private Limited.</span>
       </span>
     </>
   ),
   sub_title: (
     <>
-      Your trusted partner in digital transformation, innovative software
-      solutions and creating sustainable technology solutions that drive
-      business growth by enhancing user experiences.
+      
+        Your trusted partner in digital transformation, innovative software
+        solutions and creating sustainable technology solutions that drive
+        business growth by enhancing user experiences.
+    
     </>
   ),
   hero_shape_img: [
@@ -143,7 +143,7 @@ const HeroSlider = () => {
                   </div>
 
                   <p
-                    className="wow tpfadeUp"
+                    className="wow tpfadeUp  mb-3"
                     data-wow-duration=".9s"
                     data-wow-delay=".7s"
                   >
