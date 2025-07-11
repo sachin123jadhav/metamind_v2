@@ -16,7 +16,7 @@ const footer_content = {
   ),
   address: (
     <>
-      <b>At Metamind Systems Pvt. Ltd.,</b> <br /> Bungalow Govind, Plot no 7C,
+      <b>At Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C,
       Sr No 91/1, Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune -
       411038
     </>

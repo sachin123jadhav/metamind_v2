@@ -90,7 +90,7 @@ const AboutArea = () => {
                     <p>{des}</p>
                   </div>
                   <div className="tp-about__list">
-                    <ul>
+                    <ul className="inline-list">
                       {about_list.map((item, i) => (
                         <li key={i}>
                           <i className="fal fa-check"></i>

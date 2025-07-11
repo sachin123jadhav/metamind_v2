@@ -10,10 +10,10 @@ function GeorefeRencingArea() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h5 className="title pb-45 ">Georeferencing InitiativeŚ</h5>
+              <h5 className="title pb-45 ">Georeferencing Initiative</h5>
             </div>
           </div>
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-md-6">
               <Image className="about-img" src={Digitisation} />
             </div>

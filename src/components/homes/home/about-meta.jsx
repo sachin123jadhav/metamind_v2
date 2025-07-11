@@ -11,23 +11,47 @@ import Link from "next/link";
 
 const about_content = {
   title: "Why Choose Metamind?",
-  sub_title: "Comprehensive Digital Solutions",
+  sub_title: "Empowering Kumbh 2025 with Smart Digital Solutions",
+  heading: "1. Digital Lost and Found System",
   des: (
     <>
-      At Metamind Systems Pvt. Ltd., we offer a wide range of services tailored
-      to meet the digital needs of your business.
+      An intuitive platform to reunite people with their lost belongings and
+      loved ones during the massive Kumbh gathering. Available as both a mobile
+      app and website, the system allows users to:
     </>
   ),
 
   about_list: [
-    <>Deep domain expertise</>,
-    <>Governance</>,
-    <> Proactiveness</>,
-    <> Value addition</>,
+    <>Report and search for lost items or persons in real time</>,
+    <>Upload photos and descriptions</>,
+    <> Access centralized updates from help centers and authorities</>,
   ],
-  btn_text: "About Us",
+  heading2: "2. ICT-Based Sanitation and Tentage Monitoring System",
+  des2: (
+    <>
+      A smart monitoring solution that ensures hygienic living conditions and
+      efficient tent management for pilgrims:
+    </>
+  ),
+
+  about_list2: [
+    <>Real-time updates on sanitation status</>,
+    <>Automated reporting of issues</>,
+    <> Transparent monitoring of tent occupancy, cleanliness, and resources</>,
+  ],
+  btn_text: "Know More",
 };
-const { title, sub_title, des, about_list, btn_text } = about_content;
+const {
+  title,
+  sub_title,
+  des,
+  about_list,
+  btn_text,
+  heading,
+  heading2,
+  des2,
+  about_list2,
+} = about_content;
 function AboutMeta() {
 
      const [isLoop, setIsLoop] = useState(false);
@@ -59,11 +83,13 @@ function AboutMeta() {
               data-wow-duration=".9s"
               data-wow-delay=".6s"
             >
-              <div className="tp-about__right">
+              <div className="tp-about__right pr-0 pl-30">
                 <div className="tp-about__section-box">
                   <h4 className="tp-section-subtitle">{title}</h4>
                   <h3 className="tp-section-title mb-15">{sub_title}</h3>
-                  <p>{des}</p>
+
+                  <h5>{heading}</h5>
+                  <p className="mb-0">{des}</p>
                 </div>
                 <div className="tp-about__list">
                   <ul>
@@ -75,10 +101,24 @@ function AboutMeta() {
                     ))}
                   </ul>
                 </div>
-                <div className="tp-about__btn">
+
+                <h5 className="mt-15">{heading2}</h5>
+                <p className="mb-0">{des2}</p>
+                <div className="tp-about__list mt-15">
+                  <ul>
+                    {about_list2.map((item, i) => (
+                      <li key={i}>
+                        <i className="fal fa-check"></i>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="tp-about__btn mt-25">
                   <Link
                     className="tp-btn tp-btn-hover alt-color-black"
-                    href="/about"
+                    href="/kumbh2025"
                   >
                     <span>{btn_text}</span>
                     <b></b>

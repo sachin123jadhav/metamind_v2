@@ -606,3 +606,4 @@ position: relative;
   }
 
   .text-white .breadcrumb__list span.child-one,   .text-white .breadcrumb__list span ,   .text-white .breadcrumb__content .dvdr i{color: #fff;}
+  ul.inline-list li{width: 50%; display: inline-block;}
