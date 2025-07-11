@@ -8,6 +8,7 @@ import about_img_2 from "../../public/assets/img/about/about-2.jpg"
 import about_img_3 from "../../public/assets/img/about/about-1.jpg"
 import about_img_4 from "../../public/assets/img/about/about-3.jpg"
 import about_img_5 from "../../public/assets/img/about/about-5.png"
+import Mou from "../../public/assets/img/about/MoU.jpg";
 
 // about data
 const about_data =[
@@ -92,9 +93,7 @@ const AboutArea = () => {
                 data-wow-delay=".6s"
               >
                 <div className="tp-about__right">
-                  <div className="tp-about__section-box">
-                   {des}
-                  </div>
+                  <div className="tp-about__section-box">{des}</div>
                   <div className="tp-about__list">
                     <ul className="inline-list">
                       {about_list.map((item, i) => (
@@ -121,6 +120,7 @@ const AboutArea = () => {
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
+                <Image className="mou" src={Mou}></Image>
                 <Image className="about-img" src={about_img_1}></Image>
               </div>
             </div>

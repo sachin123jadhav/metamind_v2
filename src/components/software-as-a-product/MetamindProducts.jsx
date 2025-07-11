@@ -38,7 +38,7 @@ function MetamindProducts() {
                     </div>
                   </div>
                 </div>
-                <div className="products-info dms">Metamind Product 1</div>
+                <div className="products-info dms">Metamind Product</div>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ function MetamindProducts() {
                     </div>
                   </div>
                 </div>
-                <div className="products-info dms">Metamind Product 2</div>
+                <div className="products-info dms">Metamind Product</div>
               </div>
             </div>
           </div>

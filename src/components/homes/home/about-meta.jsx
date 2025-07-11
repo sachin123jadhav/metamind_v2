@@ -91,7 +91,7 @@ function AboutMeta() {
             >
               <div className="tp-about__right pr-0 pl-30">
                 <div className="tp-about__section-box">
-                  <h4 className="tp-section-subtitle">{title}</h4>
+                  {/* <h4 className="tp-section-subtitle">{title}</h4> */}
                   <h3 className="tp-section-title mb-15">{sub_title}</h3>
 
                   <h5>{heading}</h5>
