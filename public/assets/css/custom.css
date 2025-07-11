@@ -683,4 +683,38 @@ position: relative;
       -o-transform: scale(2);
     }
   }
-  
+  .products-info{position: absolute;
+    background: #fff;
+    padding: 5px 16px;
+    border-radius: 10px;
+    right: 37px;
+    top: -15px;
+    font-size: 12px;
+    border: solid 1px #faeaef;}
+
+    .home-bg{background-image: url(../img/bg/tech_shape_1.png); background-repeat: no-repeat;background-position: center right;}
+    /* .customers-bg{background-image: url(../img/bg/bg-11.jpg); background-repeat: no-repeat;background-position: top left;} */
+
+    .tp-footer__widget-title{position: relative; padding-bottom: 15px; margin-bottom: 15px;}
+
+
+    .tp-footer__widget .tp-footer__widget-title::before {
+      content: '';
+      height: 2px;
+      width: 100px;
+      background-color: green;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .tp-footer__widget .tp-footer__widget-title::after {
+      content: '';
+      height: 10px;
+      width: 10px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -4px;
+      left: 96px;
+      border-radius: 99px;
+      border: 2px solid Green;
+    }

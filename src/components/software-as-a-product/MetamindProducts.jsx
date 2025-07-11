@@ -11,7 +11,7 @@ function MetamindProducts() {
           <div className="row">
             <div className="col-md-6">
               <div
-                className="tp-payment__bg-color-3 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeLeft"
+                className="tp-payment__bg-color-3 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeLeft relative"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
@@ -38,12 +38,13 @@ function MetamindProducts() {
                     </div>
                   </div>
                 </div>
+                <div className="products-info dms">Metamind Product 1</div>
               </div>
             </div>
 
             <div className="col-md-6">
               <div
-                className="tp-payment__bg-color-2 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeRight"
+                className="tp-payment__bg-color-2 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeRight relative"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
@@ -72,10 +73,10 @@ function MetamindProducts() {
                     </div>
                   </div>
                 </div>
+                <div className="products-info dms">Metamind Product 2</div>
               </div>
             </div>
           </div>
-       
         </div>
       </section>
     </>

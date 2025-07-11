@@ -108,8 +108,7 @@ const security_data = [
 const SecurityArea = () => {
   return (
     <>
-      <div className="projects p">
-       
+      <div className="projects customers-bg">
         <div className="tp-security-area fix z-index pt-40 pb-40 xs-pb-0">
           <div className="container-fluid g-0">
             <div className="container">
@@ -164,7 +163,6 @@ const SecurityArea = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </>
   );

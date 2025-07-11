@@ -15,18 +15,20 @@ import AboutMeta from "./about-meta";
 import TeamDetailsArea from "@/components/team-details/team-details-area";
 import FooterTwo from "@/layout/footers/footer-2";
 import SecurityArea from "./security-area";
-import ServicesHome from "./services";
+
 
 const HomeOne = () => {
-	return (
+  return (
     <>
       <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main className="fix">
             <HeroSlider />
-            <AboutArea />
-            <AboutMeta />
+            <div className="home-bg">
+              <AboutArea />
+              <AboutMeta />
+            </div>
             {/* <ServicesHome /> */}
             <ServicesArea />
 

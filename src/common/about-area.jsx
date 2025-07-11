@@ -44,20 +44,23 @@ const about_content = {
   sub_title: "Empowering Innovation Through AI and Analytics",
   des: (
     <>
-      Bharat Electronics Limited (BEL - PSU), and Persistent Systems Ltd have
-      signed a tripartite MoU with Metamind Systems Pvt. Ltd. to jointly develop
-      and deliver innovative software products, solutions and service offerings
-      in the domains of Data Analytics, Artificial Intelligence (AI), Machine
-      Learning (ML) and Cyber Security across sectors such as Aerospace &
-      Defence, Healthcare, Telecommunications, Energy, Smart Cities and other
-      technology-driven industries. The partnership will focus on collaborating
-      and exploring business opportunities in India, the United States (US) and
-      Latin America (LATAM). The tripartite MoU was signed by Smt Durga G K,
-      Executive Director (Software), BEL; Sri Hrishikesh Kinikar, Director,
-      Metamind Systems Private Limited; and Sri Rajesh Gharpure, Chief Delivery
-      Officer, Persistent Systems Limited in the presence of Sri Manoj Jain,
-      Chairman & Managing Director and Sri Rajnish Sharma, Director (Bengaluru
-      Complex), BEL.
+      <p>
+        Bharat Electronics Limited (BEL - PSU), and Persistent Systems Ltd have
+        signed a tripartite MoU with Metamind Systems Pvt. Ltd. to jointly
+        develop and deliver innovative software products, solutions and service
+        offerings in the domains of Data Analytics, Artificial Intelligence
+        (AI), Machine Learning (ML) and Cyber Security across sectors such as
+        Aerospace & Defence, Healthcare, Telecommunications, Energy, Smart
+        Cities and other technology-driven industries.
+      </p>
+      <p>The partnership will focus on collaborating and exploring business
+      opportunities in India, the United States (US) and Latin America (LATAM).</p>  
+      <p> The tripartite MoU was signed by Smt Durga G K, Executive Director
+      (Software), BEL; Sri Hrishikesh Kinikar, Director, Metamind Systems
+      Private Limited; and Sri Rajesh Gharpure, Chief Delivery Officer,
+      Persistent Systems Limited in the presence of Sri Manoj Jain, Chairman &
+      Managing Director and Sri Rajnish Sharma, Director (Bengaluru Complex),
+      BEL.</p>  
     </>
   ),
 
@@ -78,6 +81,11 @@ const AboutArea = () => {
         <div className="tp-about__area tp-about__pt-pb pt-50 pb-50">
           <div className="container">
             <div className="row align-items-center">
+              <div className="col-xl-12">
+                {" "}
+                <h4 className="tp-section-subtitle">{title}</h4>
+                <h3 className="tp-section-title mb-15">{sub_title}</h3>
+              </div>
               <div
                 className="col-xl-6 col-lg-6 wow tpfadeRight"
                 data-wow-duration=".9s"
@@ -85,9 +93,7 @@ const AboutArea = () => {
               >
                 <div className="tp-about__right">
                   <div className="tp-about__section-box">
-                    <h4 className="tp-section-subtitle">{title}</h4>
-                    <h3 className="tp-section-title mb-15">{sub_title}</h3>
-                    <p>{des}</p>
+                   {des}
                   </div>
                   <div className="tp-about__list">
                     <ul className="inline-list">

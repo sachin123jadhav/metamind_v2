@@ -55,7 +55,7 @@ const menu_data = [
     id: 2,
     mega_menu: true,
     has_dropdown: true,
-    title: "SaaP +",
+    title: "Products +",
     link: "/software-as-a-product",
     active: "",
     sub_menus: [
@@ -71,7 +71,7 @@ const menu_data = [
     id: 2,
     mega_menu: false,
     has_dropdown: false,
-    title: "SaaS",
+    title: "Services",
     link: "/service",
     active: "",
   },
@@ -85,6 +85,7 @@ const menu_data = [
     sub_menus: [
       { link: "/digital-mapping", title: "Digital Mapping" },
       { link: "/geo-referencing", title: "Geo-referencing" },
+      { link: "/kumbh2025", title: "Kumbh 2025" },
     ],
   },
 
