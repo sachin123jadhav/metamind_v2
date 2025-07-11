@@ -77,6 +77,12 @@ function AboutMeta() {
           <div className="row">
             <div className="col-md-5">
               <Image src={About}></Image>
+              <div
+                className="play_btn popup-video"
+                onClick={() => setIsVideoOpen(true)}
+              >
+                <i class="fa fa-play"></i>
+              </div>
             </div>
             <div
               className="col-xl-7 col-lg-7 wow tpfadeRight d-flex align-items-center"
