@@ -3,7 +3,7 @@ import React from 'react';
 import SearchClose from '../svg/search-close';
 import SearchIcon from '../svg/search-icon';
 import Image from 'next/image';
-import  logo_white from "../../public/assets/img/logo/logo-white.png"
+import logo_white from "../../public/assets/img/logo/MetaMind.svg";
 
 const SearchPopup = ({searchOpen, setSearchOpen}) => {
     return (
