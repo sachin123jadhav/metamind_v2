@@ -723,3 +723,15 @@ position: relative;
       display: flex;
       max-width: 445px;
       margin: auto;}
+
+
+      @media only screen and (min-width: 1200px) and (max-width: 1300px){
+
+        .globe{
+  max-width: 100px;
+  right: 230px;
+  top: -45px;}
+
+  .header-bottom__main-menu nav ul li{margin: 0px 10px;font-size: 14px;}
+
+      }
