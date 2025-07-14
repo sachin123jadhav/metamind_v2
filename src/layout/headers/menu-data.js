@@ -84,7 +84,7 @@ const menu_data = [
     active: "",
     sub_menus: [
       { link: "/digital-mapping", title: "Digital Mapping" },
-      { link: "/geo-referencing", title: "Geo-referencing" },
+      // { link: "/geo-referencing", title: "Geo-referencing" },
       { link: "/kumbh2025", title: "Kumbh 2025" },
     ],
   },

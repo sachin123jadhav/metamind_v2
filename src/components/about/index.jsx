@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Header />
-      <div className="text-white">
+      <div className="">
         <BreadcrumbTwo title="About Company" innertitle="About Company" />{" "}
       </div>
       <AboutBanner />

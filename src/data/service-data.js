@@ -1,17 +1,11 @@
-import ServiceIconOne from "../svg/service/service-icon-1"
-import ServiceIconTwo from "../svg/service/service-icon-2"
-import ServiceIconThree from "../svg/service/service-icon-3"
-import ServiceIconFoure from "../svg/service/service-icon-4"
-import ServiceIconFive from "../svg/service/service-icon-5"
-import ServiceIconsix from "../svg/service/service-icon-6"
-import ServiceIconSeven from "../svg/service/service-icon-7"
 
 // images import  
-import img_1 from "../../public/assets/img/service/sv-icon-1.png";
-import img_2 from "../../public/assets/img/service/sv-icon-2.png";
-import img_3 from "../../public/assets/img/service/sv-icon-3.png";
-import img_4 from "../../public/assets/img/service/sv-icon-4.png";
-import img_5 from "../../public/assets/img/service/sv-icon-5.png";
+import img_1 from "../../public/assets/img/icons/SoftwareProductDevelopment.png";
+import img_2 from "../../public/assets/img/icons/SoftwareAsAService.png";
+import img_3 from "../../public/assets/img/icons/WebDevelopment.png";
+import img_4 from "../../public/assets/img/icons/E-CommerceDevelopment.png";
+import img_5 from "../../public/assets/img/icons/DigitalTransformation.png";
+import img_6 from "../../public/assets/img/icons/E-governance-Solutions.png";
 
 const service_data = [
   // for home 01
@@ -101,8 +95,8 @@ const service_data = [
   },
   {
     id: 6,
-    icon: img_5,
-    img: img_5,
+    icon: img_6,
+    img: img_6,
     title: "E-Governance Solutions",
     link: "/e-governance-solutions",
     description: (
