@@ -3,7 +3,7 @@ import React from "react";
 
 const categories_data = [
   { id: 1, titile: "Technology", items: "01" },
-  { id: 2, titile: "Softec", items: "02" },
+  { id: 2, titile: "Metamind", items: "02" },
   { id: 3, titile: "Development", items: "03" },
   { id: 4, titile: "Tips & Tricks", items: "04" },
   { id: 5, titile: "News", items: "05" },

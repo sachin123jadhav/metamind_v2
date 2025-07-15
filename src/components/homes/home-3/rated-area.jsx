@@ -11,30 +11,34 @@ import img_2 from "../../../../public/assets/img/rate/rate-shape-2.png"
 import author_big_img from "../../../../public/assets/img/rate/rated-img.png"
 import Link from 'next/link';
 
-const rated_content ={ 
-        author : [
-        {
-            id: 1,
-            title: <>"the interface is excellent"</>,
-            img: author_img_1,
-        },
-        {
-            id: 2,
-            title: <>"improvements in every release"</>,
-            img: author_img_2,
-        },
-        {
-            id: 3,
-            title: <>"improvements in every release"</>,
-            img: author_img_3,
-        },
-        ],
-        
-        bg_img: "/assets/img/rate/rated-bg.jpg",
-        
+const rated_content = {
+  author: [
+    {
+      id: 1,
+      title: <>"the interface is excellent"</>,
+      img: author_img_1,
+    },
+    {
+      id: 2,
+      title: <>"improvements in every release"</>,
+      img: author_img_2,
+    },
+    {
+      id: 3,
+      title: <>"improvements in every release"</>,
+      img: author_img_3,
+    },
+  ],
 
-        title: <>Customers have <span>Consistently</span><br /> <span>Rated</span> Softec<span> 4.9/5</span></>,
-}
+  bg_img: "/assets/img/rate/rated-bg.jpg",
+
+  title: (
+    <>
+      Customers have <span>Consistently</span>
+      <br /> <span>Rated</span> Metamind<span> 4.9/5</span>
+    </>
+  ),
+};
 
 const {author, bg_img, title}  = rated_content
 

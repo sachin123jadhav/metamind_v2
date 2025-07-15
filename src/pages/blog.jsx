@@ -5,10 +5,10 @@ import Wrapper from '../layout/wrapper';
 
 const index = () => {
     return (
-        <Wrapper>
-            <SEO pageTitle={"Softec - Data analytics"} /> 
-            <Blog />           
-        </Wrapper>
+      <Wrapper>
+        <SEO pageTitle={"Metamind - Data analytics"} />
+        <Blog />
+      </Wrapper>
     );
 };
 

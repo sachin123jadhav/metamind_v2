@@ -12,14 +12,22 @@ import img_1 from "../../../../public/assets/img/hero/hero-img-3-1.png";
 import img_2 from "../../../../public/assets/img/hero/hero-img-3-1-3.png" ;
 import Link from 'next/link';
 
-const hero_content = { 
-   title_1: <>Great <span>Customer</span></>,
-   title_2: "Relationships Start Here.",
-   info: <>Softec provides all customer management service within one software. <br /> Our landing works on all devices.</>,
-   btn_1: "Live Damo",
-   btn_2: "Try it on Browser",
-   
-}
+const hero_content = {
+  title_1: (
+    <>
+      Great <span>Customer</span>
+    </>
+  ),
+  title_2: "Relationships Start Here.",
+  info: (
+    <>
+      Metamind provides all customer management service within one software.{" "}
+      <br /> Our landing works on all devices.
+    </>
+  ),
+  btn_1: "Live Damo",
+  btn_2: "Try it on Browser",
+};
 const { title_1, title_2, info, btn_1, btn_2 } = hero_content
 
 const HeroArea = () => {
