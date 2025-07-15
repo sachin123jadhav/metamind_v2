@@ -16,9 +16,8 @@ const footer_content = {
   ),
   address: (
     <>
-      <b>At Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C,
-      Sr No 91/1, Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune -
-      411038
+      <b>At Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C, Sr No
+      91/1, Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune - 411038
     </>
   ),
   phone: "+91 20 26059659",
@@ -34,6 +33,7 @@ const footer_content = {
         { name: "About Us", link: "/about" },
         // { name: "Testimonials", link: "#" },
         { name: "Contact Us", link: "/contact" },
+        { name: "Team", link: "/team" },
         { name: "Careers", link: "/career" },
       ],
     },
