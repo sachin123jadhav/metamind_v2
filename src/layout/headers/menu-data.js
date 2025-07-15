@@ -17,15 +17,15 @@ const menu_data = [
   {
     id: 2,
     mega_menu: false,
-    has_dropdown: false,
-    title: "About Us",
+    has_dropdown: true,
+    title: "About Us +",
     link: "/about",
     active: "",
-    // sub_menus: [
-    //   { link: "/about", title: "Company" },
-    //   { link: "/#", title: "Career" },
-    //   { link: "/#", title: "Testimonials" },
-    // ],
+    sub_menus: [
+      { link: "/team", title: "Team" },
+      // { link: "/#", title: "Career" },
+      // { link: "/#", title: "Testimonials" },
+    ],
   },
   {
     id: 2,

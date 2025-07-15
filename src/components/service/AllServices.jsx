@@ -6,29 +6,19 @@ import SAS from "../../../public/assets/img/service/Software as a Service.webp";
 import WebDevelopment from "../../../public/assets/img/service/Web-Development.webp";
 import ECommerceDevelopment from "../../../public/assets/img/service/ECommerceDevelopment.webp";
 import DigitalTransformationServices from "../../../public/assets/img/service/DigitalTransformationServices.jpg";
+import ServicesArea from "../homes/home/services-area";
+import SoftwareAsAProductArea from "../software-as-a-product/SoftwareAsAProductArea";
+
 
 function AllServices() {
   const [expandedId, setExpandedId] = useState(null);
 
   return (
     <>
-      <section className="page-bg pt-50 pb-50">
+      <section className="page-bg pt-0 pb-50">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-12">
-              <h5 className="title text-center mb-25">
-                Driving Innovation and Growth Across Industries
-              </h5>
-              <h5 className="text-center fw-normal mt-10">
-                From Software Product Development to Digital Transformation, we
-                provide a full spectrum of services that empower businesses to
-                thrive in the digital age. Whether it's SaaS, Web Development,
-                E-Commerce, or Digital Transformation, our solutions are
-                designed to scale, innovate, and deliver results.
-              </h5>
-            </div>
-          </div>
-
+       
+<SoftwareAsAProductArea />
           {/* <div className="row mt-50 align-items-center" id="spd">
             <div className="col-md-6">
               <Image src={SoftwareProductDevelopment} />

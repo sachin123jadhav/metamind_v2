@@ -370,6 +370,7 @@ position: relative;
   background-color: #fff; border-radius: 10px;
         border: solid 1px #ccc; padding: 15px;  
     }
+    .text-justify{text-align: justify;}
   
    .team-bg .team-wrap  .team-inner{
         

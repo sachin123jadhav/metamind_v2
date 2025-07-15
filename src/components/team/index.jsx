@@ -4,19 +4,20 @@ import HeaderSix from "@/layout/headers/header-6";
 import React from "react";
 import CtaArea from "../contact/cta-area";
 import TeamArea from "./team-area";
+import Header from "@/layout/headers/header";
+import FooterTwo from "@/layout/footers/footer-2";
 
 const Team = () => {
   return (
     <>
-      <HeaderSix />
+      <Header />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
             <BreadcrumbTwo title={"Team Member"} innertitle={"Team Member"} />
             <TeamArea />
-            <CtaArea />
           </main>
-          <FooterFive style_contact={true} style_team={true} />
+          <FooterTwo />
         </div>
       </div>
     </>

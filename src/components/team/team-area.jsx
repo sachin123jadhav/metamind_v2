@@ -1,55 +1,206 @@
 import React from "react";
-import { gsap } from 'gsap';
-import Link from "next/link";
-import useMultipleAnime from "@/hooks/useMultipleAnime";
-import { SocialLinksTwo } from "@/common/social-links";
-import team_data from "@/data/team-data";
 import Image from "next/image";
+import aboutImg1 from "../../../public/assets/img/about/team-1.jpg";
+import aboutImg2 from "../../../public/assets/img/about/team-2.jpg";
+import aboutImg3 from "../../../public/assets/img/about/team-3.jpg";
+import getFreeSecurity from "../../../public/assets/img/about/get-free-security-circle.svg";
 
+const service_details_content = {
+  overview_title: "Expertise Across Diverse Technologies",
+  overview_des: (
+    <>
+      Our team comprises experts in a wide range of technologies and programming
+      languages, including but not limited to:
+    </>
+  ),
+  overview_list1: [
+    {
+      title: "Frontend Development",
+      points: [
+        "Proficient in HTML, CSS, JavaScript, and modern frameworks like React, our developers create intuitive and engaging user interfaces that enhance user experience.",
+      ],
+    },
+    {
+      title: "Backend Development",
+      points: [
+        "With a strong command of languages such as Python, Java, and Node.js, our backend developers build robust and scalable server-side applications that power our solutions.",
+      ],
+    },
+    {
+      title: "Mobile Development",
+      points: [
+        "Our mobile app developers are skilled in both iOS and Android platforms, ensuring that we deliver seamless and high-performing applications to meet the needs of our users.",
+      ],
+    },
+    {
+      title: "Cloud Solutions",
+      points: [
+        "Our team is well-versed in cloud technologies, enabling us to design and implement scalable solutions that leverage the power of cloud computing.",
+      ],
+    },
+  ],
+};
+
+const { overview_title, overview_des, overview_list1 } =
+  service_details_content;
 const TeamArea = () => {
-const {dataRef} = useMultipleAnime();
-
   return (
     <>
-      <div className="tp-team-area tp-team-inner pt-100 pb-75">
+      <div className="tp-team-area tp-team-inner pt-50 pb-35">
         <div className="container">
           <div className="tp-team-section-wrapper tp-team-inner-section mb-70">
             <div className="row">
               <div className="col-xl-12 col-lg-12 col-md-12">
-                <div className="tp-team-section-box text-center">
-                  <h5 className="inner-section-subtitle pb-10">
-                    Talented Team
-                  </h5>
-                  <h3 className="tp-section-title mb-0 text-black">
-                    Meet our Team Members
+                <div className="tp-team-section-box">
+                  <h3 className="tp-section-title mb-15 text-black">
+                    Our Strength: A Skilled Team
                   </h3>
+                  <p>
+                    At Metamind Systems Pvt. Ltd. we believe that our greatest
+                    asset is our talented and dedicated team of software
+                    developers. Our skilled professionals are the backbone of
+                    our success, driving innovation and delivering exceptional
+                    results for our clients.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row" ref={dataRef}>
-            {team_data.slice(0, 9).map((item, i) => (
-              <div
-                key={i}
-                data-index={i}
-                className={`col-xl-3 col-lg-4 col-md-6 col-sm-6 mb-70 tp-border-after-${item.cls} team-inner-border-right`}
-              >
-                <div className="tp-team-item text-center tp-team-inner-title-color z-index">
-                  <div className="tp-team-img">
-                    <Image src={item.img} alt="theme-pure" />
+            <div className="row align-items-center">
+              <div className="col-md-5">
+                <div className="about-us-image">
+                  {/* About Image Box 1 */}
+                  <div className="about-image-box about-img-1">
+                    <figure
+                      className="image-anime reveal"
+                      style={{
+                        transform: "translate(0px)",
+                        opacity: 1,
+                        visibility: "inherit",
+                      }}
+                    >
+                      <Image src={aboutImg1} alt="About Image 1" />
+                    </figure>
                   </div>
-                  <div className="tp-team-content">
-                    <h4 className="tp-team-title-sm">
-                      <Link href="/team-details">{item.name}</Link>
-                    </h4>
-                    <span>{item.job_title}</span>
+
+                  {/* About Image Box 2 and 3 */}
+                  <div className="about-image-box">
+                    <div className="about-img-2">
+                      <figure
+                        className="image-anime reveal"
+                        style={{
+                          transform: "translate(0px)",
+                          opacity: 1,
+                          visibility: "inherit",
+                        }}
+                      >
+                        <Image src={aboutImg2} alt="About Image 2" />
+                      </figure>
+                    </div>
+
+                    <div className="about-img-3">
+                      <figure
+                        className="image-anime reveal"
+                        style={{
+                          transform: "translate(0px)",
+                          opacity: 1,
+                          visibility: "inherit",
+                        }}
+                      >
+                        <Image src={aboutImg3} alt="About Image 3" />
+                      </figure>
+                    </div>
                   </div>
-                  <div className="tp-team-social">
-                    <SocialLinksTwo />
+
+                  {/* Get Free Security Circle */}
+                  <div className="get-free-security-circle">
+                    <a href="/contact">
+                      <Image src={getFreeSecurity} alt="Get Free Security" />
+                    </a>
                   </div>
                 </div>
               </div>
-            ))}
+              <div className="col-md-7">
+                <div className="sv-details-wrapper pl-0">
+                  <div className="sv-details-title-box mb-10">
+                    <h5 className="sv-details-text-title">{overview_title}</h5>
+                  </div>
+                  <div className="sv-details-text mb-35">
+                    <p>{overview_des}</p>
+                    <ul>
+                      {overview_list1.map((item, i) => (
+                        <li key={i}>
+                          <strong>{item.title}</strong>
+                          <ul>
+                            {item.points.map((point, j) => (
+                              <li key={j}>
+                                <i class="fal fa-check"></i>
+                                {point}
+                              </li>
+                            ))}
+                          </ul>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row mt-25">
+              <div className="col-md-4">
+                <h5>Commitment to Continuous Learning</h5>
+                <p className="text-justify">
+                  In the fast-paced world of technology, staying ahead of the
+                  curve is essential. Our team is committed to continuous
+                  learning and professional development. We encourage our
+                  developers to pursue certifications and skill improvement
+                  programs. Training and knowledge sharing within the
+                  Organization is highly encouraged and takes place frequently.
+                  This dedication to growth ensures that we remain at the
+                  forefront of technological advancements and best practices.
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h5>Collaborative Culture</h5>
+                <p className="text-justify">
+                  Collaboration is key to our success. Our skilled team works
+                  closely together, fostering an environment where ideas can
+                  flourish. We believe that the best solutions come from diverse
+                  perspectives, and our collaborative culture encourages open
+                  communication and teamwork. This synergy not only enhances our
+                  problem-solving capabilities but also leads to innovative
+                  solutions that exceed our clients' expectations.
+                </p>
+              </div>
+              <div className="col-md-4">
+                <h5>Proven Track Record</h5>
+                <p className="text-justify">
+                  Our skilled team has a proven track record of delivering
+                  high-quality software solutions on time and within budget. We
+                  take pride in our ability to understand our clients' unique
+                  needs and translate them into effective software applications.
+                  Our commitment to excellence has earned us the trust of
+                  numerous clients across various industries.
+                </p>
+              </div>
+              <div className="col-md-12 ">
+                <h5 className="mt-15">Join Us on Our Journey</h5>
+                <p className="text-justify">
+                  <b>At Metamind Systems Pvt. Ltd.</b>, we are proud of our
+                  skilled team and the exceptional work they do. As we continue
+                  to grow and evolve, we invite you to join us on our journey.
+                  Whether you are a potential client looking for a reliable
+                  software development partner or a talented individual seeking
+                  to be part of our dynamic team, we welcome you to connect with
+                  us.
+                </p>
+                <p>
+                  Please check the ‘<a href="/career">Careers</a> ’ page for
+                  latest opportunities.
+                </p>
+                <h4>Together, we can achieve great things!</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>

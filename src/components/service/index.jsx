@@ -22,7 +22,8 @@ const Service = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-           <AllServices />
+            <BreadcrumbTwo innertitle={"Services"} />
+            <AllServices />
           </main>
           <FooterTwo />
         </div>
