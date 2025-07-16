@@ -12,8 +12,10 @@ function Opportunity() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h2 className="title text-center pb-15">Opportunities</h2>
-              <p className="text-center" id="career-form">
+              <h2 className="tp-section-title mb-15 text-black">
+                Opportunities
+              </h2>
+              {/* <p className="text-center" id="career-form">
                 Join our team of innovative software engineers and developers
                 who are passionate about creating cutting-edge solutions for our
                 clients. We’re looking for talented individuals who thrive in a
@@ -24,6 +26,14 @@ function Opportunity() {
                 opportunities for professional growth. If you’re ready to take
                 your career to the next level and make a real impact, apply to
                 join our team today
+              </p> */}
+              <p class="text-justify">
+                <b>At Metamind Systems Pvt. Ltd.</b>, we are proud of our
+                skilled team and the exceptional work they do. As we continue to
+                grow and evolve, we invite you to join us on our journey.
+                Whether you are a potential client looking for a reliable
+                software development partner or a talented individual seeking to
+                be part of our dynamic team, we welcome you to connect with us.
               </p>
             </div>
           </div>
@@ -33,7 +43,7 @@ function Opportunity() {
               <Image src={career} />
             </div>
             <div className="col-md-6">
-             <CareerForm />
+              <CareerForm />
             </div>
           </div>
         </div>
