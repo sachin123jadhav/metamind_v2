@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useRef } from "react";
 
 // Static image import for the dashboard section
-import img from "../../../../public/assets/img/service/sv-dashbord.png";
+import bgImg from "../../../../public/assets/img/service/service_card_bg.png";
 import ServicesHome from "./services";
 import MetamindProducts from "@/components/software-as-a-product/MetamindProducts";
 
@@ -36,7 +36,7 @@ const ServicesArea = () => {
 
   return (
     <>
-      <div className="tp-service__area p-relative fix pt-50">
+      <div className="tp-service__area p-relative fix pt-50 pb-50">
         <div className="tp-service__grey-shape grey-bg"></div>
         <div className="container relative">
           <p className="service-title d-none d-xl-block">Services</p>
@@ -56,6 +56,7 @@ const ServicesArea = () => {
           <MetamindProducts />
           <ServicesHome />
           {/* Service Cards */}
+
           <div className="row">
             {service_data.slice(0, 6).map((item, i) => (
               <div
@@ -64,57 +65,53 @@ const ServicesArea = () => {
                 data-wow-duration=".9s"
                 data-wow-delay={item.delay}
               >
-                <div className="tp-service__item mb-30">
-                  <div className="tp-service__icon">
-                    <Image src={item.img} alt={item.title} />
+                <div className="service-card elementor-box">
+                  <div className="service-card_number">
+                    {String(i + 1).padStart(2, "0")}
                   </div>
-                  <div className="tp-service__content">
-                    <h3 className="tp-service__title-sm tp-yellow-color">
-                      <Link href="/service-details">{item.title}</Link>
-                    </h3>
-                    <p>{item.description}</p>
+
+                  <div className="shape-icon">
+                    <Image
+                      src={item.icon} // Ensure `icon` exists in your data
+                      alt={item.title}
+                      width={40}
+                      height={40}
+                    />
+                    <span className="dots"></span>
                   </div>
-                  <div className="tp-service__link">
-                    <Link href={item.link}>
-                      <RightArrow />
+
+                  <h3 className="box-title">
+                    <Link href={item.link || "/service-details"}>
+                      {item.title}
                     </Link>
+                  </h3>
+
+                  <p className="service-card_text">{item.description}</p>
+                  <div className="tp-about__btn">
+                    <Link
+                      href={item.link || "/service-details"}
+                      className="tp-btn tp-btn-hover alt-color-black"
+                    >
+                      Read More <i className="fas fa-arrow-right ms-2"></i>
+                    </Link>
+                  </div>
+
+                  <div className="bg-shape">
+                    <Image src={bgImg} />
                   </div>
                 </div>
               </div>
             ))}
+          </div>
 
-            {/* Dashboard Section */}
-            {/* <div
-              className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp"
-              data-wow-duration=".9s"
-              data-wow-delay="1s"
+          <div className="tp-about__btn mt-25 text-center">
+            <Link
+              className="tp-btn tp-btn-hover alt-color-black"
+              href="/service"
             >
-              <div
-                className="tp-service__dashboard"
-                style={{ backgroundImage: `url(${bg_img})` }}
-              >
-                <div className="tp-service__top-content">
-                  <h3 className="tp-service__title-white">{title_2}</h3>
-                  <p>{des}</p>
-                  <Link
-                    className="tp-btn-orange tp-btn-hover alt-color-white"
-                    href={link}
-                  >
-                    <span>{btn_text}</span>
-                    <b></b>
-                  </Link>
-                </div>
-                <div className="tp-service__dashdboard-sm-img">
-                  <Image
-                    className="wow tpfadeRight"
-                    data-wow-duration=".9s"
-                    data-wow-delay=".7s"
-                    src={img}
-                    alt="Dashboard"
-                  />
-                </div>
-              </div>
-            </div> */}
+              <span>View All Services</span>
+              <b></b>
+            </Link>
           </div>
         </div>
       </div>

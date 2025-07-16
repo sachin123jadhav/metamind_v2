@@ -1,7 +1,7 @@
 import React from 'react'
 
 import service_img from "../../../public/assets/img/service/SurveillanceSolutions.png"; 
-import service_img2 from "../../../public/assets/img/service/SurveillanceSolutions.jpg"; 
+import service_img2 from "../../../public/assets/img/service/relible-img-section-green.jpg"; 
 
 import Image from 'next/image';
 
