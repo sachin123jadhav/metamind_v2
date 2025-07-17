@@ -39,7 +39,7 @@ const ContactFormArea = () => {
                 <div className="card shadow contact-details ">
                   <div className="card-body d-flex flex-column justify-content-between">
                     <h2 className="title">Contact Us</h2>
-                    <p className="pb-40">
+                    <p className="pb-20">
                       Feel free to contact us from below details information
                     </p>
 
@@ -48,12 +48,18 @@ const ContactFormArea = () => {
                         <LocationMap />
                       </div>
                       <div className="rc__post-content">
-                        <h2 className="contact-head">Visit our office</h2>
+                        <h4 className="contact-head">Visit our office</h4>
                         <div className="rc__meta">
+                          <h5>India Office</h5>
                           <p>
                             <b>Metamind Systems Pvt. Ltd.</b> <br></br>"Govind",
                             Plot no 7C, Sr No 91/1, Lane no 13 D, Shree Ganesh
                             krupa Society, Kothrud, Pune - 411038
+                          </p>
+                          <h5>USA Office</h5>
+                          <p>
+                            <b>Metamind Systems Pvt. Ltd.</b> <br />
+                            6850 Fitzgerald Ct, Sugar Land, TX - 77479.
                           </p>
                         </div>
                       </div>
@@ -64,7 +70,7 @@ const ContactFormArea = () => {
                         <Call />
                       </div>
                       <div className="rc__post-content">
-                        <h2 className="contact-head">Call Us</h2>
+                        <h4 className="contact-head">Call Us</h4>
                         <div className="rc__meta">
                           <p>
                             Office :{" "}
@@ -78,7 +84,7 @@ const ContactFormArea = () => {
                         <MailIcon />
                       </div>
                       <div className="rc__post-content">
-                        <h2 className="contact-head">Request a quote</h2>
+                        <h4 className="contact-head">Request a quote</h4>
                         <div className="rc__meta">
                           <p>
                             Office :{" "}

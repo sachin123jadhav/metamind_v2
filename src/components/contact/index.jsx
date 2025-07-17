@@ -8,6 +8,7 @@ import Header from "@/layout/headers/header";
 import FooterTwo from "@/layout/footers/footer-2";
 import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
 import Map from "./map";
+import MapUSA from "./map-usa";
 
 const Contact = () => {
   return (
@@ -19,7 +20,16 @@ const Contact = () => {
             <BreadcrumbTwo title="Contact Us" innertitle="Contact Us" />
 
             <ContactFormArea />
-            <Map />
+            <div className="container">
+              <div className="row">
+                <div className="col-md-6">
+                  <Map />
+                </div>
+                <div className="col-md-6">
+                  <MapUSA />
+                </div>
+              </div>
+            </div>
           </main>
           <FooterTwo />
         </div>

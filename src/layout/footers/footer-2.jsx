@@ -20,6 +20,7 @@ const footer_content = {
       91/1, Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune - 411038
     </>
   ),
+  address2: <>6850 Fitzgerald Ct, Sugar Land, TX - 77479.</>,
   phone: "+91 20 26059659",
   email: "info@metamindsystem.com",
   download: "Contact Info",
@@ -72,6 +73,7 @@ const footer_content = {
 };
 const {
   address,
+  address2,
   phone,
   email,
   footer_lisks,
@@ -124,6 +126,18 @@ const FooterTwo = () => {
                             </Link>
                           </li>
                         </ul>
+                        <div className="tp-copyright__social">
+                          <h6 className="mt-5">Follow Us:</h6>
+                          {social_links.map((l, i) => (
+                            <Link
+                              key={i}
+                              href={l.link}
+                              target={l.target ? l.target : ""}
+                            >
+                              <i className={l.icon}></i>
+                            </Link>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -160,19 +174,10 @@ const FooterTwo = () => {
                   >
                     <div className="tp-footer__widget footer-widget-2 footer-col-2-4">
                       <h4 className="tp-footer__widget-title">{download}</h4>
+                      <h5 className="mt-15">India Office</h5>
                       <div className="tp-footer__download-box ">{address}</div>
-                      <div className="tp-copyright__social">
-                        <h6 className="mt-15">Follow Us:</h6>
-                        {social_links.map((l, i) => (
-                          <Link
-                            key={i}
-                            href={l.link}
-                            target={l.target ? l.target : ""}
-                          >
-                            <i className={l.icon}></i>
-                          </Link>
-                        ))}
-                      </div>
+                      <h5 className="mt-15">USA Office</h5>
+                      <div className="tp-footer__download-box ">{address2}</div>
                     </div>
                   </div>
                 </div>

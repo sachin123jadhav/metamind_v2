@@ -108,6 +108,7 @@ const TeamArea = () => {
                       >
                         <Image src={aboutImg3} alt="About Image 3" />
                       </figure>
+                      
                     </div>
                   </div>
 
@@ -115,6 +116,7 @@ const TeamArea = () => {
                   <div className="get-free-security-circle">
                     <a href="/contact">
                       <Image src={getFreeSecurity} alt="Get Free Security" />
+                      <div className="meta-icon">s</div>
                     </a>
                   </div>
                 </div>
