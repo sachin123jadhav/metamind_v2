@@ -10,17 +10,22 @@ const footer_content = {
   compInfo: (
     <>
       {" "}
-      At Metamind Systems Pvt. Ltd., we offer a wide range of services tailored
-      to meet the digital needs of your business.
+      Metamind Systems Pvt. Ltd., we offer a wide range of services tailored to
+      meet the digital needs of your business.
     </>
   ),
   address: (
     <>
-      <b>At Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C, Sr No
+      <b>Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C, Sr No
       91/1, Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune - 411038
     </>
   ),
-  address2: <>6850 Fitzgerald Ct, Sugar Land, TX - 77479.</>,
+  address2: (
+    <>
+      <b>Metamind Systems Pvt. Ltd.,</b> <br />
+      6850 Fitzgerald Ct, Sugar Land, TX - 77479.
+    </>
+  ),
   phone: "+91 20 26059659",
   email: "info@metamindsystem.com",
   download: "Contact Info",
