@@ -214,12 +214,12 @@ const TeamArea = () => {
                 <div className="team-intro">
                   <h4>Vikram Dhruv</h4>
                   <h5>Chief Executive Officer - US Division</h5>
-                  <p>
+                  {/* <p>
                     <a href="mailto:vikram.dhruva@metamindsystem.com">
                       <i className="far fa-envelope"></i>{" "}
                       vikram.dhruva@metamindsystem.com
                     </a>
-                  </p>
+                  </p> */}
                   <p>
                     With over 20 years of combined experience in IT systems
                     integration, Engineering training, and Industrial services,

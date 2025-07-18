@@ -42,13 +42,13 @@ const ContactFormArea = () => {
                     <p className="pb-20">
                       Feel free to contact us from below details information
                     </p>
-
+                    <h4 className="contact-head">Visit our office</h4>
                     <div className="rc__post mb-20 d-flex">
                       <div className="rc__post-thumb icon-wrap mr-20">
                         <LocationMap />
                       </div>
+
                       <div className="rc__post-content">
-                        <h4 className="contact-head">Visit our office</h4>
                         <div className="rc__meta">
                           <h5>India Office</h5>
                           <p>
@@ -56,6 +56,18 @@ const ContactFormArea = () => {
                             Plot no 7C, Sr No 91/1, Lane no 13 D, Shree Ganesh
                             krupa Society, Kothrud, Pune - 411038
                           </p>
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <div className="rc__post mb-20 d-flex">
+                      <div className="rc__post-thumb icon-wrap mr-20">
+                        <LocationMap />
+                      </div>
+
+                      <div className="rc__post-content">
+                        <div className="rc__meta">
+                         
                           <h5>USA Office</h5>
                           <p>
                             <b>Metamind Systems Pvt. Ltd.</b> <br />
