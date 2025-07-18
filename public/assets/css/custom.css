@@ -1014,7 +1014,7 @@ position: relative;
 .box-title{font-size: 22px;}
 
 .service-card:hover .tp-btn{background-color: #fff;color: #266544;}
-.meta-icon{position: absolute;
+.meta-icon{position: absolute;max-width: 70px;
   z-index: 99;
   top: 50%;
   left: 50%;

@@ -4,6 +4,7 @@ import aboutImg1 from "../../../public/assets/img/about/team-1.jpg";
 import aboutImg2 from "../../../public/assets/img/about/team-2.jpg";
 import aboutImg3 from "../../../public/assets/img/about/team-3.jpg";
 import getFreeSecurity from "../../../public/assets/img/about/Technology.svg";
+import MetaIcon from "../../../public/assets/img/about/Meta-Icon.svg";
 
 const service_details_content = {
   overview_title: "Expertise Across Diverse Technologies",
@@ -115,8 +116,10 @@ const TeamArea = () => {
                   <div className="get-free-security-circle">
                     <a href="/contact">
                       <Image src={getFreeSecurity} alt="Get Free Security" />
-                      <div className="meta-icon">s</div>
                     </a>
+                  </div>
+                  <div className="meta-icon">
+                    <Image src={MetaIcon} />
                   </div>
                 </div>
               </div>

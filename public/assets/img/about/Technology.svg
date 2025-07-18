@@ -30,8 +30,7 @@ viewBox="0 0 4432 4432"
     @font-face { font-family:"Yu Gothic";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
     .fil3 {fill:none}
     .fil2 {fill:none;fill-rule:nonzero}
-    .fil4 {fill:#F3942A}
-    .fil5 {fill:white}
+    .fil4 {fill:white}
     .fil1 {fill:white;fill-rule:nonzero}
     .fil0 {fill:url(#id0);fill-rule:nonzero}
     .fnt0 {font-weight:bold;font-size:493.89px;font-family:'Yu Gothic'}
@@ -48,33 +47,30 @@ viewBox="0 0 4432 4432"
   <circle class="fil1" cx="2219.8" cy="2213.64" r="1308.52"/>
   <ellipse class="fil2" cx="2215.05" cy="2126.83" rx="1885.64" ry="1876.11"/>
   <ellipse class="fil3" cx="2715.05" cy="1736.83" rx="1885.64" ry="1876.11"/>
-  <g id="_2940816729696">
-   <path class="fil4" d="M2555.52 2013.08c74.29,-176.52 274.82,-234.47 440.79,-127.06 194.81,126.05 217.7,407.53 98.81,592.98 -155.75,242.94 -511.54,300.77 -691.19,59.42l-440.08 -627.33c-194.25,-186.31 -499.73,0.26 -557.88,223.41 -59.73,229.2 97.62,457.37 319.9,517.04 114.27,30.66 216.96,6.39 326.08,-27.03l7.81 13.5c-261.47,157.86 -602.29,78.94 -735.03,-214.5 -136.75,-302.28 56.65,-676.02 388.69,-732.92 322.46,-55.23 501.98,247.75 649.76,478.64 101.82,159.04 173.53,427.95 410.93,382.2 295.15,-56.87 421.42,-526.33 100.84,-640.6 -130.49,-46.51 -227.44,16.38 -319.42,102.25l-0.01 0 0 0z"/>
-  </g>
   <circle class="fil3" cx="2215.05" cy="2231.85" r="1612.14"/>
-  <text x="928.55" y="1245.59"  class="fil5 fnt0"><tspan rotate="314">T</tspan></text>
-  <text x="1115.74" y="1045.86"  class="fil5 fnt0"><tspan rotate="322">e</tspan></text>
-  <text x="1345.01" y="866.34"  class="fil5 fnt0"><tspan rotate="333">c</tspan></text>
-  <text x="1588" y="742.13"  class="fil5 fnt0"><tspan rotate="341">h</tspan></text>
-  <text x="1879.49" y="649.75"  class="fil5 fnt0"><tspan rotate="353">n</tspan></text>
-  <text x="2183.47" y="613.1"  class="fil5 fnt0"><tspan rotate="4">o</tspan></text>
-  <text x="2475.48" y="637.58"  class="fil5 fnt0"><tspan rotate="13">l</tspan></text>
-  <text x="2615.43" y="665.45"  class="fil5 fnt0"><tspan rotate="19">o</tspan></text>
-  <text x="2892.57" y="762.02"  class="fil5 fnt0"><tspan rotate="30">g</tspan></text>
-  <text x="3139.47" y="908.44"  class="fil5 fnt0"><tspan rotate="38">i</tspan></text>
-  <text x="3257.07" y="989.17"  class="fil5 fnt0"><tspan rotate="46">e</tspan></text>
-  <text x="3458.34" y="1198.98"  class="fil5 fnt0"><tspan rotate="55">s</tspan></text>
-  <text x="3574.33" y="3123.24"  class="fil5 fnt0"><tspan rotate="131">T</tspan></text>
-  <text x="3398.35" y="3334.21"  class="fil5 fnt0"><tspan rotate="142">e</tspan></text>
-  <text x="3169.24" y="3513.25"  class="fil5 fnt0"><tspan rotate="150">c</tspan></text>
-  <text x="2934.6" y="3655.5"  class="fil5 fnt0"><tspan rotate="162">h</tspan></text>
-  <text x="2644.48" y="3751.98"  class="fil5 fnt0"><tspan rotate="170">n</tspan></text>
-  <text x="2342.88" y="3804.56"  class="fil5 fnt0"><tspan rotate="181">o</tspan></text>
-  <text x="2050.31" y="3795.06"  class="fil5 fnt0"><tspan rotate="188">l</tspan></text>
-  <text x="1907.89" y="3781.21"  class="fil5 fnt0"><tspan rotate="196">o</tspan></text>
-  <text x="1625.7" y="3701.68"  class="fil5 fnt0"><tspan rotate="204">g</tspan></text>
-  <text x="1367.19" y="3577.13"  class="fil5 fnt0"><tspan rotate="213">i</tspan></text>
-  <text x="1244.02" y="3505.86"  class="fil5 fnt0"><tspan rotate="221">e</tspan></text>
-  <text x="1023.06" y="3316.89"  class="fil5 fnt0"><tspan rotate="229">s</tspan></text>
+  <text x="928.55" y="1245.59"  class="fil4 fnt0"><tspan rotate="314">T</tspan></text>
+  <text x="1115.74" y="1045.86"  class="fil4 fnt0"><tspan rotate="322">e</tspan></text>
+  <text x="1345.01" y="866.34"  class="fil4 fnt0"><tspan rotate="333">c</tspan></text>
+  <text x="1588" y="742.13"  class="fil4 fnt0"><tspan rotate="341">h</tspan></text>
+  <text x="1879.49" y="649.75"  class="fil4 fnt0"><tspan rotate="353">n</tspan></text>
+  <text x="2183.47" y="613.1"  class="fil4 fnt0"><tspan rotate="4">o</tspan></text>
+  <text x="2475.48" y="637.58"  class="fil4 fnt0"><tspan rotate="13">l</tspan></text>
+  <text x="2615.43" y="665.45"  class="fil4 fnt0"><tspan rotate="19">o</tspan></text>
+  <text x="2892.57" y="762.02"  class="fil4 fnt0"><tspan rotate="30">g</tspan></text>
+  <text x="3139.47" y="908.44"  class="fil4 fnt0"><tspan rotate="38">i</tspan></text>
+  <text x="3257.07" y="989.17"  class="fil4 fnt0"><tspan rotate="46">e</tspan></text>
+  <text x="3458.34" y="1198.98"  class="fil4 fnt0"><tspan rotate="55">s</tspan></text>
+  <text x="3574.33" y="3123.24"  class="fil4 fnt0"><tspan rotate="131">T</tspan></text>
+  <text x="3398.35" y="3334.21"  class="fil4 fnt0"><tspan rotate="142">e</tspan></text>
+  <text x="3169.24" y="3513.25"  class="fil4 fnt0"><tspan rotate="150">c</tspan></text>
+  <text x="2934.6" y="3655.5"  class="fil4 fnt0"><tspan rotate="162">h</tspan></text>
+  <text x="2644.48" y="3751.98"  class="fil4 fnt0"><tspan rotate="170">n</tspan></text>
+  <text x="2342.88" y="3804.56"  class="fil4 fnt0"><tspan rotate="181">o</tspan></text>
+  <text x="2050.31" y="3795.06"  class="fil4 fnt0"><tspan rotate="188">l</tspan></text>
+  <text x="1907.89" y="3781.21"  class="fil4 fnt0"><tspan rotate="196">o</tspan></text>
+  <text x="1625.7" y="3701.68"  class="fil4 fnt0"><tspan rotate="204">g</tspan></text>
+  <text x="1367.19" y="3577.13"  class="fil4 fnt0"><tspan rotate="213">i</tspan></text>
+  <text x="1244.02" y="3505.86"  class="fil4 fnt0"><tspan rotate="221">e</tspan></text>
+  <text x="1023.06" y="3316.89"  class="fil4 fnt0"><tspan rotate="229">s</tspan></text>
  </g>
 </svg>
