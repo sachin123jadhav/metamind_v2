@@ -59,7 +59,7 @@ const ContactFormArea = () => {
                           <h5>USA Office</h5>
                           <p>
                             <b>Metamind Systems Pvt. Ltd.</b> <br />
-                            6850 Fitzgerald Ct, Sugar Land, TX - 77479.
+                            6850 Fitzgerald Ct, sugar land, TX 77479, USA
                           </p>
                         </div>
                       </div>

@@ -108,7 +108,6 @@ const TeamArea = () => {
                       >
                         <Image src={aboutImg3} alt="About Image 3" />
                       </figure>
-                      
                     </div>
                   </div>
 
@@ -201,6 +200,75 @@ const TeamArea = () => {
                   latest opportunities.
                 </p>
                 <h4>Together, we can achieve great things!</h4>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-md-12">
+                <h2 className="mt-25 mb-15">Our Skilled Expert Team</h2>
+              </div>
+              <div className="col-md-4">
+                <div className="team-intro">
+                  <h4>Vikram Dhruv</h4>
+                  <h5>Chief Executive Officer - US Division</h5>
+                  <p>
+                    <a href="mailto:vikram.dhruva@metamindsystem.com">
+                      <i className="far fa-envelope"></i>{" "}
+                      vikram.dhruva@metamindsystem.com
+                    </a>
+                  </p>
+                  <p>
+                    With over 20 years of combined experience in IT systems
+                    integration, Engineering training, and Industrial services,
+                    Vikram leads our US operations with a focus on delivering
+                    exceptional technological solutions. His extensive network
+                    across North and Latin America bridges key partnerships with
+                    enterprises, driving digital transformation across multiple
+                    sectors. Specializing in: Industrial automation integration
+                    • Cross-border technology solutions • IT workforce
+                    development
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="team-intro">
+                  <h4>Amol Shah</h4>
+                  <h5>AVP Operations & HR </h5>
+
+                  <p>
+                    MBA in International Business | Diploma in HR | 22+ Years of
+                    Expertise
+                  </p>
+                  <p>
+                    With an MBA in International Business and a Diploma in Human
+                    Resources, Amol leads operations and HR with over two
+                    decades of experience in strategic HR management, process
+                    optimization, and ISO standardization. His focus is on
+                    workforce efficiency, operational excellence, and fostering
+                    scalable frameworks that align with organizational goals. He
+                    is also the Point Of Contact for the organisation.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="team-intro">
+                  <h4>Sachin Jadhav</h4>
+                  <h5>Senior Web & UI/UX Designer</h5>
+                  <p>16+ Years of Digital Design Excellence</p>
+                  <p>
+                    With expertise in HTML, CSS, and modern design tools
+                    including Figma and Photoshop, Sachin creates visually
+                    stunning, user-centric digital experiences. His
+                    comprehensive experience spans WordPress, OpenCart, Shopify,
+                    and React JS development, ensuring seamless technical
+                    execution of every design vision.
+                  </p>
+                  <p>
+                    For 16 years, he has blended artistic creativity with
+                    technical precision to deliver designs that captivate users
+                    while driving business results.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

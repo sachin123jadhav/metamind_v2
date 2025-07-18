@@ -16,14 +16,14 @@ const footer_content = {
   ),
   address: (
     <>
-      <b>Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C, Sr No
-      91/1, Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune - 411038
+      <b>Metamind Systems Pvt. Ltd.,</b> <br /> Govind, Plot no 7C, Sr No 91/1,
+      Lane no 13 D, Shree Ganesh krupa Society, Kothrud, Pune - 411038
     </>
   ),
   address2: (
     <>
       <b>Metamind Systems Pvt. Ltd.,</b> <br />
-      6850 Fitzgerald Ct, Sugar Land, TX - 77479.
+      6850 Fitzgerald Ct, sugar land, TX 77479, USA
     </>
   ),
   phone: "+91 20 26059659",
