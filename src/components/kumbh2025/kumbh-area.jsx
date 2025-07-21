@@ -9,7 +9,7 @@ import service_img_2 from "../../../public/assets/img/Kumbh/Magh-Mela-1.jpg";
 const KumbhArea = () => {
   return (
     <>
-      <section className="kumbh-area pt-80 pb-80">
+      <section className="kumbh-area pt-80 pb-80  tp-about__list">
         <div className="container">
           <div className="row mb-5">
             <div className="col-md-12">
@@ -23,8 +23,116 @@ const KumbhArea = () => {
             </div>
           </div>
 
+          <div className="row align-items-center mb-15">
+            <div className="col-md-6  tp-about__list">
+              <h3>Cyber Threat Mitigation</h3>
+              <p>
+                Mahakumbh 2025, scheduled to be held in Prayagraj from January
+                13, 2025 to February 26, 2025, is expected to attract millions
+                of pilgrims and visitors from across the globe. With such a
+                large-scale event, the digital and cyber landscape becomes a
+                potential target for malicious actors seeking to exploit
+                vulnerabilities through fraud, impersonation, and cyberattacks.
+              </p>
+              <p>
+                As a result, Mahakumbh 2025 needed a comprehensive,
+                multi-layered approach to cybersecurity, encompassing not only
+                advanced technological tools for real-time threat detection but
+                also a coordinated effort between various stakeholders.
+              </p>
+              <p>Cyber Threat Mitigation Strategies:</p>
+              <ul>
+                <li>
+                  <i class="fal fa-check"></i>Threat Identification & reporting
+                  using Open-Source Intelligence
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>
+                  Keyword-Based Scans
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Real-Time Monitoring of digital
+                  platforms, including event websites, social media accounts,
+                  etc.
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <Image
+                src={service_img_2}
+                alt="Sanitation Monitoring"
+                className="about-img"
+              />
+            </div>
+          </div>
+
+          <div className="row tp-about__list">
+            <div className="col-md-12">
+              <h2>Objectives:</h2>
+            </div>
+            <div className="col-md-6">
+              <h5 className="mt-15">1.Proactive Fraud Detection:</h5>
+              <ul>
+                <li>
+                  <i class="fal fa-check"></i>Identify and analyze potential
+                  online fraud targeting Maha Kumbh 2025 attendees, vendors, and
+                  donors.
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Detect fake websites, phishing
+                  attempts, and fraudulent financial transactions.
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <h5 className="mt-15">2.Cyber Threat Mitigation:</h5>
+              <ul>
+                <li>
+                  <i class="fal fa-check"></i>Provide actionable intelligence to
+                  law enforcement and cyber cells to curb cybercrime during the
+                  event.
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Ensure public safety by addressing
+                  digital vulnerabilities that can be exploited by malicious
+                  actors.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <h5 className="mt-15">3.Preservation of Trust:</h5>
+              <ul>
+                <li>
+                  <i class="fal fa-check"></i>Safeguard the reputation of the
+                  Maha Kumbh event by eliminating fraudulent activities that may
+                  harm attendees.
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Support transparency by
+                  identifying authentic vendors and donation channels.
+                </li>
+              </ul>
+            </div>
+            <div className="col-md-6">
+              <h5 className="mt-15">4.Comprehensive Monitoring:</h5>
+              <ul>
+                <li>
+                  <i class="fal fa-check"></i>Leverage OSINT techniques to
+                  monitor websites, social media platforms, and communication
+                  channels for suspicious activities.
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Analyze digital footprints to
+                  trace fraud origins and patterns.
+                </li>
+              </ul>
+            </div>
+          </div>
+
           {/* ICT-Based Sanitation and Tentage Monitoring System */}
-          <div className="row align-items-center mb-5">
+          <div className="row align-items-center mb-5 mt-35">
             <div className="col-md-6">
               <Image
                 src={service_img_1}
@@ -68,7 +176,7 @@ const KumbhArea = () => {
                   data-driven decisions
                 </li>
               </ul>
-              <p className="mt-15">
+              <p className="mt-15 mb-0">
                 This system ensures operational transparency, improves public
                 hygiene, and enhances the overall living experience for
                 pilgrims.
@@ -77,7 +185,7 @@ const KumbhArea = () => {
           </div>
 
           {/* Digital Lost and Found System */}
-          <div className="row align-items-center">
+          <div className="row align-items-center mt-25">
             <div className="col-md-6  tp-about__list">
               <h3>Digital Lost and Found System</h3>
               <p>

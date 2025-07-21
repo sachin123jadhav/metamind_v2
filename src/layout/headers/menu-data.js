@@ -22,6 +22,7 @@ const menu_data = [
     link: "/about",
     active: "",
     sub_menus: [
+      { link: "/about", title: "About Us" },
       { link: "/team", title: "Team" },
       // { link: "/#", title: "Career" },
       // { link: "/#", title: "Testimonials" },

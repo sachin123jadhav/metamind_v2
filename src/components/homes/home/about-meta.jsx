@@ -12,32 +12,43 @@ import Link from "next/link";
 const about_content = {
   title: "Why Choose Metamind?",
   sub_title: "Empowering Kumbh 2025 with Smart Digital Solutions",
-  heading: "1. Digital Lost and Found System",
+  heading: "1. Cyber Threat Mitigation",
   des: (
     <>
-      An intuitive platform to reunite people with their lost belongings and
-      loved ones during the massive Kumbh gathering. Available as both a mobile
-      app and website, the system allows users to:
+      A multi-layered cybersecurity approach to protect pilgrims, digital
+      platforms, and event integrity.
     </>
   ),
 
   about_list: [
-    <>Report and search for lost items or persons in real time</>,
-    <>Upload photos and descriptions</>,
-    <> Access centralized updates from help centers and authorities</>,
+    <>Real-time surveillance of websites, social media, and digital assets</>,
+    <>Verify authenticity of vendors and official donation platforms</>,
   ],
-  heading2: "2. ICT-Based Sanitation and Tentage Monitoring System",
+  heading2: "2. Digital Lost and Found System",
   des2: (
     <>
-      A smart monitoring solution that ensures hygienic living conditions and
-      efficient tent management for pilgrims:
+      A user-friendly platform (mobile app and website) to reunite pilgrims with
+      lost items or loved ones:
     </>
   ),
 
   about_list2: [
-    <>Real-time updates on sanitation status</>,
-    <>Automated reporting of issues</>,
-    <> Transparent monitoring of tent occupancy, cleanliness, and resources</>,
+    <>
+      Real-time reporting and search with photo uploads and detailed
+      descriptions
+    </>,
+    <>Centralized updates and coordination with help centers and authorities</>,
+  ],
+  heading3: "3. ICT-Based Sanitation and Tentage Monitoring System",
+  des3: (
+    <>
+      A smart system to maintain hygiene and manage accommodations efficiently:
+    </>
+  ),
+
+  about_list3: [
+    <>Live updates on sanitation, tent occupancy, and cleanliness status</>,
+    <>Automated issue reporting and transparent resource tracking</>,
   ],
   btn_text: "Know More",
 };
@@ -51,31 +62,33 @@ const {
   heading2,
   des2,
   about_list2,
+  heading3,
+  des3,
+  about_list3,
 } = about_content;
 function AboutMeta() {
+  const [isLoop, setIsLoop] = useState(false);
+  useEffect(() => {
+    setIsLoop(true);
+  }, []);
 
-     const [isLoop, setIsLoop] = useState(false);
-     useEffect(() => {
-       setIsLoop(true);
-     }, []);
-    
-       const [isDragged, setIsDragged] = useState(false);
-       const handleSlideChange = () => {
-         setIsDragged(true);
-    };
-     const handleTransitionEnd = () => {
-       setIsDragged(false);
-     };
+  const [isDragged, setIsDragged] = useState(false);
+  const handleSlideChange = () => {
+    setIsDragged(true);
+  };
+  const handleTransitionEnd = () => {
+    setIsDragged(false);
+  };
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-    const videoEl = useRef(null); 
-      // const { handleMouseEnter, handleMouseLeave } = useContext(AppContext); 
-    
+  const videoEl = useRef(null);
+  // const { handleMouseEnter, handleMouseLeave } = useContext(AppContext);
+
   return (
     <>
       <section className="p-relative pt-50 pb-80 about-home xs-mb-0 xs-pb-30">
         <div className="container">
           <div className="row">
-            <div className="col-md-5">
+            <div className="col-md-6">
               <Image src={About}></Image>
               <div
                 className="play_btn popup-video"
@@ -85,7 +98,7 @@ function AboutMeta() {
               </div>
             </div>
             <div
-              className="col-xl-7 col-lg-7 wow tpfadeRight d-flex align-items-center"
+              className="col-xl-6 col-lg-6 wow tpfadeRight d-flex align-items-center"
               data-wow-duration=".9s"
               data-wow-delay=".6s"
             >
@@ -113,6 +126,18 @@ function AboutMeta() {
                 <div className="tp-about__list mt-15">
                   <ul>
                     {about_list2.map((item, i) => (
+                      <li key={i}>
+                        <i className="fal fa-check"></i>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <h5 className="mt-15">{heading3}</h5>
+                <p className="mb-0">{des3}</p>
+                <div className="tp-about__list mt-15">
+                  <ul>
+                    {about_list3.map((item, i) => (
                       <li key={i}>
                         <i className="fal fa-check"></i>
                         {item}

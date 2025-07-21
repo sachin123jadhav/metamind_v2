@@ -54,11 +54,12 @@ const Header = () => {
                       Visit Us: <SocialLinks />
                     </span> */}
                     <Link className="pl-15" href="/contact">
-                      Contact Us
+                      <i class="fa fa-envelope-open-text pr-2"></i> Contact Us
                     </Link>
 
                     <Link className="pl-15" href="/career">
-                      Careers
+                      <i class="fa fa-business-time pr-5"></i>
+                       Careers
                     </Link>
                   </div>
                 </div>
