@@ -210,16 +210,120 @@ const TeamArea = () => {
               <div className="col-md-12">
                 <h2 className="mt-25 mb-15">Our Skilled Expert Team</h2>
               </div>
+            </div>
+            <div className="team-member">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="team-name">
+                    <h4>Vikram Dhruv</h4>
+                    <h5>Chief Executive Officer - US Division</h5>
+                    <h6>Experience: 20 Years</h6>
+                  </div>
+                </div>
+                <div className="col-md-8">
+                  <div className="team-desc">
+                    <p>
+                      With over 20 years of combined experience in IT systems
+                      integration, Engineering training, and Industrial
+                      services, Vikram leads our US operations with a focus on
+                      delivering exceptional technological solutions. His
+                      extensive network across North and Latin America bridges
+                      key partnerships with enterprises, driving digital
+                      transformation across multiple sectors. Specializing in:
+                      Industrial automation integration • Cross-border
+                      technology solutions • IT workforce development
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="team-member">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="team-name">
+                    <h4>Amol Shah</h4>
+                    <h5>AVP Operations & HR </h5>
+                    <h6>Experience: 22+ Years</h6>
+                  </div>
+                </div>
+                <div className="col-md-8">
+                  <div className="team-desc">
+                    <p>
+                      MBA in International Business | Diploma in HR | 22+ Years
+                      of Expertise
+                      <br />
+                      With an MBA in International Business and a Diploma in
+                      Human Resources, Amol leads operations and HR with over
+                      two decades of experience in strategic HR management,
+                      process optimization, and ISO standardization. His focus
+                      is on workforce efficiency, operational excellence, and
+                      fostering scalable frameworks that align with
+                      organizational goals. He is also the Point Of Contact for
+                      the organisation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="team-member">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="team-name">
+                    <h4>Sachin Jadhav</h4>
+                    <h5>Senior Web & UI/UX Designer</h5>
+                    <h6>16+ Years of Digital Design Excellence</h6>
+                  </div>
+                </div>
+                <div className="col-md-8">
+                  <div className="team-desc">
+                    <p>
+                      With expertise in HTML, CSS, and modern design tools
+                      including Figma and Photoshop, Sachin creates visually
+                      stunning, user-centric digital experiences. His
+                      comprehensive experience spans WordPress, OpenCart,
+                      Shopify, and React JS development, ensuring seamless
+                      technical execution of every design vision.
+                      <br />
+                      For 16 years, he has blended artistic creativity with
+                      technical precision to deliver designs that captivate
+                      users while driving business results.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="team-member">
+              <div className="row">
+                <div className="col-md-4">
+                  <div className="team-name">
+                    <h4>Tauseef Mallabadkar</h4>
+                    <h5>Tech Lead</h5>
+                    <h6>Experience: 14+ Years</h6>
+                  </div>
+                </div>
+                <div className="col-md-8">
+                  <div className="team-desc">
+                    <p>
+                      Experienced tech lead specializing in both backend and
+                      frontend development. Proven track record of designing
+                      scalable systems, leading cross-functional teams, and
+                      delivering high-impact digital solutions across diverse
+                      industries. <br />
+                      Successfully contributed to e-Governance projects through
+                      on-site visits, client coordination, and meetings with
+                      senior government officials.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="row">
               <div className="col-md-4">
                 <div className="team-intro">
                   <h4>Vikram Dhruv</h4>
                   <h5>Chief Executive Officer - US Division</h5>
-                  {/* <p>
-                    <a href="mailto:vikram.dhruva@metamindsystem.com">
-                      <i className="far fa-envelope"></i>{" "}
-                      vikram.dhruva@metamindsystem.com
-                    </a>
-                  </p> */}
+                 
                   <p>
                     With over 20 years of combined experience in IT systems
                     integration, Engineering training, and Industrial services,
@@ -273,7 +377,7 @@ const TeamArea = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

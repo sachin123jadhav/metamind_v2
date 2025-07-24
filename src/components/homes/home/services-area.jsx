@@ -10,6 +10,9 @@ import bgImg from "../../../../public/assets/img/service/service_card_bg.png";
 import ServicesHome from "./services";
 import MetamindProducts from "@/components/software-as-a-product/MetamindProducts";
 
+import bgImg1 from "../../../../public/assets/img/service/elements1.png";
+import bgImg2 from "../../../../public/assets/img/service/elements2.png";
+
 // Section content
 const service_content = {
   title: "Empowering Transformation, Innovation, and Connectivity",
@@ -37,6 +40,8 @@ const ServicesArea = () => {
   return (
     <>
       <div className="tp-service__area p-relative fix pt-50 pb-50">
+        <Image className="tp-hand" src={bgImg2} />
+        <Image className="tp-circle" src={bgImg1} />
         <div className="tp-service__grey-shape grey-bg"></div>
         <div className="container relative">
           <p className="service-title d-none d-xl-block">Services</p>
