@@ -271,7 +271,7 @@ const TeamArea = () => {
                   <div className="team-name">
                     <h4>Sachin Jadhav</h4>
                     <h5>Senior Web & UI/UX Designer</h5>
-                    <h6>16+ Years of Digital Design Excellence</h6>
+                    <h6>Experience: 16+ Years</h6>
                   </div>
                 </div>
                 <div className="col-md-8">
