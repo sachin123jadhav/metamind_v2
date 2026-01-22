@@ -14,7 +14,7 @@ const KumbhArea = () => {
           <div className="row mb-5">
             <div className="col-md-12">
               <h2 className="section-title">
-                Meytamind Smart Solutions for Prayagraj Maha Kumbh Mela 2025
+                Metamind Smart Solutions for Prayagraj Maha Kumbh Mela 2025
               </h2>
               <p className="section-subtitle">
                 Harnessing technology to empower tradition, safety, and
