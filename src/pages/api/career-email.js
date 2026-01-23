@@ -18,7 +18,6 @@ export default async function handler(req, res) {
           .json({ message: "Error parsing form data", status: 400 });
       }
 
-      console.log("Fields received:", fields); // Log fields to check if subject is present
       const { subject, text, from, name, phone, position } = fields;
       const file = files.attachment;
 
@@ -78,9 +77,8 @@ Message: ${text}
 
         return res
           .status(200)
-          .json({ message: "Email sent successfully", status: 200, info });
+          .json({ message: "Thank you for applying. We’ll review your application and be in touch.", status: 200, info });
       } catch (error) {
-        console.error("Error sending email:", error);
         return res
           .status(500)
           .json({ message: "Error sending email", status: 500, error });
