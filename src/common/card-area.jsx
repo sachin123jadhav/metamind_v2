@@ -2,12 +2,12 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-import card_img_1 from "../../public/assets/img/card/card-bg.png";
-import card_img_2 from "../../public/assets/img/card/card-shape-1.png";
-import card_img_3 from "../../public/assets/img/card/card-img-1.png";
-import card_img_4 from "../../public/assets/img/card/card-img-2.png";
-import card_img_5 from "../../public/assets/img/card/card-img-3.png";
-import card_img_6 from "../../public/assets/img/card/card-img-4.png" ;
+// import card_img_1 from "../../public/assets/img/card/card-bg.png";
+// import card_img_2 from "../../public/assets/img/card/card-shape-1.png";
+// import card_img_3 from "../../public/assets/img/card/card-img-1.png";
+// import card_img_4 from "../../public/assets/img/card/card-img-2.png";
+// import card_img_5 from "../../public/assets/img/card/card-img-3.png";
+// import card_img_6 from "../../public/assets/img/card/card-img-4.png" ;
 
 
 const card_content = {
@@ -16,37 +16,37 @@ const card_content = {
             id: 1,
             cls: "main-img",
             data_parallax: "",
-            img: card_img_1,
+            // img: card_img_1,
         },
         {
             id: 2,
             cls: "img-1 d-none d-sm-block",
             data_parallax: "",
-            img: card_img_2,
+            // img: card_img_2,
         },
         {
             id: 3,
             cls: "img-2 d-none d-sm-block",
             data_parallax: '{"x": 50, "smoothness": 30}',
-            img: card_img_3,
+            // img: card_img_3,
         },
         {
             id: 4,
             cls: "img-3 d-none d-sm-block",
             data_parallax: '{"x": -50, "smoothness": 30}',
-            img: card_img_4,
+            // img: card_img_4,
         },
         {
             id: 5,
             cls: "img-4 d-none d-sm-block",
             data_parallax: "",
-            img: card_img_5,
+            // img: card_img_5,
         },
         {
             id: 6,
             cls: "img-5 d-none d-sm-block",
             data_parallax: "",
-            img: card_img_6,
+            // img: card_img_6,
         },
     ],
 
@@ -70,7 +70,7 @@ const CardArea = ({style_service}) => {
                         <div className="tp-card-thumb-wrapper p-relative">
                             {card_images.map((item, i)  => 
                                 <div key={i} className={`tp-card-${item.cls}`} data-parallax={item.data_parallax}>
-                                    <Image src={item.img} alt="theme-pure" />
+                                    <Image src={item?.img} alt="theme-pure" />
                                 </div>
                             )} 
                         </div>

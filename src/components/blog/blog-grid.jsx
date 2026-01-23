@@ -5,12 +5,12 @@ import { EffectFade, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // author img import here 
-import author_img_1 from "../../../public/assets/img/blog/blog-avata-3.png";
-import author_img_2 from "../../../public/assets/img/blog/blog-avata-2.png";
-import author_img_3 from "../../../public/assets/img/blog/blog-avata-1.png";
-import author_img_4 from "../../../public/assets/img/blog/blog-avata-3.png";
-import author_img_5 from "../../../public/assets/img/blog/blog-avata-2.png";
-import author_img_6 from "../../../public/assets/img/blog/blog-avata-1.png";
+// import author_img_1 from "../../../public/assets/img/blog/blog-avata-3.png";
+// import author_img_2 from "../../../public/assets/img/blog/blog-avata-2.png";
+// import author_img_3 from "../../../public/assets/img/blog/blog-avata-1.png";
+// import author_img_4 from "../../../public/assets/img/blog/blog-avata-3.png";
+// import author_img_5 from "../../../public/assets/img/blog/blog-avata-2.png";
+// import author_img_6 from "../../../public/assets/img/blog/blog-avata-1.png";
 
 const setting = { 
     slidesPerView: 1,
@@ -51,7 +51,7 @@ const blog_grid_content = {
             des: <>From publishing content and hoping to acquire leads to <br />
             gaining audience insights and making personalized <br />
             content, content marketing.</>,
-            author_img: author_img_1,
+            // author_img: author_img_1,
             author_name: "Hilary Ouse",
             author_info: "Founder & CEO Dulalix",
         } ,
@@ -64,7 +64,7 @@ const blog_grid_content = {
             des: <>From publishing content and hoping to acquire leads to <br />
             gaining audience insights and making personalized <br />
             content, content marketing.</>,
-            author_img: author_img_2,
+            // author_img: author_img_2,
             author_name: "Ouse Hilary",
             author_info: "Founder & CEO Dulalix",
         } ,
@@ -77,7 +77,7 @@ const blog_grid_content = {
             des: <>From publishing content and hoping to acquire leads to <br />
             gaining audience insights and making personalized <br />
             content, content marketing.</>,
-            author_img: author_img_3,
+            // author_img: author_img_3,
             author_name: "Mahful Alom",
             author_info: "Founder & CEO Dulalix",
         } ,
@@ -90,7 +90,7 @@ const blog_grid_content = {
             des: <>From publishing content and hoping to acquire leads to <br />
             gaining audience insights and making personalized <br />
             content, content marketing.</>,
-            author_img: author_img_4,
+            // author_img: author_img_4,
             author_name: "Hilary Ouse",
             author_info: "Founder & CEO Dulalix",
         } ,
@@ -103,7 +103,7 @@ const blog_grid_content = {
             des: <>From publishing content and hoping to acquire leads to <br />
             gaining audience insights and making personalized <br />
             content, content marketing.</>,
-            author_img: author_img_5,
+            // author_img: author_img_5,
             author_name: "Ouse Hilary",
             author_info: "Founder & CEO Dulalix",
         } ,
@@ -116,7 +116,7 @@ const blog_grid_content = {
             des: <>From publishing content and hoping to acquire leads to <br />
             gaining audience insights and making personalized <br />
             content, content marketing.</>,
-            author_img: author_img_6,
+            // author_img: author_img_6,
             author_name: "Mahful Alom",
             author_info: "Founder & CEO Dulalix",
         } ,
@@ -173,7 +173,7 @@ const BlogGrid = () => {
                                                 </div>
                                                 <div className="tp-blog-author-info-box blog-grid-avata-box d-flex align-items-center">
                                                     <div className="tp-blog-avata">
-                                                        <Image src={item.author_img} alt="theme-pure" />
+                                                        <Image src={item?.author_img} alt="theme-pure" />
                                                     </div>
                                                     <div className="tp-blog-author-info">
                                                         <h5>{item.author_name}</h5>

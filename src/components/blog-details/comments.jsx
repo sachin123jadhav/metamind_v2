@@ -3,15 +3,15 @@ import Image from 'next/image';
 import ReplyIcon from '@/svg/reply-icon';
 
 
-import avata_1 from "../../../public/assets/img/blog/blog-avata-2.png";
-import avata_2 from "../../../public/assets/img/blog/blog-avata-1.png";
-import avata_3 from "../../../public/assets/img/blog/blog-list-avata-1.jpg";
+// import avata_1 from "../../../public/assets/img/blog/blog-avata-2.png";
+// import avata_2 from "../../../public/assets/img/blog/blog-avata-1.png";
+// import avata_3 from "../../../public/assets/img/blog/blog-list-avata-1.jpg";
 import Link from 'next/link';
 
 const comments_data = [
     {
         id: 1, 
-        img: avata_1,
+        // img: avata_1,
         name: "Justin Case",
         date: "April 8, 2022 at 7:38 am",
         comment: <>Patient Comments are a collection of comments submitted by viewers in <br /> response to a question posed by a MedicineNet doctor.</>,
@@ -19,7 +19,7 @@ const comments_data = [
     },
     {
         id: 2, 
-        img: avata_2,
+        // img: avata_2,
         name: "Farhan Firoz",
         date: "July 14, 2022",
         comment: <>Include anecdotal examples of your experience, or things you took notice of that you feel others would find useful.</>,
@@ -27,7 +27,7 @@ const comments_data = [
     },
     {
         id: 3, 
-        img: avata_3,
+        // img: avata_3,
         name: "Jamil Rayhan",
         date: "April 8, 2022 at 7:38 am",
         comment: <>Patient Comments are a collection of comments submitted by viewers in <br /> response to a question posed by a MedicineNet doctor.</>,
@@ -45,7 +45,7 @@ const Comments = () => {
               <div className="postbox__comment-box  d-flex">
                 <div className="postbox__comment-info">
                   <div className="postbox__comment-avater mr-20">
-                    <Image src={item.img} alt="theme-pure" />
+                    <Image src={item?.img} alt="theme-pure" />
                   </div>
                 </div>
                 <div className="postbox__comment-text">

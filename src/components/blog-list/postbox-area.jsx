@@ -8,9 +8,9 @@ import Search from './search';
 import Tags from './tags';
  
 
-import img_1 from "../../../public/assets/img/blog/blog-list-1.jpg";
-import img_2 from "../../../public/assets/img/blog/blog-list-3.jpg";
-import thumb from "../../../public/assets/img/blog/blog-list-2.jpg";
+// import img_1 from "../../../public/assets/img/blog/blog-list-1.jpg";
+// import img_2 from "../../../public/assets/img/blog/blog-list-3.jpg";
+// import thumb from "../../../public/assets/img/blog/blog-list-2.jpg";
 import Image from 'next/image';
 
 
@@ -19,7 +19,7 @@ import Image from 'next/image';
 const blog_page_data = [
     {
       id: 1,
-      img: img_1,
+      // img: img_1,
       cls: "format-image",
       slider_img: false,
       category: "Resources",
@@ -34,14 +34,14 @@ const blog_page_data = [
     },
     {
       id: 2,
-      img: "",
+      // img: "",
       cls: "format-video",
       slider_img: false,
       category: "Resources",
       date: "April 20, 2023",
       video: [
         {
-          video_tum: thumb,
+          // video_tum: thumb,
           videoId: "-WRZI63emjs",
         },
       ],
@@ -54,7 +54,7 @@ const blog_page_data = [
     },
     {
       id: 3,
-      img: img_2,
+      // img: img_2,
       cls: "format-image fix",
       slider_img: false,
       category: "Resources",
@@ -85,7 +85,7 @@ const PostboxArea = () => {
                                 {item.img && 
                                     <div className="postbox__thumb w-img">
                                         <Link href="/blog-details">
-                                            <Image src={item.img} alt="theme-pure" />
+                                            <Image src={item?.img} alt="theme-pure" />
                                         </Link>
                                     </div>
                                 }

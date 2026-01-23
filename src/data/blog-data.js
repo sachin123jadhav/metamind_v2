@@ -1,19 +1,19 @@
-import img_1 from "../../public/assets/img/blog/blog-1.jpg"
-import img_2 from "../../public/assets/img/blog/blog-2.jpg"
-import img_3 from "../../public/assets/img/blog/blog-3.jpg"
+// import img_1 from "../../public/assets/img/blog/blog-1.jpg"
+// import img_2 from "../../public/assets/img/blog/blog-2.jpg"
+// import img_3 from "../../public/assets/img/blog/blog-3.jpg"
 
-import author_img_1 from "../../public/assets/img/blog/blog-avata-1.png";
-import author_img_2 from "../../public/assets/img/blog/blog-avata-2.png";
-import author_img_3 from "../../public/assets/img/blog/blog-avata-3.png";
+// import author_img_1 from "../../public/assets/img/blog/blog-avata-1.png";
+// import author_img_2 from "../../public/assets/img/blog/blog-avata-2.png";
+// import author_img_3 from "../../public/assets/img/blog/blog-avata-3.png";
 
-import img_4 from "../../public/assets/img/blog/blog-4-1.jpg"
-import img_5 from "../../public/assets/img/blog/blog-4-2.jpg"
+// import img_4 from "../../public/assets/img/blog/blog-4-1.jpg"
+// import img_5 from "../../public/assets/img/blog/blog-4-2.jpg"
 
 const blog_data = [
     // home 03 
     {
         id: 1, 
-        img: img_1,
+        // img: img_1,
         category: "Crm Software",
         color: "1",
         date: "28 April, 2023",
@@ -24,7 +24,7 @@ const blog_data = [
     },
     {
         id: 2, 
-        img: img_2,
+        // img: img_2,
         category: "Sales Tools",
         color: "2",
         date: "28 April, 2023",
@@ -35,7 +35,7 @@ const blog_data = [
     },
     {
         id: 3, 
-        img: img_3,
+        // img: img_3,
         category: "Sales Management",
         color: "3",
         date: "28 April, 2023",
@@ -48,7 +48,7 @@ const blog_data = [
     // home 04
     {
         id: 4, 
-        img: img_4,
+        // img: img_4,
         category: "Blog",
         color: "",
         date: "10 min",
@@ -61,7 +61,7 @@ const blog_data = [
     },
     {
         id: 5, 
-        img: img_5,
+        // img: img_5,
         category: "Blog",
         color: "",
         date: "24 min",

@@ -11,12 +11,12 @@ import Tags from '../blog-list/tags';
 import Comments from './comments';
 
 
-import blog_details_img_1  from "../../../public/assets/img/blog/blog-details-1.jpg";
-import blog_details_img_2  from "../../../public/assets/img/blog/blog-details-2.jpg";
-import blog_details_img_3  from "../../../public/assets/img/blog/blog-details-3.jpg";
-import navigation_img_1  from "../../../public/assets/img/blog/navigation-1.png";
-import navigation_img_2  from "../../../public/assets/img/blog/navigation-2.png";
-import blog_details_avata  from "../../../public/assets/img/blog/blog-details-avata-1.jpg";
+// import blog_details_img_1  from "../../../public/assets/img/blog/blog-details-1.jpg";
+// import blog_details_img_2  from "../../../public/assets/img/blog/blog-details-2.jpg";
+// import blog_details_img_3  from "../../../public/assets/img/blog/blog-details-3.jpg";
+// import navigation_img_1  from "../../../public/assets/img/blog/navigation-1.png";
+// import navigation_img_2  from "../../../public/assets/img/blog/navigation-2.png";
+// import blog_details_avata  from "../../../public/assets/img/blog/blog-details-avata-1.jpg";
 
 
 const post_box_content = {
@@ -52,7 +52,7 @@ const PostboxArea = ({style_details_2}) => {
                     {style_details_2 && (
                       <div className="postbox__thumb w-img">
                         <Link href="/blog-details">
-                          <Image src={blog_details_img_1} alt="" />
+                          {/* <Image src={blog_details_img_1} alt="" /> */}
                         </Link>
                       </div>
                     )}
@@ -77,21 +77,21 @@ const PostboxArea = ({style_details_2}) => {
                     </div>
                     <div className="postbox__details-img-box d-flex">
                       <div className="mr-20 text-center">
-                        <Image
+                        {/* <Image
                           className="mb-20"
                           src={blog_details_img_2}
                           alt="theme-pure"
-                        />
+                        /> */}
                         <h4 className="postbox__details-img-caption">
                           <span>Images by</span>@sample
                         </h4>
                       </div>
                       <div className="text-center">
-                        <Image
+                        {/* <Image
                           className="mb-20"
                           src={blog_details_img_3}
                           alt="theme-pure"
-                        />
+                        /> */}
                         <h5 className="postbox__details-img-caption">
                           <span>Images by</span>@sample
                         </h5>
@@ -129,7 +129,7 @@ const PostboxArea = ({style_details_2}) => {
                       <div className="postbox__navigation-left d-flex align-items-center">
                         <div className="postbox__navigation-img">
                           <Link href="#">
-                            <Image src={navigation_img_1} alt="theme-pure" />
+                            {/* <Image src={navigation_img_1} alt="theme-pure" /> */}
                           </Link>
                         </div>
                         <div className="postbox__navigation-content">
@@ -158,7 +158,7 @@ const PostboxArea = ({style_details_2}) => {
                         </div>
                         <div className="postbox__navigation-img">
                           <Link href="#">
-                            <Image src={navigation_img_2} alt="theme-pure" />
+                            {/* <Image src={navigation_img_2} alt="theme-pure" /> */}
                           </Link>
                         </div>
                       </div>
@@ -166,7 +166,7 @@ const PostboxArea = ({style_details_2}) => {
 
                     <div className="postbox__details-author-info-box mb-100 d-flex align-items-start">
                       <div className="postbox__details-author-avata">
-                        <Image src={blog_details_avata} alt="theme-pure" />
+                        {/* <Image src={blog_details_avata} alt="theme-pure" /> */}
                       </div>
                       <div className="postbox__details-author-content">
                         <h5 className="postbox__details-author-title">

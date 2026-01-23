@@ -4,7 +4,7 @@ import SocialLinks from '../social-links';
 
 import img_1 from "../../../public/assets/img/breadcrumb/breadcrumb-shape-1.png";
 import img_2 from "../../../public/assets/img/breadcrumb/breadcrumb-shape-2.png";
-import img_3 from "../../../public/assets/img/blog/blog-avata-1.png";
+// import img_3 from "../../../public/assets/img/blog/blog-avata-1.png";
 
 
 const breadcrumb_content = {
@@ -36,7 +36,7 @@ const BreadcrumbSix = () => {
                         </div>
                         <div className="tp-blog-author-info-box d-flex align-items-center">
                            <div className="tp-blog-avata">
-                              <Image src={img_3} alt="theme-pure" />
+                              <Image src="/assets/img/career/image-1.png" alt="theme-pure" />
                            </div>
                            <div className="tp-blog-author-info">
                               <h5>{author_name}</h5>
