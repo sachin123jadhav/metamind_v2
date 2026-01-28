@@ -132,7 +132,7 @@ const TeamArea = () => {
                     <p>{overview_des}</p>
                     <ul>
                       {overview_list1.map((item, i) => (
-                        <li key={i}>
+                        <li key={i} className="xs-pl-0">
                           <strong>{item.title}</strong>
                           <ul>
                             {item.points.map((point, j) => (

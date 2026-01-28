@@ -180,9 +180,9 @@ const FooterTwo = () => {
                     <div className="tp-footer__widget footer-widget-2 footer-col-2-4">
                       <h4 className="tp-footer__widget-title">{download}</h4>
                       <h5 className="mt-15">India Office</h5>
-                      <div className="tp-footer__download-box ">{address}</div>
+                      <div className="tp-footer__download-box capitalize">{address}</div>
                       <h5 className="mt-15">USA Office</h5>
-                      <div className="tp-footer__download-box ">{address2}</div>
+                      <div className="tp-footer__download-box capitalize ">{address2}</div>
                     </div>
                   </div>
                 </div>

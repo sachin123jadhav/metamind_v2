@@ -1082,6 +1082,9 @@
                 position: relative;
                 padding-left: 35px;
                 margin-bottom: 10px;
+                  @media #{$xs}{
+                       padding-left: 25px;
+                    } 
                 & p { 
                     font-weight: 600;
                     font-size: 16px;

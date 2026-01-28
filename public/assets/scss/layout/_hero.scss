@@ -21,13 +21,13 @@
             padding-top: 170px;
         }
         @media #{$xs}{
-            padding-top: 50px;
-            padding-bottom: 100px;
+            padding-top: 30px;
+            padding-bottom: 35px;
         }
     }
     &__hero-title{
         font-weight: 700;
-        font-size: 38px;
+        font-size: 30px;
         line-height: 1.1;
         padding-bottom: 0px;
         overflow: hidden;
@@ -38,8 +38,8 @@
             font-size: 30px;  
         }
         @media #{$xs}{
-            font-size: 20px;
-            padding-bottom: 28px; 
+            font-size: 18px;
+            padding-bottom: 20px; 
         }
         @media only screen and (min-width: 350px) and (max-width: 992px){
             & .tp_title:first-child{
@@ -100,7 +100,10 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 1.5;
-            color: rgba(1, 16, 61, 0.60); margin-top: -20px;
+            color: rgba(1, 16, 61, 0.60); 
+             @media #{$xs}{
+               font-size: 14px;margin-top: -20px;
+            }
         }
     }
     &__input{
@@ -1187,6 +1190,7 @@
             object-fit: cover;
             object-position: center;
             bottom: 0;
+            top: -20px;
         }
     }
 

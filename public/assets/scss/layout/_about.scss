@@ -114,6 +114,9 @@
                 
   display: block;
                 list-style-type: none;
+                 @media #{$md,$xs}{
+                  font-size: 14px;
+            }
                 &:last-child{
                     margin-bottom: 0;
                 }
