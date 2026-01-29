@@ -99,6 +99,9 @@ const CareerForm = () => {
           position: "",
         });
         setFile(null); // Reset file
+        // Clear file input
+        const fileInput = document.querySelector('input[type="file"]');
+        if (fileInput) fileInput.value = "";
       }
     } catch (error) {
       setAlert({ status: "danger", text: "Something went wrong" });
