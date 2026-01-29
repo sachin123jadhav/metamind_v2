@@ -61,33 +61,36 @@ const CareerForm = () => {
     setLoading(true);
 
     const formData = new FormData();
-    formData.append("from", data?.email);
+    formData.append("email", data?.email);
     formData.append("name", data?.name);
     formData.append("phone", data?.phone);
-    formData.append("text", data?.message);
+    formData.append("message", data?.message);
     formData.append("position", data?.position);
-    formData.append("subject", "Career Form Submission");
+    formData.append("subject", "Career Form");
 
     if (file) {
       formData.append("attachment", file); // Attach the file
     }
 
     try {
-      console.log("formData", [...formData]);
-      const response = await fetch("/api/career-email", {
-        method: "POST",
-        body: formData, // Send the formData directly
-      });
+      const response = await fetch(
+        "https://metamindsystem.com/sendEmailwithAttachment.php",
+        {
+          method: "POST",
+          headers: { Authorization: `${process.env.NEXT_PUBLIC_TOKEN}` },
+          body: formData, // Send the formData directly
+        },
+      );
 
       const result = await response.json();
       setLoading(false);
 
       setAlert({
-        status: result?.status === 200 ? "success" : "danger",
+        status: result?.status === "success" ? "success" : "danger",
         text: result?.message,
       });
 
-      if (result?.status === 200) {
+      if (result?.status === "success") {
         setData({
           name: "",
           email: "",
@@ -98,7 +101,6 @@ const CareerForm = () => {
         setFile(null); // Reset file
       }
     } catch (error) {
-      console.log("catch error", error);
       setAlert({ status: "danger", text: "Something went wrong" });
     } finally {
       setLoading(false);

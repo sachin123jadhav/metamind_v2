@@ -34,9 +34,7 @@ const ContactUsForm = () => {
         "https://metamindsystem.com/sendEmailwithAttachment.php",
         {
           method: "POST",
-          headers: {
-            Authorization: `${process.env.NEXT_PUBLIC_TOKEN}`,
-          },
+          headers: { Authorization: `${process.env.NEXT_PUBLIC_TOKEN}` },
           body: formData,
         },
       );
