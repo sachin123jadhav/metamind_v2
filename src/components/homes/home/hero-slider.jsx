@@ -5,18 +5,16 @@ import useCharAnimation from "@/hooks/useCharAnimation";
 import Image from "next/image";
 
 // images import
-import hero_frame from "../../../../public/assets/img/hero/powered-hero-bg.jpg";
+
+import hero_hand from "../../../../public/assets/img/hero/hand.png";
 import hero_frame_mobile from "../../../../public/assets/img/hero/powered-hero-bg-mobile.jpg";
 import shape_1 from "../../../../public/assets/img/hero/hero-line-shape.png";
 import shape_2 from "../../../../public/assets/img/hero/hero-line-shape-2.png";
 import shape_img_1 from "../../../../public/assets/img/hero/hero-shape-1.png";
 import shape_img_2 from "../../../../public/assets/img/hero/hero-shape-2.png";
-import hero_thumb_1 from "../../../../public/assets/img/hero/hero-sm-1.jpg";
 import thumb_1 from "../../../../public/assets/img/hero/hero-sm-3.png";
 import thumb_2 from "../../../../public/assets/img/hero/hero-sm-4.jpg";
-import hero_thumb_2 from "../../../../public/assets/img/hero/hero-sm-2.jpg";
-import HeroForm from "@/forms/hero-form";
-import LineShape from "@/svg/line-shape";
+
 import Link from "next/link";
 import globeImg from "../../../../public/assets/img/hero/powered-hero-shape.png";
 
@@ -109,9 +107,9 @@ const HeroSlider = () => {
         <div className="tp-hero__bg p-relative">
           <div className="tp-hero-bg tp-hero-bg-single" ref={hero_bg}>
             <Image
-              className="d-none d-md-inline-block"
+              className="d-none d-md-inline-block hand-img"
               // style={{width: "auto", height: "auto"}}
-              src={hero_frame}
+              src={hero_hand}
               alt="Metamind"
             />
             <Image
@@ -134,7 +132,7 @@ const HeroSlider = () => {
           </div>
           <div className="container">
             <div className="row ">
-              <div className="col-xl-6">
+              <div className="col-xl-6 col-lg-7 col-md-8">
                 <div className="tp-hero__content-box z-index-3">
                   <div className="tp-hero__title-box p-relative">
                     <h2 className="tp-hero__hero-title tp-title-anim">
@@ -161,7 +159,7 @@ const HeroSlider = () => {
                 </div>
               </div>
               <div
-                className="col-xl-6 relative  wow tpfadeUp"
+                className="col-xl-6 col-lg-5  col-md-4 relative  wow tpfadeUp"
                 data-wow-duration=".9s"
                 data-wow-delay=".7s"
               >

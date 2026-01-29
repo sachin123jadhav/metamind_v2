@@ -12,13 +12,15 @@
     &__bg{
         padding-top: 120px;
         padding-bottom:120px;
-        border-radius: 30px;
+        // border-radius: 30px;
+        background-color: #e7ecef;
         @media #{$xl,$lg}{
             padding-top: 60px;
             padding-bottom:60px;
         }
         @media #{$md}{
-            padding-top: 170px;
+            padding-top: 20px;
+            padding-bottom:20px;
         }
         @media #{$xs}{
             padding-top: 30px;
@@ -1127,13 +1129,13 @@
     height: 100%;
     @media #{$lg,$xl,$md}{
         & img{
-            height: 700px;
+            height: 350px;
         }
     }
     @media #{$xs}{
         top: 15px;
         & img{
-            height: 500px;
+            height: 325px;
         }
     }
 }
@@ -1173,16 +1175,19 @@
         left: -40px;
         top: 20px;
     }
-    & img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        // @media #{$lg} {
-        //     width: auto;
-        //     height: auto;
-        // }
-        object-fit: cover;
-        object-position: left center;
+    & .hand-img{
+           width: 50vw;
+    height: auto;
+    object-position: right;
+    position: absolute;
+    right: 0;
+    top: 20%;
+     @media #{$lg}{
+                        top: 30%;
+                    }
+                      @media #{$md}{
+                        top: 40%;
+                    }
         @media #{$xs}{
             position: absolute;
             width: 100%;
