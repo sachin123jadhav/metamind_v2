@@ -36,11 +36,11 @@ const hero_content = {
   ],
   hero_title: (
     <>
-      <span className="tp_title">
+      <div className="tp_title">
         <span className="child">Welcome to</span>
-      </span>
+      </div>
 
-      <span className="mt--20">
+      <span className="mb-10 d-block">
         <span className="child">Metamind Systems Private Limited.</span>
       </span>
     </>
@@ -143,7 +143,7 @@ const HeroSlider = () => {
                   </div>
 
                   <p
-                    className="wow tpfadeUp  mb-3"
+                    className="wow tpfadeUp  mb-3 "
                     data-wow-duration=".9s"
                     data-wow-delay=".7s"
                   >

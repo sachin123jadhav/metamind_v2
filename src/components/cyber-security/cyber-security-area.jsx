@@ -3,6 +3,10 @@ import Image from "next/image";
 import aboutImg1 from "../../../public/assets/img/service/about-image-1.jpg";
 import aboutImg2 from "../../../public/assets/img/service/about-image-2.jpg";
 import aboutImg3 from "../../../public/assets/img/service/about-image-3.jpg";
+import cyberSecurity1 from "../../../public/assets/img/service/cyber-security-1.jpg";
+import cyberSecurity2 from "../../../public/assets/img/service/cyber-security-2.jpg";
+import cyberSecurity3 from "../../../public/assets/img/service/cyber-security-3.jpg";
+
 import getFreeSecurity from "../../../public/assets/img/service/get-free-security-circle.svg";
 
 const service_details_content = {
@@ -86,7 +90,7 @@ function CyberSecurityArea() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h2 className="mb-35">Cyber Security Solutions</h2>
+            <h2 className="mb-35 mt-15">Cyber Security Solutions</h2>
           </div>
         </div>
         <div className="row align-items-center">
@@ -152,7 +156,7 @@ function CyberSecurityArea() {
                 <p>{overview_des}</p>
                 <ul>
                   {overview_list1.map((item, i) => (
-                    <li key={i}>
+                    <li key={i} className="xs-pl-0">
                       <strong>{item.title}</strong>
                       <ul>
                         {item.points.map((point, j) => (
@@ -175,7 +179,7 @@ function CyberSecurityArea() {
               <div className="sv-details-text mb-35">
                 <ul>
                   {overview_list1.map((item, i) => (
-                    <li key={i}>
+                    <li key={i}  className="xs-pl-0">
                       <strong>{item.title}</strong>
                       <ul>
                         {item.points.map((point, j) => (
@@ -205,7 +209,7 @@ function CyberSecurityArea() {
                     visibility: "inherit",
                   }}
                 >
-                  <Image src={aboutImg1} alt="About Image 1" />
+                  <Image src={cyberSecurity1} alt="About Image 1" />
                 </figure>
               </div>
 
@@ -220,7 +224,7 @@ function CyberSecurityArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={aboutImg2} alt="About Image 2" />
+                    <Image src={cyberSecurity2} alt="About Image 2" />
                   </figure>
                 </div>
 
@@ -233,7 +237,7 @@ function CyberSecurityArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={aboutImg3} alt="About Image 3" />
+                    <Image src={cyberSecurity3} alt="About Image 3" />
                   </figure>
                 </div>
               </div>

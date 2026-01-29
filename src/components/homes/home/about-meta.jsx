@@ -102,7 +102,7 @@ function AboutMeta() {
               data-wow-duration=".9s"
               data-wow-delay=".6s"
             >
-              <div className="tp-about__right pr-0 pl-30">
+              <div className="tp-about__right pr-0 pl-30 xs-pl-0">
                 <div className="tp-about__section-box">
                   {/* <h4 className="tp-section-subtitle">{title}</h4> */}
                   <h3 className="tp-section-title mb-15">{sub_title}</h3>
