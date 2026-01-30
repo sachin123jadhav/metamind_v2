@@ -12,7 +12,7 @@ const Surveillance = () => {
       <main>
         <BreadcrumbTwo
           title="Surveillance Soutions"
-          innertitle="Surveillance Soutions"
+          innertitle="Surveillance Solutions"
         />
         <SurveillanceArea />
       </main>

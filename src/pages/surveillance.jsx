@@ -7,7 +7,7 @@ import Surveillance from "@/components/surveillance";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Surveillance Soutions"} />
+      <SEO pageTitle={"Surveillance Solutions"} />
       <div className="page-bg">
         <Surveillance />
       </div>
