@@ -1084,6 +1084,45 @@ position: relative;
 .hover-bx .box-wrap:hover{background-color: #266544;}
 .tp-footer__widget{font-size: 15px;}
 
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .globe {
+        max-width: 112px;
+    position: absolute;
+    right: 80px;
+    top: -5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .globe {
+        max-width: 95px;
+    position: absolute;
+    right: 80px;
+    top: 20%;
+    }
+
+.header-top__support::before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: -24px;
+    bottom: 0;
+    width: 2px;
+    background: #fff;
+    transform: rotate(24deg);
+    transform-origin: top left;
+    height: 78px;
+}
+
+
+
+}
+
+
+
   
         @media (max-width: 767px) {
 
@@ -1118,8 +1157,18 @@ h2, .h2 {
 
 .team-member{  padding: 15px;  }
 
-
-
+    .tp-hero-bg {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+.tp-hero-bg img{  top: -44vw;}
 
         }
 
+
+          @media (max-width: 400px) {   
+.tp-hero-bg img{  top: -11%;}
+
+            }
+          
