@@ -9,7 +9,7 @@ function ServicesHome() {
   return (
     <>
       <section className="home-services  pb-30">
-        <div className="container z-index-5">
+        <div className="">
           {/* <div className="row">
             <div className="col-md-6">
               <div
@@ -80,7 +80,7 @@ function ServicesHome() {
           <div className="row">
             <div className="col-md-6">
               <div
-                className="tp-payment__bg-color-2 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeLeft"
+                className="tp-payment__bg-color-2 pt-30 pb-30 pl-30 pr-30 xs-pl-10 xs-pr-10 xs-pt-10 xs-pb-20 mb-25 wow tpfadeLeft"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
@@ -90,7 +90,7 @@ function ServicesHome() {
                     <Image src={service_img_1}></Image>
                   </div>
                   <div className="col-md-6">
-                    <h4 className=" mb-15">Surveillance Solutions</h4>
+                    <h4 className="mb-15 xs-pt-15">Surveillance Solutions</h4>
                     <div className="service-content">
                       <p>
                         Metamind Systems delivers AI-driven surveillance and
@@ -113,7 +113,7 @@ function ServicesHome() {
 
             <div className="col-md-6">
               <div
-                className="tp-payment__bg-color-3 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeRight"
+                className="tp-payment__bg-color-3  pt-30 pb-30 pl-30 pr-30 xs-pl-10 xs-pr-10 xs-pt-10 xs-pb-20 mb-25 wow tpfadeRight"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
@@ -123,7 +123,7 @@ function ServicesHome() {
                     <Image src={service_img_2}></Image>
                   </div>
                   <div className="col-md-6">
-                    <h4 className=" mb-15">Cyber Security</h4>
+                    <h4 className=" mb-15  xs-pt-15">Cyber Security</h4>
                     <div className="service-content">
                       <p>
                         Our Cyber Security Solutions provide comprehensive

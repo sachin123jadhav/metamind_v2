@@ -85,10 +85,10 @@ function AboutMeta() {
 
   return (
     <>
-      <section className="p-relative pt-50 pb-80 about-home xs-mb-0 xs-pb-30">
+      <section className="p-relative pt-50 pb-80 about-home xs-mb-0 xs-pb-30 xs-pt-10">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-xl-6 col-lg-6 ">
               <Image src={About}></Image>
               <div
                 className="play_btn popup-video"
@@ -98,7 +98,7 @@ function AboutMeta() {
               </div>
             </div>
             <div
-              className="col-xl-6 col-lg-6 wow tpfadeRight d-flex align-items-center"
+              className="col-md-6 col-xl-6 col-lg-6 wow tpfadeRight d-flex align-items-center"
               data-wow-duration=".9s"
               data-wow-delay=".6s"
             >

@@ -79,7 +79,7 @@ const {title, sub_title, des, about_list, btn_text}  = about_content
 const AboutArea = () => {
     return (
       <>
-        <div className="tp-about__area tp-about__pt-pb pt-50 pb-50 sm-pb-20 sm-pt-50">
+        <div className="tp-about__area tp-about__pt-pb pt-30 pb-0 sm-pb-20 sm-pt-50 xs-mt-15">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-xl-12">
@@ -87,13 +87,15 @@ const AboutArea = () => {
                 <h4 className="tp-section-subtitle">{title}</h4>
                 <h3 className="tp-section-title mb-15">{sub_title}</h3>
               </div>
+              </div>
+              <div className="row">
               <div
-                className="col-xl-6 col-lg-6 wow tpfadeRight"
+                className="col-xl-6 col-lg-6 order-2 order-lg-1 wow tpfadeRight"
                 data-wow-duration=".9s"
                 data-wow-delay=".6s"
               >
                 <div className="tp-about__right">
-                  <div className="tp-about__section-box">{des}</div>
+                  <div className="tp-about__section-box xs-pb-5">{des}</div>
                   <div className="tp-about__list">
                     <ul className="inline-list">
                       {about_list.map((item, i) => (
@@ -104,7 +106,7 @@ const AboutArea = () => {
                       ))}
                     </ul>
                   </div>
-                  <div className="tp-about__btn">
+                  <div className="tp-about__btn xs-mt-10 xs-mb-15">
                     <Link
                       className="tp-btn tp-btn-hover alt-color-black"
                       href="/about"
@@ -116,7 +118,7 @@ const AboutArea = () => {
                 </div>
               </div>
               <div
-                className="col-xl-6 col-lg-6 wow tpfadeLeft"
+                className="col-xl-6 col-lg-6  order-1 order-lg-2 lg-mt-15 lg-mb-15 wow tpfadeLeft"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >

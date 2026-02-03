@@ -6,12 +6,12 @@ import Image from "next/image";
 function MetamindProducts() {
   return (
     <>
-      <section className="home-services pt-50 pb-30">
-        <div className="container z-index-5">
+      <section className="home-services pt-50 pb-30 xs-pb-0">
+        <div className=" z-index-5">
           <div className="row">
             <div className="col-md-6">
               <div
-                className="tp-payment__bg-color-3 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeLeft relative"
+                className="tp-payment__bg-color-3  pt-30 pb-30 pl-30 pr-30 xs-pl-10 xs-pr-10 xs-pt-10 xs-pb-20  mb-25 wow tpfadeLeft relative"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
@@ -21,7 +21,7 @@ function MetamindProducts() {
                     <Image src={workfusion}></Image>
                   </div>
                   <div className="col-md-6">
-                    <h4 className=" mb-15">WorkFusion HRMS</h4>
+                    <h4 className=" mb-15  xs-pt-15">WorkFusion HRMS</h4>
                     <div className="service-content">
                       <p>
                         Seamless HR, Streamlined Success: Efficient, Error Free,
@@ -44,7 +44,7 @@ function MetamindProducts() {
 
             <div className="col-md-6">
               <div
-                className="tp-payment__bg-color-2 pt-30 pb-30 pl-30 pr-30 mb-25 wow tpfadeRight relative"
+                className="tp-payment__bg-color-2  pt-30 pb-30 pl-30 pr-30 xs-pl-10 xs-pr-10 xs-pt-10 xs-pb-20 mb-25 wow tpfadeRight relative"
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
@@ -54,7 +54,7 @@ function MetamindProducts() {
                     <Image src={service_img_2}></Image>
                   </div>
                   <div className="col-md-6">
-                    <h4 className=" mb-15">Document Management System</h4>
+                    <h4 className=" mb-15 xs-pt-15">Document Management System</h4>
                     <div className="service-content">
                       <p>
                         Our Cyber Security Solutions provide comprehensive

@@ -95,8 +95,9 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 28px;
-            @media #{$md,$xs,$lg}{
-                display: none;
+            @media #{$xs}{
+               
+                 font-size: 14px; line-height: 1.4;
             }
         }
     }

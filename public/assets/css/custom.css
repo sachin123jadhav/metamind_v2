@@ -1164,6 +1164,13 @@ h2, .h2 {
     }
 .tp-hero-bg img{  top: -44vw;}
 
+ul.inline-list li {
+    width: 100%;
+    display: block;}
+
+    .play_btn{top: -60px;
+  right: -30px;}
+
         }
 
 
@@ -1172,3 +1179,13 @@ h2, .h2 {
 
             }
           
+
+
+            @media (max-width: 375px) {
+    .service-card {
+        padding: 15px;
+    }
+    .box-title {
+    font-size: 20px;
+}
+}

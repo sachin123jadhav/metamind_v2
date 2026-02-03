@@ -102,7 +102,7 @@ const ServiceArea = () => {
         <div className="tp-service-2__shape">
           <Image src={bg_img} alt="theme-pure" />
         </div>
-        <div className="container z-index-5">
+        <div className="z-index-5">
           <div className="row align-items-center mb-50">
             <div className="col-xl-6 col-lg-6">
               <div className="tp-service-2__section-box">
