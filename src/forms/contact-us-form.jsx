@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
 const ContactUsForm = () => {
+  const [captcha, setCaptcha] = useState(null);
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState({
@@ -122,7 +123,12 @@ const ContactUsForm = () => {
             <span className="floating-label-2">Message...</span>
           </div>
         </div>
-
+<div className="col-12 mb-20">
+  <ReCAPTCHA
+    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+    onChange={(value) => setCaptcha(value)}
+  />
+</div>
         {/* Submit Button */}
         <div className="col-xxl-12">
           <div className="postbox__btn-box">

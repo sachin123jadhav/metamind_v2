@@ -135,16 +135,17 @@
 
 
 .offering-sec{
-    z-index: 5;
-position: relative;
-.offering-title{display: flex;align-items: center;
+    z-index: 5;position: relative;}
+    
+    .offering-title{display: flex; align-items: center;}
+
     .icon{width: 50px; margin-right: 10px;flex: 0 0 auto;}
     .title-text{font-size:21px; line-height: 28px;}
 
-}
+
 .card-body{padding: 0;}
 
-}
+
 
 
 
@@ -153,7 +154,7 @@ position: relative;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
     border-style: none;
     border-radius: 0px 0px 10px 10px;
-    padding: 30px 30px 30px 30px;height: 100%;
+    padding: 30px 30px 30px 30px;height: 100%;}
   
     .service-description{margin: 15px 0;line-height: 28px;}
    
@@ -169,7 +170,7 @@ position: relative;
   }
   
   
-  }
+  
   .iq-service-box::after {
     content: "";
   
@@ -1009,25 +1010,40 @@ position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);}
-  .team-intro{border: solid 1px #ccc; padding: 15px; border-radius: 15px;height: 100%;
-  h5{color: rgba(0, 0, 0, 0.7);}
-  }
+ .team-intro {
+  border: solid 1px #ccc;
+  padding: 15px;
+  border-radius: 15px;
+  height: 100%;
+}
 
-  .team-member{
-    border: solid 1px #ccc;position: relative;
+.team-intro h5 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.team-member {
+  border: solid 1px #ccc;
+  position: relative;
   border-radius: 10px;
-  padding: 0px;box-shadow: 0 0 18px 0px rgba(0, 0, 0, 0.09); margin-bottom: 20px;
+  padding: 0px;
+  box-shadow: 0 0 18px 0px rgba(0, 0, 0, 0.09);
+  margin-bottom: 20px;
+}
 
-    .team-name{height: 100%;align-items: center;position: relative; overflow: hidden;
-
+.team-member .team-name {
+  height: 100%;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: center;}
-    .team-desc{ 
+  justify-content: center;
+}
 
-      p{margin-bottom: 0; padding: 30px 0;}
-    }
-  }
+.team-member .team-desc p {
+  margin-bottom: 0;
+  padding: 30px 0;
+}
 
   .tp-hand{position: absolute;
   left: -100px;

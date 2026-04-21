@@ -48,7 +48,7 @@ const ContactFormArea = () => {
             </div>
             <div className="col-xl-6 col-lg-6">
               <div className="card shadow contact-details ">
-                <div className="card-body d-flex flex-column justify-content-between">
+                <div className="card-body d-flex flex-column justify-content-between p-5">
                   <h2 className="title">Contact Us</h2>
                   <p className="pb-20">
                     Feel free to contact us from below details information
@@ -75,7 +75,7 @@ const ContactFormArea = () => {
                       <LocationMap />
                     </div>
 
-                    <div className="rc__post-content">
+                    <div className="rc__post-content capitalize">
                       <div className="rc__meta">
                         <h5>USA Office</h5>
                         <p>
