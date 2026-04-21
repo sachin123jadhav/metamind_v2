@@ -124,10 +124,7 @@ const ContactUsForm = () => {
           </div>
         </div>
 <div className="col-12 mb-20">
-  <ReCAPTCHA
-    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-    onChange={(value) => setCaptcha(value)}
-  />
+
 </div>
         {/* Submit Button */}
         <div className="col-xxl-12">
