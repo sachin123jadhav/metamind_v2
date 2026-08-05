@@ -23,7 +23,7 @@ const footer_content = {
   address2: (
     <>
       <b>Metamind Systems Pvt. Ltd.,</b> <br />
-      6850 Fitzgerald Ct, sugar land, TX 77479, USA
+      TX, USA
     </>
   ),
   phone: "+91 20 26059659",

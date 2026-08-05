@@ -30,6 +30,7 @@ const ContactUsForm = () => {
     );
 
     try {
+      console.log("HOST",process.env.NEXT_PUBLIC_TOKEN)
       const response = await fetch(
         "https://metamindsystem.com/sendEmailwithAttachment.php",
         {

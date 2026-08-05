@@ -6,13 +6,17 @@ export default async function handler(req, res) {
     // Destructure the request body
     const { subject, text, html, from, name, phone } = req.body;
    
+    console.log("HOST:", process.env.HOST);
+    console.log("EMAIL_PORT:", process.env.EMAIL_PORT);
+    console.log("OFFICE_EMAIL:", process.env.OFFICE_EMAIL);
+    console.log("PASSWORD:", process.env.PASSWORD);
     // Set up the SMTP transporter using your credentials
     const transporter = nodemailer.createTransport({
       host: process.env.HOST, // Replace with your SMTP server host
       port: process.env.EMAIL_PORT, // Replace with your SMTP server port (use 587 for TLS)
       secure: true, // Use true for SSL (465 port)
       auth: {
-        user: process.env.OFFICE_EMAIL, // Replace with your SMTP username
+        user: process.env.OFFICE_EMAIL, // Replace with your SMTP username  
         pass: process.env.PASSWORD, // Replace with your SMTP password
       },
     });
