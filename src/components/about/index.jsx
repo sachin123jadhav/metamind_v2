@@ -5,7 +5,6 @@ import AboutBanner from "./about-banner";
 import AboutContent from "./about-content";
 import FooterTwo from "@/layout/footers/footer-2";
 import OurTeam from "./team";
-import AboutAreaNew from "@/common/about-area-new";
  
 const About = () => {
   return (
@@ -18,7 +17,6 @@ const About = () => {
       <AboutContent />
       <OurTeam />
 
-      {/* <AboutAreaNew /> */}
       <FooterTwo />
     </>
   );

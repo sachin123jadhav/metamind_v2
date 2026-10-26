@@ -1,5 +1,3 @@
-import FooterFive from "@/layout/footers/footer-5";
-import HeaderSix from "@/layout/headers/header-6";
 import React from "react";
 
 import ContactFormArea from "./contact-form-area";

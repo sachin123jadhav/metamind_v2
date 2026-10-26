@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 import SoftwareProductDevelopment from "../../../public/assets/img/service/Steps-of-Software-Development-Process.jpg";
-import SAS from "../../../public/assets/img/service/Software as a Service.webp";
-import WebDevelopment from "../../../public/assets/img/service/Web-Development.webp";
-import ECommerceDevelopment from "../../../public/assets/img/service/ECommerceDevelopment.webp";
-import DigitalTransformationServices from "../../../public/assets/img/service/DigitalTransformationServices.jpg";
 
 function SoftwareAsAProductArea() {
   return (

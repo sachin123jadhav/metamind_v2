@@ -1,12 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"],
-      "@/assets/*": ["./public/assets/*"],
-      "@/components/*": ["./src/components/*"],
-      "@/layouts/*": ["./src/layouts/*"], 
-      "@/data/*": ["./src/data/*"],
-      "@/hooks/*": ["/hooks/*"],  
+      "@/hooks/*": ["./hooks/*"],
+      "@/*": ["./src/*"]
     }
   }
 }

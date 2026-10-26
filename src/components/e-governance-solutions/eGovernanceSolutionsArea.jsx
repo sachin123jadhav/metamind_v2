@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import aboutImg1 from "../../../public/assets/img/service/Digital-Transformation-document.jpg";
-import aboutImg2 from "../../../public/assets/img/service/about-image-2.jpg";
-import aboutImg3 from "../../../public/assets/img/service/about-image-3.jpg";
-import getFreeSecurity from "../../../public/assets/img/service/get-free-security-circle.svg";
 
 
 

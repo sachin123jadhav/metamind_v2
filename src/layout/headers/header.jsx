@@ -1,16 +1,13 @@
 import useSticky from '@/hooks/use-sticky';
 import Offcanvus from '@/common/offcanvus';
 import SearchPopup from '@/modals/search-popup';
-import SearchIconTwo from '@/svg/search-icon-2';
-import UserIcon from '@/svg/user-icon';
-import {gsap} from 'gsap';
+import { gsap } from 'gsap';
 import Link from 'next/link';
-import React, {useState, useRef, useEffect, useLayoutEffect} from 'react';
+import React, { useState, useRef } from 'react';
 import NavMenu from './nav-menu';
 import Image from 'next/image';
 
 import logo from "../../../public/assets/img/logo/MetaMind.svg";
-import SocialLinks from '@/common/social-links';
 
 const Header = () => {
 
@@ -54,11 +51,11 @@ const Header = () => {
                       Visit Us: <SocialLinks />
                     </span> */}
                     <Link className="pl-15" href="/contact">
-                      <i class="fa fa-envelope-open-text pr-2"></i> Contact Us
+                      <i className="fa fa-envelope-open-text pr-2"></i> Contact Us
                     </Link>
 
                     <Link className="pl-15" href="/career">
-                      <i class="fa fa-business-time pr-5"></i>
+                      <i className="fa fa-business-time pr-5"></i>
                        Careers
                     </Link>
                   </div>
@@ -93,13 +90,6 @@ const Header = () => {
                     <div className="header-bottom__right d-flex align-items-center justify-content-end">
                       <div className="header-bottom__action"></div>
                       <div className="header-bottom__btn d-flex align-items-center">
-                        {/* <Link
-                          className="tp-btn-orange tp-btn-hover alt-color-green d-none d-md-inline-block"
-                          href="/contact"
-                        >
-                          <span className="white-text">Contact</span>
-                          <b></b>
-                        </Link> */}
                         <a
                           className="header-bottom__bar d-lg-none tp-menu-bar"
                           onClick={() => setSidebarOpen(true)}

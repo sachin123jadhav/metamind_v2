@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Metamind Systems website
 
-## Getting Started
+Corporate website for Metamind Systems Pvt. Ltd., built with Next.js 14 (Pages Router) and exported as a static site.
 
-First, run the development server:
+## Requirements
+
+- Node.js 18.17 or newer (tested on Node 24)
+- npm (the lockfile is `package-lock.json`; do not add a `yarn.lock`)
+
+## Commands
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install     # install dependencies
+npm run dev     # development server on http://localhost:3000
+npm run build   # production build; static files are written to ./out
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`next.config.mjs` sets `output: 'export'`, so the site is plain HTML/CSS/JS and cannot use API routes or server-side rendering. Upload the contents of `out/` to the web host.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Environment
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Create a `.env` file (it is git-ignored) with:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+NEXT_PUBLIC_TOKEN=<token expected by sendEmailwithAttachment.php>
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The contact and career forms post to `https://metamindsystem.com/sendEmailwithAttachment.php`. Anything prefixed `NEXT_PUBLIC_` is visible to every visitor, so the PHP endpoint must not rely on that token as a secret.
 
-## Learn More
+## Structure
 
-To learn more about Next.js, take a look at the following resources:
+| Path | Contents |
+|---|---|
+| `src/pages` | Routes: home, about, team, surveillance, cyber-security, software-as-a-product, workfusion, document-management-system, service, e-governance-solutions, digital-mapping, kumbh2025, geo-referencing, contact, career, 404 |
+| `src/components` | Page sections, one folder per page |
+| `src/common`, `src/layout` | Shared sections, headers, footers |
+| `src/forms` | Contact and career forms |
+| `src/data` | Static content (team, services) |
+| `hooks`, `utils` | Animation and scroll hooks, helpers |
+| `src/styles/index.scss` | Stylesheet entry (Bootstrap, modal-video, then the theme) |
+| `public/assets/scss`, `public/assets/css` | Theme styles; `custom.css` holds Metamind-specific rules |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Styles
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The theme uses the Sass module system (`@use` / `@forward`). `custom.css` uses CSS nesting, which Sass 1.71 cannot compile; the project is built and tested with Sass 1.106 (`^1.106.1` in `package.json`). `next build` and `next dev` do not display Sass deprecation warnings; to see them run:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+npx sass public/assets/scss/main.scss > /dev/null
+```

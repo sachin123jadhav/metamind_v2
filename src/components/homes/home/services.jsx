@@ -1,6 +1,4 @@
-import React from 'react'
-import workfusion from "../../../../public/assets/img/product/Workfusion.jpg";
-import DMS from "../../../../public/assets/img/product/DMS.jpg";
+import React from 'react';
 import service_img_1 from "../../../../public/assets/img/service/surveillance.jpg";
 import service_img_2 from "../../../../public/assets/img/service/CyberSecurity.jpg";
 import Image from "next/image";
@@ -33,7 +31,7 @@ function ServicesHome() {
                         settle for complicated HR Systems?
                       </p>
                     </div>
-                    <div class="tp-feature-five-link">
+                    <div className="tp-feature-five-link">
                       <span>
                         <a href="/workfusion">Read More</a>
                       </span>
@@ -67,7 +65,7 @@ function ServicesHome() {
                         ecosystems.
                       </p>
                     </div>
-                    <div class="tp-feature-five-link">
+                    <div className="tp-feature-five-link">
                       <span>
                         <a href="/document-management-system">Read More</a>
                       </span>
@@ -101,7 +99,7 @@ function ServicesHome() {
                         prediction, and coordination.
                       </p>
                     </div>
-                    <div class="tp-feature-five-link">
+                    <div className="tp-feature-five-link">
                       <span>
                         <a href="/surveillance">Read More</a>
                       </span>
@@ -135,7 +133,7 @@ function ServicesHome() {
                         ecosystems.
                       </p>
                     </div>
-                    <div class="tp-feature-five-link">
+                    <div className="tp-feature-five-link">
                       <span>
                         <a href="/cyber-security">Read More</a>
                       </span>

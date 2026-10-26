@@ -11,8 +11,8 @@ const Surveillance = () => {
       <Header />
       <main>
         <BreadcrumbTwo
-          title="Surveillance Soutions"
-          innertitle="Surveillance Soutions"
+          title="Surveillance Solutions"
+          innertitle="Surveillance Solutions"
         />
         <SurveillanceArea />
       </main>

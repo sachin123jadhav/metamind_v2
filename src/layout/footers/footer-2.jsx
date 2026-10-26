@@ -3,7 +3,7 @@ import EmailTwo from '@/svg/email-2';
 import PhoneTwo from '@/svg/phone-2';
 import Image from 'next/image';
 import Link from 'next/link';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 // img import 
 import footer_logo from "../../../public/assets/img/logo/MetaMind.svg";
 const footer_content = {

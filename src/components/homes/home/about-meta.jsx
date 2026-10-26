@@ -1,10 +1,7 @@
 
-import { AppContext } from "@/context/ContextProvider";
-import React, { useState, useEffect, useRef, useContext } from "react";
-import { Navigation, Scrollbar} from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useState, useEffect, useRef } from "react";
 import VideoPopup from "@/modals/video-popup";
-import About from "../../../../public/assets/img/about/About.png"; 
+import About from "../../../../public/assets/img/about/About.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -94,7 +91,7 @@ function AboutMeta() {
                 className="play_btn popup-video"
                 onClick={() => setIsVideoOpen(true)}
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </div>
             </div>
             <div

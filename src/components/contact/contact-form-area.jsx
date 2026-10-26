@@ -1,14 +1,8 @@
 import ContactUsForm from "@/forms/contact-us-form";
 import SendIcon from "@/svg/send-icon";
-import Link from "next/link";
 import React from "react";
 
-import img from "../../../public/assets/img/contact/contact-icon-sm-4.png";
-import Image from "next/image";
-import LocationIcon from "@/svg/location-icon";
-import LocationIconThree from "@/svg/location-icon-3";
 import LocationMap from "@/svg/location-map";
-import EmailIcon from "@/svg/email";
 import Call from "@/svg/call";
 import MailIcon from "@/svg/e-Mail";
 

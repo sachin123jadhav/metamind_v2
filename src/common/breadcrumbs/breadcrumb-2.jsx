@@ -1,14 +1,8 @@
 import useBreadcrumbTitleAnime from "@/hooks/useBreadcrumbTitleAnime";
-import useCharAnimation from "@/hooks/useCharAnimation";
 import useTitleAnimation from "@/hooks/useTitleAnimation";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
 
-import shape_1  from "../../../public/assets/img/breadcrumb/breadcrumb-shape-1.png";
-import shape_2  from "../../../public/assets/img/breadcrumb/breadcrumb-shape-2.png";
-import shape_3  from "../../../public/assets/img/breadcrumb/breadcrumb-3.png";
-import shape_4  from "../../../public/assets/img/breadcrumb/breadcrumb-sub-1.png";
  
 
 

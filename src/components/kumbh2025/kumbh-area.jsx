@@ -43,15 +43,15 @@ const KumbhArea = () => {
               <p>Cyber Threat Mitigation Strategies:</p>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>Threat Identification & reporting
+                  <i className="fal fa-check"></i>Threat Identification & reporting
                   using Open-Source Intelligence
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
                   Keyword-Based Scans
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Real-Time Monitoring of digital
+                  <i className="fal fa-check"></i>Real-Time Monitoring of digital
                   platforms, including event websites, social media accounts,
                   etc.
                 </li>
@@ -74,12 +74,12 @@ const KumbhArea = () => {
               <h5 className="mt-15">1.Proactive Fraud Detection:</h5>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>Identify and analyze potential
+                  <i className="fal fa-check"></i>Identify and analyze potential
                   online fraud targeting Maha Kumbh 2025 attendees, vendors, and
                   donors.
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Detect fake websites, phishing
+                  <i className="fal fa-check"></i>Detect fake websites, phishing
                   attempts, and fraudulent financial transactions.
                 </li>
               </ul>
@@ -88,12 +88,12 @@ const KumbhArea = () => {
               <h5 className="mt-15">2.Cyber Threat Mitigation:</h5>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>Provide actionable intelligence to
+                  <i className="fal fa-check"></i>Provide actionable intelligence to
                   law enforcement and cyber cells to curb cybercrime during the
                   event.
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Ensure public safety by addressing
+                  <i className="fal fa-check"></i>Ensure public safety by addressing
                   digital vulnerabilities that can be exploited by malicious
                   actors.
                 </li>
@@ -105,12 +105,12 @@ const KumbhArea = () => {
               <h5 className="mt-15">3.Preservation of Trust:</h5>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>Safeguard the reputation of the
+                  <i className="fal fa-check"></i>Safeguard the reputation of the
                   Maha Kumbh event by eliminating fraudulent activities that may
                   harm attendees.
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Support transparency by
+                  <i className="fal fa-check"></i>Support transparency by
                   identifying authentic vendors and donation channels.
                 </li>
               </ul>
@@ -119,12 +119,12 @@ const KumbhArea = () => {
               <h5 className="mt-15">4.Comprehensive Monitoring:</h5>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>Leverage OSINT techniques to
+                  <i className="fal fa-check"></i>Leverage OSINT techniques to
                   monitor websites, social media platforms, and communication
                   channels for suspicious activities.
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Analyze digital footprints to
+                  <i className="fal fa-check"></i>Analyze digital footprints to
                   trace fraud origins and patterns.
                 </li>
               </ul>
@@ -149,30 +149,30 @@ const KumbhArea = () => {
               </p>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>
-                  <i class="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
                   Mobile app for field teams and centralized web portal for
                   administrators
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Sector-wise live monitoring and
+                  <i className="fal fa-check"></i>Sector-wise live monitoring and
                   dashboards
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Quick asset registration and issue
+                  <i className="fal fa-check"></i>Quick asset registration and issue
                   reporting
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
                   Instant alerts to vendors for on-ground problem resolution
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
                   Enhanced inter-departmental coordination and resource
                   optimization
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Real-time reports to support
+                  <i className="fal fa-check"></i>Real-time reports to support
                   data-driven decisions
                 </li>
               </ul>
@@ -195,23 +195,23 @@ const KumbhArea = () => {
               </p>
               <ul>
                 <li>
-                  <i class="fal fa-check"></i>AI-based facial recognition for
+                  <i className="fal fa-check"></i>AI-based facial recognition for
                   identity verification
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
                   Bhashini-enabled multilingual support for ease of access
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Mobile app, web portal, and help
+                  <i className="fal fa-check"></i>Mobile app, web portal, and help
                   center integration
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>Real-time dashboards and case
+                  <i className="fal fa-check"></i>Real-time dashboards and case
                   tracking for authorities
                 </li>
                 <li>
-                  <i class="fal fa-check"></i>
+                  <i className="fal fa-check"></i>
                   Location-wise trends, team performance, and recovery insights
                 </li>
               </ul>

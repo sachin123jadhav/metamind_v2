@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import Digitisation from "../../../public/assets/img/service/Georeferencing.jpg";
 import Image from "next/image";

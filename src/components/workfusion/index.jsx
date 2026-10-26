@@ -14,8 +14,6 @@ const Project = () => {
       <main>
         <BreadcrumbTwo title="Products" innertitle="Workfusion HRMS" />
         <WorkFusion />
-        {/* <Portfolio /> */}
-        {/* <CtaArea /> */}
         <ServiceArea />
       </main>
       <FooterTwo />

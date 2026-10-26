@@ -1,10 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import shashank from "../../../public/assets/img/team/ShashakPatil.jpg";
 
 import left_shape from "../../../public/assets/img/hero/hero-left-shape-3-1.png";
 import TeamMember from "./TeamMember";
-// import gradient_bg from "../../../../public/assets/img/hero/hero-gradient-3.jpg";
 
 import TeamData from "@/data/TeamData";
 

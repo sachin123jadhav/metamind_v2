@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";  
+import React, { useEffect, useRef } from "react";
 //use gsap
 import { gsap } from "gsap";
 import useCharAnimation from "@/hooks/useCharAnimation";
@@ -11,12 +11,8 @@ import shape_1 from "../../../../public/assets/img/hero/hero-line-shape.png";
 import shape_2 from "../../../../public/assets/img/hero/hero-line-shape-2.png";
 import shape_img_1 from "../../../../public/assets/img/hero/hero-shape-1.png";
 import shape_img_2 from "../../../../public/assets/img/hero/hero-shape-2.png";
-import hero_thumb_1 from "../../../../public/assets/img/hero/hero-sm-1.jpg";
 import thumb_1 from "../../../../public/assets/img/hero/hero-sm-3.png";
 import thumb_2 from "../../../../public/assets/img/hero/hero-sm-4.jpg";
-import hero_thumb_2 from "../../../../public/assets/img/hero/hero-sm-2.jpg";
-import HeroForm from "@/forms/hero-form";
-import LineShape from "@/svg/line-shape";
 import Link from "next/link";
 import globeImg from "../../../../public/assets/img/hero/powered-hero-shape.png";
 

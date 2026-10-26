@@ -161,7 +161,7 @@ function CyberSecurityArea() {
                       <ul>
                         {item.points.map((point, j) => (
                           <li key={j}>
-                            <i class="fal fa-check"></i>
+                            <i className="fal fa-check"></i>
                             {point}
                           </li>
                         ))}
@@ -183,12 +183,10 @@ function CyberSecurityArea() {
                       <strong>{item.title}</strong>
                       <ul>
                         {item.points.map((point, j) => (
-                          <>
-                            <li key={j}>
-                              <i class="fal fa-check"></i>
-                              {point}
-                            </li>
-                          </>
+                          <li key={j}>
+                            <i className="fal fa-check"></i>
+                            {point}
+                          </li>
                         ))}
                       </ul>
                     </li>

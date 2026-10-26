@@ -14,6 +14,11 @@ const CareerForm = () => {
   const [file, setFile] = useState(null);
 
   const validateFile = (file) => {
+    if (!file) {
+      setFile(null);
+      return false;
+    }
+
     const allowedTypes = [
       "application/pdf",
       "application/msword",
@@ -24,6 +29,7 @@ const CareerForm = () => {
     const maxSize = 2 * 1024 * 1024; // Max file size: 2MB
 
     if (!allowedTypes.includes(file.type)) {
+      setFile(null);
       setAlert({
         status: "danger",
         text: "Invalid file type. Please upload a PDF, DOC, DOCX, JPG, or PNG.",
@@ -32,6 +38,7 @@ const CareerForm = () => {
     }
 
     if (file.size > maxSize) {
+      setFile(null);
       setAlert({
         status: "danger",
         text: "File is too large. Please upload a file under 2MB.",
@@ -211,7 +218,9 @@ const CareerForm = () => {
               name="resume"
               className="inputFile"
               accept=".pdf,.doc,.docx,.jpg,.png"
-              onChange={(e) => validateFile(e.target.files[0])}
+              onChange={(e) => {
+                if (!validateFile(e.target.files[0])) e.target.value = "";
+              }}
               required
             />
             <p className="sub-text">

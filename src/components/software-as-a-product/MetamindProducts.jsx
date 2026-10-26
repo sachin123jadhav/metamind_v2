@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import workfusion from "../../../public/assets/img/product/Workfusion.jpg";
 import service_img_2 from "../../../public/assets/img/product/DMS.jpg";
 import Image from "next/image";
@@ -31,7 +31,7 @@ function MetamindProducts() {
                         settle for complicated HR Systems?
                       </p>
                     </div>
-                    <div class="tp-feature-five-link">
+                    <div className="tp-feature-five-link">
                       <span>
                         <a href="/workfusion">Read More</a>
                       </span>
@@ -66,7 +66,7 @@ function MetamindProducts() {
                         ecosystems.
                       </p>
                     </div>
-                    <div class="tp-feature-five-link">
+                    <div className="tp-feature-five-link">
                       <span>
                         <a href="/document-management-system">Read More</a>
                       </span>

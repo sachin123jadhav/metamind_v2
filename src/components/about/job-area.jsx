@@ -1,4 +1,3 @@
-import ClockIcon from "@/svg/clock-icon";
 import LocationIconThree from "@/svg/location-icon-3";
 import UserIcon from "@/svg/user-icon";
 import Link from "next/link";

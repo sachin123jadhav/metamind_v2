@@ -4,10 +4,10 @@ import React from 'react';
 
 // images import 
 import about_img_1 from "../../public/assets/img/about/Metamind.jpg";
-import about_img_2 from "../../public/assets/img/about/about-2.jpg"
-import about_img_3 from "../../public/assets/img/about/about-1.jpg"
-import about_img_4 from "../../public/assets/img/about/about-3.jpg"
-import about_img_5 from "../../public/assets/img/about/about-5.png"
+import about_img_2 from "../../public/assets/img/about/about-2.jpg";
+import about_img_3 from "../../public/assets/img/about/about-1.jpg";
+import about_img_4 from "../../public/assets/img/about/about-3.jpg";
+import about_img_5 from "../../public/assets/img/about/about-5.png";
 import Mou from "../../public/assets/img/about/MoU.jpg";
 
 // about data

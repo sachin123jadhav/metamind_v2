@@ -27,7 +27,7 @@ function Opportunity() {
                 your career to the next level and make a real impact, apply to
                 join our team today
               </p> */}
-              <p class="text-justify">
+              <p className="text-justify">
                 <b>At Metamind Systems Pvt. Ltd.</b>, we are proud of our
                 skilled team and the exceptional work they do. As we continue to
                 grow and evolve, we invite you to join us on our journey.

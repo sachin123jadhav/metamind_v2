@@ -1,4 +1,5 @@
-import "../styles/index.scss"; 
+import "slick-carousel/slick/slick.css";
+import "../styles/index.scss";
 
 
 if (typeof window !== "undefined") {

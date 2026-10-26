@@ -19,8 +19,6 @@ const Dms = () => {
         />
         <DocumentManagementSystemArea />
        
-        {/* <Portfolio /> */}
-        {/* <CtaArea /> */}
      
       </main>
       <FooterTwo />

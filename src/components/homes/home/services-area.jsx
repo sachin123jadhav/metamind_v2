@@ -1,6 +1,5 @@
 import useTitleAnimation from "@/hooks/useTitleAnimation";
 import service_data from "@/data/service-data";
-import RightArrow from "@/svg/right-arrow";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
@@ -25,7 +24,7 @@ const service_content = {
   ),
   des: <>Discover our smart enterprise solutions.</>,
   btn_text: "Know More",
-  link: "/product", // ✅ Ensure this path exists in your routes
+  link: "/software-as-a-product",
 };
 
 // Destructure content

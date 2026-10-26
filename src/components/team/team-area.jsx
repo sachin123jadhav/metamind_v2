@@ -137,7 +137,7 @@ const TeamArea = () => {
                           <ul>
                             {item.points.map((point, j) => (
                               <li key={j}>
-                                <i class="fal fa-check"></i>
+                                <i className="fal fa-check"></i>
                                 {point}
                               </li>
                             ))}

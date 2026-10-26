@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { escapeHtml } from "../../utils/utils";
 
 const ContactUsForm = () => {
   const formRef = useRef();
@@ -23,10 +24,10 @@ const ContactUsForm = () => {
     formData.append(
       "html",
       `
-      <p>Name: ${data?.name}</p>
-      <p>Phone: <a href="tel:${data?.phone}">${data?.phone}</a></p>
-      <p>Email:<a href="mailto:${data?.email}">${data?.email}</a></p>
-      <p>Message: ${data?.message}</p>`,
+      <p>Name: ${escapeHtml(data?.name)}</p>
+      <p>Phone: <a href="tel:${escapeHtml(String(data?.phone).replace(/\s+/g, ""))}">${escapeHtml(data?.phone)}</a></p>
+      <p>Email: <a href="mailto:${escapeHtml(data?.email)}">${escapeHtml(data?.email)}</a></p>
+      <p>Message: ${escapeHtml(data?.message)}</p>`,
     );
 
     try {
@@ -42,7 +43,9 @@ const ContactUsForm = () => {
       const result = await response.json();
 
       setLoading(false);
-      setData({ name: "", email: "", message: "", phone: "" });
+      if (result?.status === "success") {
+        setData({ name: "", email: "", message: "", phone: "" });
+      }
       setAlert({
         status: result?.status === "success" ? "success" : "danger",
         text: result?.message,
@@ -54,7 +57,7 @@ const ContactUsForm = () => {
     }
     setTimeout(() => {
       setAlert({ status: null, text: null });
-    }, 2000);
+    }, 5000);
   };
 
   const handleInputChange = (e) => {

@@ -2,7 +2,6 @@ import React from "react";
 import aboutImg1 from "../../../public/assets/img/product/DMS-App.png";
 import aboutImg2 from "../../../public/assets/img/product/DMS-Branch.jpg";
 import aboutImg3 from "../../../public/assets/img/product/DMS.jpg";
-import getFreeSecurity from "../../../public/assets/img/service/get-free-security-circle.svg";
 import Image from "next/image";
 
 const service_details_content = {

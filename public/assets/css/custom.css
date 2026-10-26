@@ -437,7 +437,7 @@ position: relative;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: end;
+	align-items: flex-end;
 	gap: 30px;
 	margin-right: 20px;
 }
