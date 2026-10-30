@@ -129,7 +129,7 @@
         & p{
             font-weight: 400;
             font-size: 18px;
-            line-height: 16px;
+            line-height: 1.6;
             @media #{$xs}{
                 font-size: 17px;
             }
@@ -320,11 +320,11 @@
                 width: 25%;
                 float: left; 
                 @media #{$md}{
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 24px;
                 }
                 @media #{$xs}{
-                    font-size: 12px;
+                    font-size: 14px;
                     line-height: 24px;
                     width: 50%;
                 }

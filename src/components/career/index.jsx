@@ -12,7 +12,7 @@ const Career = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <BreadcrumbTwo title="Career" innertitle="Career" />
+            <BreadcrumbTwo title="Careers" innertitle="Careers at Metamind" />
             <div className="page-bg">
               <Opportunity />
               <JobArea style_carrer={true} />

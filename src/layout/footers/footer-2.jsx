@@ -23,7 +23,7 @@ const footer_content = {
   address2: (
     <>
       <b>Metamind Systems Pvt. Ltd.,</b> <br />
-      6850 Fitzgerald Ct, sugar land, TX 77479, USA
+      TX, USA
     </>
   ),
   phone: "+91 20 26059659",
@@ -107,7 +107,7 @@ const FooterTwo = () => {
                     <div className="tp-footer__widget footer-widget-2 footer-col-2-1">
                       <div className="tp-footer__logo mb-25">
                         <Link href="/">
-                          <Image src={footer_logo} alt="Metamind" />
+                          <Image src={footer_logo} alt="Metamind Systems logo" />
                         </Link>
                         <p className="mt-15">{compInfo}</p>
                       </div>

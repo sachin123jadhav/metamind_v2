@@ -12,7 +12,7 @@ const Project = () => {
     <>
       <Header />
       <main>
-        <BreadcrumbTwo title="Products" innertitle="Workfusion HRMS" />
+        <BreadcrumbTwo title="Products" innertitle="WorkFusion HRMS" />
         <WorkFusion />
         <ServiceArea />
       </main>

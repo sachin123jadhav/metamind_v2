@@ -40,7 +40,7 @@ function Opportunity() {
 
           <div className="row mt-15" id ="career-form">
             <div className="col-md-6">
-              <Image src={career} />
+              <Image src={career} alt="Careers at Metamind Systems" />
             </div>
             <div className="col-md-6">
               <CareerForm />

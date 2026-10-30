@@ -106,7 +106,7 @@ function CyberSecurityArea() {
                     visibility: "inherit",
                   }}
                 >
-                  <Image src={aboutImg1} alt="About Image 1" />
+                  <Image src={aboutImg1} alt="Cyber security threat detection and monitoring" />
                 </figure>
               </div>
 
@@ -121,7 +121,7 @@ function CyberSecurityArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={aboutImg2} alt="About Image 2" />
+                    <Image src={aboutImg2} alt="Network security and data protection" />
                   </figure>
                 </div>
 
@@ -134,15 +134,15 @@ function CyberSecurityArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={aboutImg3} alt="About Image 3" />
+                    <Image src={aboutImg3} alt="Cyber security incident response" />
                   </figure>
                 </div>
               </div>
 
               {/* Get Free Security Circle */}
               <div className="get-free-security-circle">
-                <a href="/contact">
-                  <Image src={getFreeSecurity} alt="Get Free Security" />
+                <a href="/contact/">
+                  <Image src={getFreeSecurity} alt="Contact us for a free security consultation" />
                 </a>
               </div>
             </div>
@@ -207,7 +207,7 @@ function CyberSecurityArea() {
                     visibility: "inherit",
                   }}
                 >
-                  <Image src={cyberSecurity1} alt="About Image 1" />
+                  <Image src={cyberSecurity1} alt="Cloud security solutions" />
                 </figure>
               </div>
 
@@ -222,7 +222,7 @@ function CyberSecurityArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={cyberSecurity2} alt="About Image 2" />
+                    <Image src={cyberSecurity2} alt="Cyber security compliance and audits" />
                   </figure>
                 </div>
 
@@ -235,15 +235,15 @@ function CyberSecurityArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={cyberSecurity3} alt="About Image 3" />
+                    <Image src={cyberSecurity3} alt="Third-party cyber risk management" />
                   </figure>
                 </div>
               </div>
 
               {/* Get Free Security Circle */}
               <div className="get-free-security-circle">
-                <a href="/contact">
-                  <Image src={getFreeSecurity} alt="Get Free Security" />
+                <a href="/contact/">
+                  <Image src={getFreeSecurity} alt="Contact us for a free security consultation" />
                 </a>
               </div>
             </div>

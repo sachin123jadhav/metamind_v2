@@ -120,8 +120,8 @@ const AboutArea = () => {
                 data-wow-duration=".9s"
                 data-wow-delay=".2s"
               >
-                <Image className="mou" src={Mou}></Image>
-                <Image className="about-img" src={about_img_1}></Image>
+                <Image className="mou" src={Mou} alt="Metamind, Bharat Electronics and Persistent logos"></Image>
+                <Image className="about-img" src={about_img_1} alt="Metamind and Bharat Electronics representatives at an MoU signing"></Image>
               </div>
             </div>
           </div>

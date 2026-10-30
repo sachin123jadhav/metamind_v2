@@ -11,7 +11,7 @@ const Team = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <BreadcrumbTwo title={"Team Member"} innertitle={"Team Member"} />
+            <BreadcrumbTwo title={"Our Team"} innertitle={"Our Team"} />
             <TeamArea />
           </main>
           <FooterTwo />

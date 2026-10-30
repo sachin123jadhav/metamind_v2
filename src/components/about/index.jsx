@@ -11,7 +11,7 @@ const About = () => {
     <>
       <Header />
       <div className="">
-        <BreadcrumbTwo title="About Company" innertitle="About Company" />{" "}
+        <BreadcrumbTwo title="About Us" innertitle="About Metamind Systems" />{" "}
       </div>
       <AboutBanner />
       <AboutContent />

@@ -16,7 +16,7 @@ const SearchPopup = ({searchOpen, setSearchOpen}) => {
                   <div className="search__top d-flex justify-content-between align-items-center">
                      <div className="search__logo">
                         <Link href="/" onClick={() => setSearchOpen(false)}>
-                           <Image src={logo_white} alt="theme-pure" />
+                           <Image src={logo_white} alt="Metamind Systems logo" />
                         </Link>
                      </div>
                      <div className="search__close">

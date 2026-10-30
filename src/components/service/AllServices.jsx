@@ -43,7 +43,7 @@ function AllServices() {
             id="saas"
           >
             <div className="col-md-6">
-              <Image className="about-img" src={SAS} />
+              <Image className="about-img" src={SAS} alt="Software as a Service" />
             </div>
             <div className="col-md-6">
               <h4 className="mb-25 sm-mt-20 sm-mb-10">
@@ -63,7 +63,7 @@ function AllServices() {
 
           <div className="row mt-50 align-items-center" id="wd">
             <div className="col-md-6">
-              <Image className="about-img" src={WebDevelopment} />
+              <Image className="about-img" src={WebDevelopment} alt="Web development" />
             </div>
             <div className="col-md-6">
               <h4 className="mb-25 sm-mt-20 sm-mb-10">Web Development</h4>
@@ -81,7 +81,7 @@ function AllServices() {
             id="ecd"
           >
             <div className="col-md-6">
-              <Image className="about-img" src={ECommerceDevelopment} />
+              <Image className="about-img" src={ECommerceDevelopment} alt="E-commerce development" />
             </div>
             <div className="col-md-6">
               <h4 className="mb-25 sm-mt-20 sm-mb-10">
@@ -100,6 +100,7 @@ function AllServices() {
               <Image
                 className="about-img"
                 src={DigitalTransformationServices}
+                alt="Digital transformation services"
               />
             </div>
             <div className="col-md-6">

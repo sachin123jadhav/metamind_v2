@@ -75,7 +75,7 @@ const Header = () => {
                 <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
                   <div className="header-bottom__logo">
                     <Link href="/">
-                      <Image src={logo} alt="theme-pure" />
+                      <Image src={logo} alt="Metamind Systems logo" />
                     </Link>
                   </div>
                 </div>

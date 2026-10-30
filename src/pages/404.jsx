@@ -1,55 +1,76 @@
 import Link from "next/link";
 import React from "react";
 import SEO from "../common/seo";
-
-// error shape import here 
-import error_shape_1 from "../../public/assets/img/login/error-shape.png";
-import error_shape_2 from "../../public/assets/img/login/text-404.png";
-import Image from "next/image";
+import { PAGES } from "@/data/seo-data";
+import Wrapper from "../layout/wrapper";
 import Header from "@/layout/headers/header";
 import FooterTwo from "@/layout/footers/footer-2";
+import BreadcrumbTwo from "@/common/breadcrumbs/breadcrumb-2";
 
+const popular_pages = [
+  { title: "IT Services", des: "Web, e-commerce, SaaS and software development", link: "/service" },
+  { title: "E-Governance Solutions", des: "Digital platforms for government departments", link: "/e-governance-solutions" },
+  { title: "Surveillance Solutions", des: "AI video analytics and social media monitoring", link: "/surveillance" },
+  { title: "Cyber Security Solutions", des: "Threat detection, incident response and compliance", link: "/cyber-security" },
+  { title: "WorkFusion HRMS", des: "Attendance, leave and timelog management", link: "/workfusion" },
+  { title: "Document Management System", des: "Organise, tag and retrieve documents fast", link: "/document-management-system" },
+];
 
-const index = () => {
+const NotFound = () => {
   return (
-    <>
-    <SEO pageTitle={"Oops.! Page Not Found!"} />
-      <Header style_error={true} />
-      <div id="smooth-wrapper">
-        <div id="smooth-content">
-          <main>
-            <div className="tp-error-area tp-error-ptb p-relative">
-              <div className="tp-error-left-shape">
-                <Image src={error_shape_1} alt="theme-pure" />
-              </div>
-              <div className="container">
-                <div className="row">
-                  <div className="col-xl-12">
-                    <div className="tp-error-content-box text-center mb-40">
-                      <Image src={error_shape_2} alt="theme-pure"
-                      />
-                    </div>
-                    <div className="tp-error-text-box text-center">
-                      <h4 className="error-title-sm">Oops.! Page Not Found!</h4>
-                      <p>The page vou are looking for does not exist'</p>
-                      <Link
-                        className="tp-btn-inner tp-btn-hover alt-color-black"
-                        href="/"
-                      >
-                        <span> Back To Home</span>
+    <Wrapper>
+      <SEO {...PAGES.notFound} />
+      <Header />
+      <main>
+        <BreadcrumbTwo title="Page Not Found" innertitle="Page Not Found" />
+        <div className="page-bg">
+          <section className="error-page-area pt-40">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-xl-8 col-lg-10">
+                  <div className="error-page-box text-center">
+                    <p className="error-page-code" aria-hidden="true">
+                      4<span>0</span>4
+                    </p>
+                    <h2 className="mb-15">Oops! Page not found</h2>
+                    <p className="mb-30">
+                      The page you are looking for may have been moved, renamed
+                      or no longer exists. Try one of the links below, or get in
+                      touch and we will help you find it.
+                    </p>
+                    <div className="error-page-actions">
+                      <Link className="tp-btn tp-btn-hover alt-color-black" href="/">
+                        <span className="white-text">Back To Home</span>
                         <b></b>
+                      </Link>
+                      <Link className="tp-btn error-page-btn-outline" href="/contact">
+                        <span>Contact Us</span>
                       </Link>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <div className="row pt-50">
+                <div className="col-12">
+                  <h3 className="error-page-subtitle text-center mb-25">Popular pages</h3>
+                </div>
+                {popular_pages.map((item) => (
+                  <div key={item.link} className="col-lg-4 col-md-6 mb-25">
+                    <Link className="error-page-link" href={item.link}>
+                      <h4>{item.title}</h4>
+                      <p className="mb-0">{item.des}</p>
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
-          </main>
-          <FooterTwo />
+          </section>
         </div>
-      </div>
-    </>
+      </main>
+      <FooterTwo />
+    </Wrapper>
   );
 };
 
-export default index;
+export default NotFound;

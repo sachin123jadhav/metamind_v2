@@ -15,7 +15,7 @@ function EGovernanceSolutionsArea() {
         </div>
         <div className="row align-items-center">
           <div className="col-md-5">
-            <Image className="about-img" src={aboutImg1} alt="About Image 1" />
+            <Image className="about-img" src={aboutImg1} alt="E-governance digital transformation of government documents" />
           </div>
           <div className="col-md-7">
             <div className="sv-details-wrapper pl-0">

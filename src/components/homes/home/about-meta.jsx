@@ -86,7 +86,7 @@ function AboutMeta() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <Image src={About}></Image>
+              <Image src={About} alt="Inauguration of the Khoya-Paya (lost and found) centre at Maha Kumbh"></Image>
               <div
                 className="play_btn popup-video"
                 onClick={() => setIsVideoOpen(true)}

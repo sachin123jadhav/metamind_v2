@@ -11,7 +11,7 @@ function OurTeam() {
     <>
       <section className="team-bg">
         <div className="tp-hero-left-shape">
-          <Image src={left_shape} alt="them-pure" />
+          <Image src={left_shape} alt="" aria-hidden="true" />
         </div>
         <div className="container">
           <div className="row">

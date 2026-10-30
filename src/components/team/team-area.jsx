@@ -79,7 +79,7 @@ const TeamArea = () => {
                         visibility: "inherit",
                       }}
                     >
-                      <Image src={aboutImg1} alt="About Image 1" />
+                      <Image src={aboutImg1} alt="Metamind Systems team at work" />
                     </figure>
                   </div>
 
@@ -94,7 +94,7 @@ const TeamArea = () => {
                           visibility: "inherit",
                         }}
                       >
-                        <Image src={aboutImg2} alt="About Image 2" />
+                        <Image src={aboutImg2} alt="Metamind Systems team collaboration" />
                       </figure>
                     </div>
 
@@ -107,19 +107,19 @@ const TeamArea = () => {
                           visibility: "inherit",
                         }}
                       >
-                        <Image src={aboutImg3} alt="About Image 3" />
+                        <Image src={aboutImg3} alt="Metamind Systems team meeting" />
                       </figure>
                     </div>
                   </div>
 
                   {/* Get Free Security Circle */}
                   <div className="get-free-security-circle">
-                    <a href="/contact">
-                      <Image src={getFreeSecurity} alt="Get Free Security" />
+                    <a href="/contact/">
+                      <Image src={getFreeSecurity} alt="Contact Metamind Systems" />
                     </a>
                   </div>
                   <div className="meta-icon">
-                    <Image src={MetaIcon} />
+                    <Image src={MetaIcon} alt="" aria-hidden="true" />
                   </div>
                 </div>
               </div>
@@ -199,7 +199,7 @@ const TeamArea = () => {
                   us.
                 </p>
                 <p>
-                  Please check the ‘<a href="/career">Careers</a> ’ page for
+                  Please check the ‘<a href="/career/">Careers</a> ’ page for
                   latest opportunities.
                 </p>
                 <h4>Together, we can achieve great things!</h4>

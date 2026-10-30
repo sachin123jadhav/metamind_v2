@@ -54,6 +54,7 @@ const security_data = [
     id: 1,
     link: "#",
     img: logo1,
+    name: "Bharat Electronics Limited (BEL)",
     title: (
       <>
         Bharat Electronics <br /> Limited (BEL)
@@ -64,6 +65,7 @@ const security_data = [
     id: 2,
     link: "#",
     img: logo2,
+    name: "Samarthgad Foundation and Schools",
     title: (
       <>
         Samarthgad <br /> Foundation and Schools
@@ -74,6 +76,7 @@ const security_data = [
     id: 3,
     link: "#",
     img: logo3,
+    name: "Kumbh Prayagraj 2025",
     title: (
       <>
         Kumbh <br />
@@ -85,6 +88,7 @@ const security_data = [
     id: 4,
     link: "#",
     img: logo4,
+    name: "Government of Maharashtra",
     title: (
       <>
         Government <br />
@@ -96,6 +100,7 @@ const security_data = [
     id: 5,
     link: "#",
     img: logo5,
+    name: "Government of Delhi",
     title: (
       <>
         Government <br />
@@ -141,7 +146,7 @@ const SecurityArea = () => {
                         <Link href={item.link}>
                           <div className="tp-security-item d-flex align-items-center">
                             <div className="tp-security-img">
-                              <Image src={item.img} alt="theme-pure" />
+                              <Image src={item.img} alt={`${item.name} logo`} />
                             </div>
                             <div className="tp-security-content">
                               <h4 className="tp-security-title-sm">

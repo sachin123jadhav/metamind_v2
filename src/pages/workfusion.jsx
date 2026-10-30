@@ -1,12 +1,13 @@
 import React from "react";
 import SEO from "../common/seo";
+import { PAGES } from "@/data/seo-data";
 import Wrapper from "../layout/wrapper";
 import WorkFusion from "@/components/workfusion";
 
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Work Fusion HRMS"} />
+      <SEO {...PAGES.workfusion} />
       <div className="page-bg">
         <WorkFusion />
       </div>

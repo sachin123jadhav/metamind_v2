@@ -1,0 +1,19 @@
+# Metamind website: Next.js static export with one folder per page (about/index.html, contact/index.html, ...).
+# The old catch-all rewrite to /index.html is removed: real pages now exist as files, and the rewrite
+# made every wrong URL return the home page with status 200 instead of a 404.
+
+# Wrong URLs get the site's own 404 page, with a real 404 status
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # One address for the site: send www.metamindsystem.com to metamindsystem.com (matches the canonical URLs)
+  RewriteCond %{HTTP_HOST} ^www\.metamindsystem\.com$ [NC]
+  RewriteRule ^ https://metamindsystem.com%{REQUEST_URI} [R=301,L]
+
+  # Fallback for hosts that ignore ErrorDocument: a URL with no matching file or folder gets 404.php,
+  # which returns the site's 404 page with a real 404 status (real files such as the mail script are untouched)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /404.php [L]
+</IfModule>

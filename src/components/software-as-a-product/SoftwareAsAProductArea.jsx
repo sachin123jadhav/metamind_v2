@@ -25,7 +25,7 @@ function SoftwareAsAProductArea() {
 
           <div className="row mt-50 align-items-center" id="spd">
             <div className="col-md-6">
-              <Image src={SoftwareProductDevelopment} />
+              <Image src={SoftwareProductDevelopment} alt="Software product development steps" />
             </div>
             <div className="col-md-6">
               <h4 className="mb-25 sm-mt-20 sm-mb-10">

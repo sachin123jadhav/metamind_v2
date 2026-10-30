@@ -1,5 +1,6 @@
 import React from "react";
 import SEO from "../common/seo";
+import { PAGES } from "@/data/seo-data";
 import Wrapper from "../layout/wrapper";
 import SoftwareAsAProduct from "@/components/software-as-a-product";
 
@@ -7,7 +8,7 @@ import SoftwareAsAProduct from "@/components/software-as-a-product";
 const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={"Software as a Product"} />
+      <SEO {...PAGES.softwareProduct} />
       <div className="page-bg">
       <SoftwareAsAProduct />
       </div>

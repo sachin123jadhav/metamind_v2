@@ -14,7 +14,7 @@ function GeorefeRencingArea() {
           </div>
           <div className="row align-items-center">
             <div className="col-md-6">
-              <Image className="about-img" src={Digitisation} />
+              <Image className="about-img" src={Digitisation} alt="Georeferencing of maps" />
             </div>
             <div className="col-md-6">
               <h5>In Partnership with Government of Maharashtra</h5>

@@ -18,7 +18,7 @@ function ServicesHome() {
                 <div className="row">
                   <div className="col-md-12"></div>
                   <div className="col-md-6">
-                    <Image src={workfusion}></Image>
+                    <Image src={workfusion} alt="WorkFusion HRMS"></Image>
                   </div>
                   <div className="col-md-6">
                     <h4 className=" mb-15">WorkFusion HRMS</h4>
@@ -33,7 +33,7 @@ function ServicesHome() {
                     </div>
                     <div className="tp-feature-five-link">
                       <span>
-                        <a href="/workfusion">Read More</a>
+                        <a href="/workfusion/">Read More</a>
                       </span>
                     </div>
                   </div>
@@ -50,7 +50,7 @@ function ServicesHome() {
                 <div className="row">
                   <div className="col-md-12"></div>
                   <div className="col-md-6">
-                    <Image src={DMS}></Image>
+                    <Image src={DMS} alt="Document Management System"></Image>
                   </div>
                   <div className="col-md-6">
                     <h4 className=" mb-15">Document Management System</h4>
@@ -67,7 +67,7 @@ function ServicesHome() {
                     </div>
                     <div className="tp-feature-five-link">
                       <span>
-                        <a href="/document-management-system">Read More</a>
+                        <a href="/document-management-system/">Read More</a>
                       </span>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ function ServicesHome() {
                 <div className="row">
                   <div className="col-md-12"></div>
                   <div className="col-md-6">
-                    <Image src={service_img_1}></Image>
+                    <Image src={service_img_1} alt="Surveillance solutions"></Image>
                   </div>
                   <div className="col-md-6">
                     <h4 className=" mb-15">Surveillance Solutions</h4>
@@ -101,7 +101,7 @@ function ServicesHome() {
                     </div>
                     <div className="tp-feature-five-link">
                       <span>
-                        <a href="/surveillance">Read More</a>
+                        <a href="/surveillance/">Read More</a>
                       </span>
                     </div>
                   </div>
@@ -118,7 +118,7 @@ function ServicesHome() {
                 <div className="row">
                   <div className="col-md-12"></div>
                   <div className="col-md-6">
-                    <Image src={service_img_2}></Image>
+                    <Image src={service_img_2} alt="Cyber security"></Image>
                   </div>
                   <div className="col-md-6">
                     <h4 className=" mb-15">Cyber Security</h4>
@@ -135,7 +135,7 @@ function ServicesHome() {
                     </div>
                     <div className="tp-feature-five-link">
                       <span>
-                        <a href="/cyber-security">Read More</a>
+                        <a href="/cyber-security/">Read More</a>
                       </span>
                     </div>
                   </div>

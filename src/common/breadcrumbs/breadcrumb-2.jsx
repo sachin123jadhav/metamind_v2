@@ -35,13 +35,13 @@ const BreadcrumbTwo = ({ title, innertitle, team_details, career_details }) => {
                   <span className="dvdr">
                     <i className="fal fa-angle-right"></i>
                   </span>
-                  <span
-                    className={`${team_details && "child-one"} ${
-                      career_details && "child-one"
+                  <h1
+                    className={`breadcrumb__page-title ${
+                      team_details || career_details ? "child-one" : ""
                     }`}
                   >
                     {innertitle}
-                  </span>
+                  </h1>
                   {team_details && (
                     <>
                       <span className="dvdr">

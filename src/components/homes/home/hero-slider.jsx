@@ -124,7 +124,7 @@ const HeroSlider = () => {
                 key={i}
                 className={item.cls}
                 src={item.img}
-                alt="Metamind "
+                alt="" aria-hidden="true"
               />
             ))}
           </div>
@@ -133,9 +133,9 @@ const HeroSlider = () => {
               <div className="col-xl-6">
                 <div className="tp-hero__content-box z-index-3">
                   <div className="tp-hero__title-box p-relative">
-                    <h2 className="tp-hero__hero-title tp-title-anim">
+                    <h1 className="tp-hero__hero-title tp-title-anim">
                       {hero_title}
-                    </h2>
+                    </h1>
                   </div>
 
                   <p
@@ -161,7 +161,7 @@ const HeroSlider = () => {
                 data-wow-duration=".9s"
                 data-wow-delay=".7s"
               >
-                <Image className="globe" src={globeImg}></Image>
+                <Image className="globe" src={globeImg} alt="" aria-hidden="true"></Image>
               </div>
             </div>
           </div>

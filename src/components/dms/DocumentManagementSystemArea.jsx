@@ -159,7 +159,7 @@ function DocumentManagementSystemArea() {
                       visibility: "inherit",
                     }}
                   >
-                    <Image src={aboutImg1} alt="About Image 1" />
+                    <Image src={aboutImg1} alt="Metamind Document Management System app" />
                   </figure>
                 </div>
 
@@ -174,7 +174,7 @@ function DocumentManagementSystemArea() {
                         visibility: "inherit",
                       }}
                     >
-                      <Image src={aboutImg2} alt="About Image 2" />
+                      <Image src={aboutImg2} alt="DMS branch-wise document categories" />
                     </figure>
                   </div>
 
@@ -187,15 +187,15 @@ function DocumentManagementSystemArea() {
                         visibility: "inherit",
                       }}
                     >
-                      <Image src={aboutImg3} alt="About Image 3" />
+                      <Image src={aboutImg3} alt="Document Management System dashboard" />
                     </figure>
                   </div>
                 </div>
 
                 {/* Get Free Security Circle */}
                 {/* <div className="get-free-security-circle">
-                           <a href="/contact">
-                             <Image src={getFreeSecurity} alt="Get Free Security" />
+                           <a href="/contact/">
+                             <Image src={getFreeSecurity} alt="" aria-hidden="true" />
                            </a>
                          </div> */}
               </div>

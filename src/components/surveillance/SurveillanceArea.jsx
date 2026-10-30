@@ -103,7 +103,7 @@ function SurveillanceArea() {
           </div>
           <div className="row  align-items-center">
             <div className="col-md-5">
-              <Image src={service_img}></Image>
+              <Image src={service_img} alt="Surveillance solutions"></Image>
             </div>
             <div className="col-md-7">
               <div className="sv-details-wrapper">
@@ -172,7 +172,7 @@ function SurveillanceArea() {
               </div>
             </div>
             <div className="col-md-5">
-              <Image src={service_img2}></Image>
+              <Image src={service_img2} alt="Reliable surveillance and monitoring"></Image>
             </div>
           </div>
           <div className="row">

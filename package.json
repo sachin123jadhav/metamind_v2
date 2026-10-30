@@ -2,8 +2,12 @@
   "name": "metamind-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.19"
+  },
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/generate-sitemap.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

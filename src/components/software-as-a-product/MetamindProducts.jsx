@@ -18,7 +18,7 @@ function MetamindProducts() {
                 <div className="row">
                   <div className="col-md-12"></div>
                   <div className="col-md-6">
-                    <Image src={workfusion}></Image>
+                    <Image src={workfusion} alt="WorkFusion HRMS"></Image>
                   </div>
                   <div className="col-md-6">
                     <h4 className=" mb-15">WorkFusion HRMS</h4>
@@ -33,7 +33,7 @@ function MetamindProducts() {
                     </div>
                     <div className="tp-feature-five-link">
                       <span>
-                        <a href="/workfusion">Read More</a>
+                        <a href="/workfusion/">Read More</a>
                       </span>
                     </div>
                   </div>
@@ -51,24 +51,22 @@ function MetamindProducts() {
                 <div className="row">
                   <div className="col-md-12"></div>
                   <div className="col-md-6">
-                    <Image src={service_img_2}></Image>
+                    <Image src={service_img_2} alt="Document Management System"></Image>
                   </div>
                   <div className="col-md-6">
                     <h4 className=" mb-15">Document Management System</h4>
                     <div className="service-content">
                       <p>
-                        Our Cyber Security Solutions provide comprehensive
-                        protection through real-time threat detection, data
-                        encryption, and incident response planning. We help
-                        organizations build resilient defenses, ensure
-                        regulatory compliance, and manage evolving risks across
-                        networks, cloud environments, and third-party
-                        ecosystems.
+                        Organise, classify and retrieve your documents with
+                        multi-level categorization, meta tagging and
+                        multi-faceted search. Our Document Management System
+                        keeps important files secure and compliant, and helps
+                        teams collaborate and work more efficiently.
                       </p>
                     </div>
                     <div className="tp-feature-five-link">
                       <span>
-                        <a href="/document-management-system">Read More</a>
+                        <a href="/document-management-system/">Read More</a>
                       </span>
                     </div>
                   </div>

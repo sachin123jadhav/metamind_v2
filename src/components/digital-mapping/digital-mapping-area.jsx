@@ -16,7 +16,7 @@ function DigitalMappingArea() {
           </div>
           <div className="row">
             <div className="col-md-6">
-              <Image className="about-img" src={Digitisation} />
+              <Image className="about-img" src={Digitisation} alt="Digitisation of land records" />
             </div>
             <div className="col-md-6">
               <p>

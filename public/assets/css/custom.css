@@ -391,7 +391,8 @@ position: relative;
   }
   
   .tp-about__list.list-flex ul li{width: 100%;}
-  .page-bg{position: relative; width: 100%; }
+  /* the ::after decoration bleeds 85% past the right edge; clip it so it cannot widen the page */
+  .page-bg{position: relative; width: 100%; overflow-x: hidden; overflow-x: clip; }
 .page-bg::before, .page-bg::after{content: '';z-index: -1;  background-size: auto;  background-repeat: no-repeat;  height: 100%;  display: block;  opacity: .5;  width: 100%;  position: absolute; }
 
   .page-bg::before{content: '';background-image: url("../../assets/img/about/comparison-plan-before.png"); left: 0;}
@@ -1123,3 +1124,147 @@ h2, .h2 {
 
         }
 
+/* ===== Responsive fixes (phones and tablets) ===== */
+
+/* Justified text leaves wide gaps in narrow columns */
+@media (max-width: 991.98px) {
+  .text-justify,
+  .about-box p { text-align: left; }
+}
+
+/* The breadcrumb strip is pulled 50px over the next section; on narrow screens that collides with long page titles */
+@media (max-width: 991.98px) {
+  .breadcrumb__area { margin-bottom: 0; }
+}
+
+/* Stacked image columns: centre the image and leave room before the text that follows it */
+@media (max-width: 767.98px) {
+  .row > [class*="col-md-"] > img:only-child {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+}
+
+/* The heading column after a stacked image already gets sm-mt-20 on some pages; do not add the image gap twice */
+@media (max-width: 767.98px) {
+  .row > [class*="col-md-"]:has(> img:only-child) + [class*="col-md-"] > .sm-mt-20:first-child { margin-top: 0; }
+}
+
+h5.fw-normal { line-height: 1.5; }
+
+/* Home product cards: stack image above text until there is room for two columns */
+@media (max-width: 1199.98px) {
+  .home-services [class*="tp-payment__bg-color"] .row > [class*="col-md-"] { flex: 0 0 100%; max-width: 100%; }
+  .home-services [class*="tp-payment__bg-color"] .row > [class*="col-md-"] > img:only-child { display: block; max-width: 100%; height: auto; margin: 0 auto 20px; }
+}
+@media (max-width: 575.98px) {
+  .home-services [class*="tp-payment__bg-color"] { padding-left: 16px; padding-right: 16px; }
+}
+
+/* Decorative hand/globe must stay behind the section heading */
+.tp-service__area .tp-hand,
+.tp-service__area .tp-circle { z-index: 0; pointer-events: none; }
+.tp-service__area > .container { position: relative; z-index: 1; }
+
+/* Contact details: long e-mail addresses wrap inside the card */
+.contact-details .rc__post-content { min-width: 0; overflow-wrap: anywhere; }
+@media (max-width: 575.98px) {
+  .contact-details .rc__post-thumb.mr-20 { margin-right: 12px; }
+}
+
+/* Career: file input must not be wider than its form; job cards use the full width on phones */
+.inputFile { max-width: 100%; }
+@media (max-width: 575.98px) {
+  .job-post-box,
+  .job-post-box:hover { transform: none; }
+  .job-post-box { padding: 20px 16px; }
+  .job-post-time svg { width: 24px; }
+  .job-post-wrapper { flex-wrap: wrap; gap: 8px 20px; }
+  .job-post-time { margin-right: 0; }
+}
+
+/* Photo collage: the template reserves 20px on the right only, which makes it look off-centre on phones */
+@media (max-width: 767.98px) {
+  .about-us-image { margin-right: 0; justify-content: center; }
+}
+
+/* Home hero on phones: the 1:1 background image is 120% of the screen wide, so it is taller than the hero and used to
+   spill over the About section below. Clip it to the hero, give the hero room for the image, and keep the hand visible. */
+@media (max-width: 767.98px) {
+  .tp-hero__bg { overflow: hidden; min-height: min(105vw, 560px); }
+  .tp-hero__bg .tp-hero-bg { top: 0; height: 100%; }
+  .tp-hero__bg .tp-hero-bg img.mobile-img { top: auto; bottom: 0; height: 100%; object-fit: cover; object-position: center bottom; }
+}
+
+/* Home About block: the partner-logo strip sits directly under the About Us button once the columns stack */
+@media (max-width: 991.98px) {
+  .mou { margin-top: 24px; }
+}
+
+/* Scroll-to-top button: smaller and closer to the corner on phones so it covers less text */
+@media (max-width: 575.98px) {
+  .scroll-top { width: 40px; height: 40px; line-height: 40px; right: 12px; }
+  .scroll-top.open { bottom: 20px; }
+}
+
+/* The breadcrumb's current page is the page <h1>; keep it looking like the breadcrumb text it replaced */
+.breadcrumb__list h1.breadcrumb__page-title {
+  display: inline;
+  margin: 0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+}
+.text-white .breadcrumb__list h1.breadcrumb__page-title { color: #fff; }
+@media (max-width: 767px) {
+  .breadcrumb__list h1.breadcrumb__page-title { font-size: 15px; }
+}
+
+/* 404 page: same card, colour and button language as the rest of the site */
+.error-page-area { padding-bottom: 60px; }
+.error-page-box {
+  background: #fff;
+  border-top: 6px solid #266544;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  padding: 40px 30px 45px;
+}
+.error-page-code {
+  font-family: var(--tp-ff-heading);
+  font-size: 140px;
+  font-weight: 800;
+  line-height: 1;
+  color: #266544;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.error-page-code span { color: #F3942A; }
+.error-page-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+.tp-btn.error-page-btn-outline { background-color: transparent; border: 2px solid #266544; line-height: 41px; }
+.tp-btn.error-page-btn-outline span { color: #266544; }
+.tp-btn.error-page-btn-outline:hover, .tp-btn.error-page-btn-outline:focus-visible { background-color: #266544; }
+.tp-btn.error-page-btn-outline:hover span, .tp-btn.error-page-btn-outline:focus-visible span { color: #fff; }
+.error-page-box .tp-btn:focus-visible, .error-page-link:focus-visible { outline: 3px solid #F3942A; outline-offset: 2px; }
+.error-page-subtitle { color: #266544; }
+.error-page-link {
+  display: block;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e6ebe8;
+  border-left: 4px solid #266544;
+  border-radius: 5px;
+  padding: 20px 22px;
+  transition: all .3s;
+}
+.error-page-link h4 { font-size: 19px; margin-bottom: 6px; color: var(--tp-heading-primary); }
+.error-page-link p { font-size: 15px; line-height: 22px; }
+.error-page-link:hover, .error-page-link:focus-visible { background: #266544; border-color: #266544; }
+.error-page-link:hover h4, .error-page-link:hover p, .error-page-link:focus-visible h4, .error-page-link:focus-visible p { color: #fff; }
+@media (max-width: 767px) {
+  .error-page-code { font-size: 96px; }
+  .error-page-box { padding: 30px 18px 35px; }
+}

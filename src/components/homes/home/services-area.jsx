@@ -39,8 +39,8 @@ const ServicesArea = () => {
   return (
     <>
       <div className="tp-service__area p-relative fix pt-50 pb-50">
-        <Image className="tp-hand" src={bgImg2} />
-        <Image className="tp-circle" src={bgImg1} />
+        <Image className="tp-hand" src={bgImg2} alt="" aria-hidden="true" />
+        <Image className="tp-circle" src={bgImg1} alt="" aria-hidden="true" />
         <div className="tp-service__grey-shape grey-bg"></div>
         <div className="container relative">
           <p className="service-title d-none d-xl-block">Services</p>
@@ -101,7 +101,7 @@ const ServicesArea = () => {
                   </div>
 
                   <div className="bg-shape">
-                    <Image src={bgImg} />
+                    <Image src={bgImg} alt="" aria-hidden="true" />
                   </div>
                 </div>
               </div>
