@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import VideoBg from "../../../public/assets/img/Login.png";
 
 function WorkFusion() {
   return (
@@ -25,9 +24,17 @@ function WorkFusion() {
                 muted
                 controls // Add video controls
                 style={{ width: "100%" }} // Set video width to 100%
-                poster={VideoBg.src} // Set the default image for the video
-                src="https://metamindsystem.com/workfusion_demo_video/WorkFusionHRMSbyMetamindSystemsPL-Demo.mp4" // Directly reference public folder path
-              ></video>
+                poster="/assets/video/workfusion-promo-poster.jpg" // Set the default image for the video
+              >
+                <source
+                  src="https://metamindsystem.com/workfusion_demo_video/workfusion-promo-1080p.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="https://metamindsystem.com/workfusion_demo_video/workfusion-promo-1080p.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </div>
             <div className="col-md-5">
               <p>
