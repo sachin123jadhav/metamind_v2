@@ -11,7 +11,7 @@ import about_img_5 from "../../public/assets/img/about/about-5.png";
 import Mou from "../../public/assets/img/about/MoU.jpg";
 
 // about data
-const about_data =[
+const about_data =[    
     {
         id: 1, 
         cls: "bg-shape",
