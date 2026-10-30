@@ -11,7 +11,7 @@ import about_img_5 from "../../public/assets/img/about/about-5.png";
 import Mou from "../../public/assets/img/about/MoU.jpg";
 
 // about data
-const about_data =[    
+const about_data =[
     {
         id: 1, 
         cls: "bg-shape",
@@ -60,7 +60,7 @@ const about_content = {
       (Software), BEL; Sri Hrishikesh Kinikar, Director, Metamind Systems
       Private Limited; and Sri Rajesh Gharpure, Chief Delivery Officer,
       Persistent Systems Limited in the presence of Sri Manoj Jain, Chairman &
-      Managing Director and Sri Rajnish Sharma, Director (Bengaluru Complex),
+      Managing Director and Sri Rajnish Sharma, Director (Bengaluru Complex) ,
       BEL.</p>  
     </>
   ),
